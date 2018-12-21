@@ -2,7 +2,7 @@
 
 To be described...
 
-### Antipatterns definition
+### Bad JMH practices definition
 
  - RETU: method call return ignored (Blackhole)
  - LOOP: loop in the benchmark
