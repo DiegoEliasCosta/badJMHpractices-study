@@ -1,8 +1,8 @@
-# Project Study from JMH Performance Bad Practices
+# Studying Bad Practices in JMH Benchmarks - Online Appendix
 
 To be described...
 
-### Antipatterns definition
+### Bad JMH practices definition
 
  - RETU: method call return ignored (Blackhole)
  - LOOP: loop in the benchmark
