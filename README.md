@@ -1,4 +1,4 @@
-# Project Study from JMH Performance Bad Practices
+# Studying Bad Practices in JMH Benchmarks - Online Appendix
 
 To be described...
 
