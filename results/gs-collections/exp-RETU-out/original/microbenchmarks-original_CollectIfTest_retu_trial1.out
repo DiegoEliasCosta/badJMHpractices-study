@@ -1,0 +1,683 @@
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.parallel_eager_gsc
+
+# Run progress: 0.00% complete, ETA 01:06:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 103.036 ops/s
+# Warmup Iteration   2: 106.907 ops/s
+# Warmup Iteration   3: 106.960 ops/s
+# Warmup Iteration   4: 107.145 ops/s
+# Warmup Iteration   5: 107.278 ops/s
+Iteration   1: 107.334 ops/s
+Iteration   2: 107.263 ops/s
+Iteration   3: 107.215 ops/s
+Iteration   4: 107.491 ops/s
+Iteration   5: 107.394 ops/s
+
+# Run progress: 2.50% complete, ETA 01:05:27
+# Fork: 2 of 5
+# Warmup Iteration   1: 99.319 ops/s
+# Warmup Iteration   2: 104.420 ops/s
+# Warmup Iteration   3: 104.381 ops/s
+# Warmup Iteration   4: 104.839 ops/s
+# Warmup Iteration   5: 104.800 ops/s
+Iteration   1: 104.654 ops/s
+Iteration   2: 104.624 ops/s
+Iteration   3: 104.720 ops/s
+Iteration   4: 104.784 ops/s
+Iteration   5: 104.749 ops/s
+
+# Run progress: 5.00% complete, ETA 01:03:45
+# Fork: 3 of 5
+# Warmup Iteration   1: 101.737 ops/s
+# Warmup Iteration   2: 105.989 ops/s
+# Warmup Iteration   3: 106.100 ops/s
+# Warmup Iteration   4: 106.301 ops/s
+# Warmup Iteration   5: 106.567 ops/s
+Iteration   1: 106.625 ops/s
+Iteration   2: 106.606 ops/s
+Iteration   3: 106.576 ops/s
+Iteration   4: 106.341 ops/s
+Iteration   5: 106.460 ops/s
+
+# Run progress: 7.50% complete, ETA 01:02:04
+# Fork: 4 of 5
+# Warmup Iteration   1: 101.868 ops/s
+# Warmup Iteration   2: 106.655 ops/s
+# Warmup Iteration   3: 106.484 ops/s
+# Warmup Iteration   4: 106.778 ops/s
+# Warmup Iteration   5: 106.924 ops/s
+Iteration   1: 107.129 ops/s
+Iteration   2: 106.977 ops/s
+Iteration   3: 106.808 ops/s
+Iteration   4: 106.910 ops/s
+Iteration   5: 107.268 ops/s
+
+# Run progress: 10.00% complete, ETA 01:00:23
+# Fork: 5 of 5
+# Warmup Iteration   1: 98.854 ops/s
+# Warmup Iteration   2: 103.951 ops/s
+# Warmup Iteration   3: 104.094 ops/s
+# Warmup Iteration   4: 104.428 ops/s
+# Warmup Iteration   5: 104.775 ops/s
+Iteration   1: 104.358 ops/s
+Iteration   2: 104.763 ops/s
+Iteration   3: 104.365 ops/s
+Iteration   4: 104.531 ops/s
+Iteration   5: 104.469 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.parallel_eager_gsc":
+  106.017 ±(99.9%) 0.911 ops/s [Average]
+  (min, avg, max) = (104.358, 106.017, 107.491), stdev = 1.217
+  CI (99.9%): [105.105, 106.928] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.parallel_lazy_gsc
+
+# Run progress: 12.50% complete, ETA 00:58:43
+# Fork: 1 of 5
+# Warmup Iteration   1: 92.475 ops/s
+# Warmup Iteration   2: 96.585 ops/s
+# Warmup Iteration   3: 96.777 ops/s
+# Warmup Iteration   4: 97.135 ops/s
+# Warmup Iteration   5: 96.820 ops/s
+Iteration   1: 97.235 ops/s
+Iteration   2: 96.752 ops/s
+Iteration   3: 97.279 ops/s
+Iteration   4: 96.974 ops/s
+Iteration   5: 97.182 ops/s
+
+# Run progress: 15.00% complete, ETA 00:57:02
+# Fork: 2 of 5
+# Warmup Iteration   1: 93.783 ops/s
+# Warmup Iteration   2: 97.076 ops/s
+# Warmup Iteration   3: 97.109 ops/s
+# Warmup Iteration   4: 97.374 ops/s
+# Warmup Iteration   5: 97.272 ops/s
+Iteration   1: 97.362 ops/s
+Iteration   2: 97.211 ops/s
+Iteration   3: 97.425 ops/s
+Iteration   4: 97.414 ops/s
+Iteration   5: 97.495 ops/s
+
+# Run progress: 17.50% complete, ETA 00:55:21
+# Fork: 3 of 5
+# Warmup Iteration   1: 93.290 ops/s
+# Warmup Iteration   2: 97.002 ops/s
+# Warmup Iteration   3: 97.282 ops/s
+# Warmup Iteration   4: 97.352 ops/s
+# Warmup Iteration   5: 97.490 ops/s
+Iteration   1: 97.553 ops/s
+Iteration   2: 97.598 ops/s
+Iteration   3: 97.317 ops/s
+Iteration   4: 97.738 ops/s
+Iteration   5: 97.532 ops/s
+
+# Run progress: 20.00% complete, ETA 00:53:40
+# Fork: 4 of 5
+# Warmup Iteration   1: 92.735 ops/s
+# Warmup Iteration   2: 95.508 ops/s
+# Warmup Iteration   3: 96.015 ops/s
+# Warmup Iteration   4: 96.015 ops/s
+# Warmup Iteration   5: 95.834 ops/s
+Iteration   1: 95.819 ops/s
+Iteration   2: 96.014 ops/s
+Iteration   3: 96.008 ops/s
+Iteration   4: 95.897 ops/s
+Iteration   5: 95.872 ops/s
+
+# Run progress: 22.50% complete, ETA 00:52:00
+# Fork: 5 of 5
+# Warmup Iteration   1: 95.830 ops/s
+# Warmup Iteration   2: 99.268 ops/s
+# Warmup Iteration   3: 99.391 ops/s
+# Warmup Iteration   4: 99.725 ops/s
+# Warmup Iteration   5: 99.462 ops/s
+Iteration   1: 99.696 ops/s
+Iteration   2: 99.643 ops/s
+Iteration   3: 99.777 ops/s
+Iteration   4: 99.446 ops/s
+Iteration   5: 99.605 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.parallel_lazy_gsc":
+  97.514 ±(99.9%) 0.925 ops/s [Average]
+  (min, avg, max) = (95.819, 97.514, 99.777), stdev = 1.234
+  CI (99.9%): [96.589, 98.439] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.parallel_lazy_jdk
+
+# Run progress: 25.00% complete, ETA 00:50:19
+# Fork: 1 of 5
+# Warmup Iteration   1: 62.627 ops/s
+# Warmup Iteration   2: 65.597 ops/s
+# Warmup Iteration   3: 65.609 ops/s
+# Warmup Iteration   4: 65.861 ops/s
+# Warmup Iteration   5: 65.778 ops/s
+Iteration   1: 65.822 ops/s
+Iteration   2: 65.935 ops/s
+Iteration   3: 65.888 ops/s
+Iteration   4: 65.762 ops/s
+Iteration   5: 65.968 ops/s
+
+# Run progress: 27.50% complete, ETA 00:48:38
+# Fork: 2 of 5
+# Warmup Iteration   1: 62.753 ops/s
+# Warmup Iteration   2: 65.968 ops/s
+# Warmup Iteration   3: 65.832 ops/s
+# Warmup Iteration   4: 65.857 ops/s
+# Warmup Iteration   5: 65.902 ops/s
+Iteration   1: 65.928 ops/s
+Iteration   2: 65.926 ops/s
+Iteration   3: 66.010 ops/s
+Iteration   4: 65.841 ops/s
+Iteration   5: 65.975 ops/s
+
+# Run progress: 30.00% complete, ETA 00:46:58
+# Fork: 3 of 5
+# Warmup Iteration   1: 62.462 ops/s
+# Warmup Iteration   2: 65.830 ops/s
+# Warmup Iteration   3: 65.798 ops/s
+# Warmup Iteration   4: 65.903 ops/s
+# Warmup Iteration   5: 65.967 ops/s
+Iteration   1: 65.881 ops/s
+Iteration   2: 65.924 ops/s
+Iteration   3: 65.858 ops/s
+Iteration   4: 65.892 ops/s
+Iteration   5: 65.888 ops/s
+
+# Run progress: 32.50% complete, ETA 00:45:18
+# Fork: 4 of 5
+# Warmup Iteration   1: 62.851 ops/s
+# Warmup Iteration   2: 66.012 ops/s
+# Warmup Iteration   3: 66.004 ops/s
+# Warmup Iteration   4: 66.029 ops/s
+# Warmup Iteration   5: 66.032 ops/s
+Iteration   1: 66.036 ops/s
+Iteration   2: 66.312 ops/s
+Iteration   3: 66.101 ops/s
+Iteration   4: 65.962 ops/s
+Iteration   5: 66.290 ops/s
+
+# Run progress: 35.00% complete, ETA 00:43:37
+# Fork: 5 of 5
+# Warmup Iteration   1: 62.516 ops/s
+# Warmup Iteration   2: 65.988 ops/s
+# Warmup Iteration   3: 66.010 ops/s
+# Warmup Iteration   4: 65.948 ops/s
+# Warmup Iteration   5: 65.984 ops/s
+Iteration   1: 66.126 ops/s
+Iteration   2: 66.147 ops/s
+Iteration   3: 66.168 ops/s
+Iteration   4: 66.082 ops/s
+Iteration   5: 66.200 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.parallel_lazy_jdk":
+  65.997 ±(99.9%) 0.110 ops/s [Average]
+  (min, avg, max) = (65.762, 65.997, 66.312), stdev = 0.146
+  CI (99.9%): [65.887, 66.106] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.parallel_lazy_streams_gsc
+
+# Run progress: 37.50% complete, ETA 00:41:56
+# Fork: 1 of 5
+# Warmup Iteration   1: 60.672 ops/s
+# Warmup Iteration   2: 63.863 ops/s
+# Warmup Iteration   3: 63.659 ops/s
+# Warmup Iteration   4: 63.607 ops/s
+# Warmup Iteration   5: 63.718 ops/s
+Iteration   1: 63.722 ops/s
+Iteration   2: 63.663 ops/s
+Iteration   3: 63.849 ops/s
+Iteration   4: 63.721 ops/s
+Iteration   5: 63.803 ops/s
+
+# Run progress: 40.00% complete, ETA 00:40:16
+# Fork: 2 of 5
+# Warmup Iteration   1: 59.856 ops/s
+# Warmup Iteration   2: 63.238 ops/s
+# Warmup Iteration   3: 63.188 ops/s
+# Warmup Iteration   4: 63.248 ops/s
+# Warmup Iteration   5: 63.309 ops/s
+Iteration   1: 63.447 ops/s
+Iteration   2: 63.607 ops/s
+Iteration   3: 63.421 ops/s
+Iteration   4: 63.395 ops/s
+Iteration   5: 63.485 ops/s
+
+# Run progress: 42.50% complete, ETA 00:38:35
+# Fork: 3 of 5
+# Warmup Iteration   1: 60.053 ops/s
+# Warmup Iteration   2: 63.217 ops/s
+# Warmup Iteration   3: 63.381 ops/s
+# Warmup Iteration   4: 63.477 ops/s
+# Warmup Iteration   5: 63.350 ops/s
+Iteration   1: 63.428 ops/s
+Iteration   2: 63.575 ops/s
+Iteration   3: 63.555 ops/s
+Iteration   4: 63.535 ops/s
+Iteration   5: 63.441 ops/s
+
+# Run progress: 45.00% complete, ETA 00:36:55
+# Fork: 4 of 5
+# Warmup Iteration   1: 60.659 ops/s
+# Warmup Iteration   2: 63.630 ops/s
+# Warmup Iteration   3: 63.645 ops/s
+# Warmup Iteration   4: 63.563 ops/s
+# Warmup Iteration   5: 63.687 ops/s
+Iteration   1: 63.716 ops/s
+Iteration   2: 63.759 ops/s
+Iteration   3: 63.723 ops/s
+Iteration   4: 63.508 ops/s
+Iteration   5: 63.643 ops/s
+
+# Run progress: 47.50% complete, ETA 00:35:14
+# Fork: 5 of 5
+# Warmup Iteration   1: 59.923 ops/s
+# Warmup Iteration   2: 63.194 ops/s
+# Warmup Iteration   3: 63.440 ops/s
+# Warmup Iteration   4: 63.556 ops/s
+# Warmup Iteration   5: 63.485 ops/s
+Iteration   1: 63.674 ops/s
+Iteration   2: 63.420 ops/s
+Iteration   3: 63.590 ops/s
+Iteration   4: 63.923 ops/s
+Iteration   5: 64.144 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.parallel_lazy_streams_gsc":
+  63.630 ±(99.9%) 0.136 ops/s [Average]
+  (min, avg, max) = (63.395, 63.630, 64.144), stdev = 0.181
+  CI (99.9%): [63.494, 63.766] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.serial_eager_gsc
+
+# Run progress: 50.00% complete, ETA 00:33:33
+# Fork: 1 of 5
+# Warmup Iteration   1: 14.727 ops/s
+# Warmup Iteration   2: 15.917 ops/s
+# Warmup Iteration   3: 17.109 ops/s
+# Warmup Iteration   4: 17.486 ops/s
+# Warmup Iteration   5: 16.693 ops/s
+Iteration   1: 17.240 ops/s
+Iteration   2: 17.367 ops/s
+Iteration   3: 17.226 ops/s
+Iteration   4: 17.396 ops/s
+Iteration   5: 17.424 ops/s
+
+# Run progress: 52.50% complete, ETA 00:31:54
+# Fork: 2 of 5
+# Warmup Iteration   1: 14.665 ops/s
+# Warmup Iteration   2: 15.913 ops/s
+# Warmup Iteration   3: 17.375 ops/s
+# Warmup Iteration   4: 16.975 ops/s
+# Warmup Iteration   5: 17.054 ops/s
+Iteration   1: 16.600 ops/s
+Iteration   2: 17.333 ops/s
+Iteration   3: 17.782 ops/s
+Iteration   4: 17.405 ops/s
+Iteration   5: 17.517 ops/s
+
+# Run progress: 55.00% complete, ETA 00:30:14
+# Fork: 3 of 5
+# Warmup Iteration   1: 14.869 ops/s
+# Warmup Iteration   2: 15.726 ops/s
+# Warmup Iteration   3: 17.277 ops/s
+# Warmup Iteration   4: 17.252 ops/s
+# Warmup Iteration   5: 17.447 ops/s
+Iteration   1: 17.625 ops/s
+Iteration   2: 17.846 ops/s
+Iteration   3: 17.557 ops/s
+Iteration   4: 17.754 ops/s
+Iteration   5: 17.661 ops/s
+
+# Run progress: 57.50% complete, ETA 00:28:34
+# Fork: 4 of 5
+# Warmup Iteration   1: 14.973 ops/s
+# Warmup Iteration   2: 16.691 ops/s
+# Warmup Iteration   3: 17.283 ops/s
+# Warmup Iteration   4: 17.310 ops/s
+# Warmup Iteration   5: 17.503 ops/s
+Iteration   1: 17.564 ops/s
+Iteration   2: 17.521 ops/s
+Iteration   3: 17.682 ops/s
+Iteration   4: 17.095 ops/s
+Iteration   5: 17.093 ops/s
+
+# Run progress: 60.00% complete, ETA 00:26:53
+# Fork: 5 of 5
+# Warmup Iteration   1: 14.968 ops/s
+# Warmup Iteration   2: 16.365 ops/s
+# Warmup Iteration   3: 16.928 ops/s
+# Warmup Iteration   4: 17.302 ops/s
+# Warmup Iteration   5: 17.757 ops/s
+Iteration   1: 17.536 ops/s
+Iteration   2: 17.285 ops/s
+Iteration   3: 17.534 ops/s
+Iteration   4: 17.539 ops/s
+Iteration   5: 17.693 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.serial_eager_gsc":
+  17.451 ±(99.9%) 0.201 ops/s [Average]
+  (min, avg, max) = (16.600, 17.451, 17.846), stdev = 0.268
+  CI (99.9%): [17.250, 17.652] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.serial_lazy_gsc
+
+# Run progress: 62.50% complete, ETA 00:25:13
+# Fork: 1 of 5
+# Warmup Iteration   1: 14.470 ops/s
+# Warmup Iteration   2: 16.064 ops/s
+# Warmup Iteration   3: 16.271 ops/s
+# Warmup Iteration   4: 17.144 ops/s
+# Warmup Iteration   5: 17.392 ops/s
+Iteration   1: 17.348 ops/s
+Iteration   2: 17.508 ops/s
+Iteration   3: 16.942 ops/s
+Iteration   4: 17.159 ops/s
+Iteration   5: 16.720 ops/s
+
+# Run progress: 65.00% complete, ETA 00:23:33
+# Fork: 2 of 5
+# Warmup Iteration   1: 14.587 ops/s
+# Warmup Iteration   2: 15.953 ops/s
+# Warmup Iteration   3: 16.850 ops/s
+# Warmup Iteration   4: 16.966 ops/s
+# Warmup Iteration   5: 17.491 ops/s
+Iteration   1: 16.473 ops/s
+Iteration   2: 17.183 ops/s
+Iteration   3: 17.422 ops/s
+Iteration   4: 16.950 ops/s
+Iteration   5: 16.798 ops/s
+
+# Run progress: 67.50% complete, ETA 00:21:52
+# Fork: 3 of 5
+# Warmup Iteration   1: 14.652 ops/s
+# Warmup Iteration   2: 15.659 ops/s
+# Warmup Iteration   3: 16.532 ops/s
+# Warmup Iteration   4: 17.378 ops/s
+# Warmup Iteration   5: 17.085 ops/s
+Iteration   1: 17.294 ops/s
+Iteration   2: 17.383 ops/s
+Iteration   3: 17.485 ops/s
+Iteration   4: 17.319 ops/s
+Iteration   5: 17.404 ops/s
+
+# Run progress: 70.00% complete, ETA 00:20:12
+# Fork: 4 of 5
+# Warmup Iteration   1: 14.829 ops/s
+# Warmup Iteration   2: 15.606 ops/s
+# Warmup Iteration   3: 17.298 ops/s
+# Warmup Iteration   4: 16.796 ops/s
+# Warmup Iteration   5: 17.333 ops/s
+Iteration   1: 17.383 ops/s
+Iteration   2: 17.555 ops/s
+Iteration   3: 17.375 ops/s
+Iteration   4: 17.273 ops/s
+Iteration   5: 17.379 ops/s
+
+# Run progress: 72.50% complete, ETA 00:18:31
+# Fork: 5 of 5
+# Warmup Iteration   1: 14.428 ops/s
+# Warmup Iteration   2: 15.778 ops/s
+# Warmup Iteration   3: 16.397 ops/s
+# Warmup Iteration   4: 16.887 ops/s
+# Warmup Iteration   5: 16.203 ops/s
+Iteration   1: 16.852 ops/s
+Iteration   2: 17.194 ops/s
+Iteration   3: 16.760 ops/s
+Iteration   4: 17.060 ops/s
+Iteration   5: 16.384 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.serial_lazy_gsc":
+  17.144 ±(99.9%) 0.244 ops/s [Average]
+  (min, avg, max) = (16.384, 17.144, 17.555), stdev = 0.326
+  CI (99.9%): [16.900, 17.388] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.serial_lazy_jdk
+
+# Run progress: 75.00% complete, ETA 00:16:50
+# Fork: 1 of 5
+# Warmup Iteration   1: 15.029 ops/s
+# Warmup Iteration   2: 16.098 ops/s
+# Warmup Iteration   3: 17.309 ops/s
+# Warmup Iteration   4: 17.775 ops/s
+# Warmup Iteration   5: 18.263 ops/s
+Iteration   1: 17.228 ops/s
+Iteration   2: 17.670 ops/s
+Iteration   3: 17.794 ops/s
+Iteration   4: 17.529 ops/s
+Iteration   5: 18.285 ops/s
+
+# Run progress: 77.50% complete, ETA 00:15:09
+# Fork: 2 of 5
+# Warmup Iteration   1: 15.019 ops/s
+# Warmup Iteration   2: 17.449 ops/s
+# Warmup Iteration   3: 17.466 ops/s
+# Warmup Iteration   4: 17.550 ops/s
+# Warmup Iteration   5: 17.882 ops/s
+Iteration   1: 17.852 ops/s
+Iteration   2: 18.091 ops/s
+Iteration   3: 18.172 ops/s
+Iteration   4: 17.966 ops/s
+Iteration   5: 18.392 ops/s
+
+# Run progress: 80.00% complete, ETA 00:13:28
+# Fork: 3 of 5
+# Warmup Iteration   1: 15.052 ops/s
+# Warmup Iteration   2: 16.246 ops/s
+# Warmup Iteration   3: 17.373 ops/s
+# Warmup Iteration   4: 16.953 ops/s
+# Warmup Iteration   5: 18.462 ops/s
+Iteration   1: 17.440 ops/s
+Iteration   2: 17.779 ops/s
+Iteration   3: 18.282 ops/s
+Iteration   4: 17.166 ops/s
+Iteration   5: 17.051 ops/s
+
+# Run progress: 82.50% complete, ETA 00:11:47
+# Fork: 4 of 5
+# Warmup Iteration   1: 14.647 ops/s
+# Warmup Iteration   2: 15.675 ops/s
+# Warmup Iteration   3: 17.675 ops/s
+# Warmup Iteration   4: 17.284 ops/s
+# Warmup Iteration   5: 18.362 ops/s
+Iteration   1: 17.136 ops/s
+Iteration   2: 18.187 ops/s
+Iteration   3: 18.178 ops/s
+Iteration   4: 17.704 ops/s
+Iteration   5: 18.193 ops/s
+
+# Run progress: 85.00% complete, ETA 00:10:06
+# Fork: 5 of 5
+# Warmup Iteration   1: 14.661 ops/s
+# Warmup Iteration   2: 16.096 ops/s
+# Warmup Iteration   3: 18.246 ops/s
+# Warmup Iteration   4: 17.084 ops/s
+# Warmup Iteration   5: 18.251 ops/s
+Iteration   1: 17.684 ops/s
+Iteration   2: 17.838 ops/s
+Iteration   3: 18.092 ops/s
+Iteration   4: 17.485 ops/s
+Iteration   5: 17.674 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.serial_lazy_jdk":
+  17.795 ±(99.9%) 0.294 ops/s [Average]
+  (min, avg, max) = (17.051, 17.795, 18.392), stdev = 0.392
+  CI (99.9%): [17.501, 18.089] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.1, Java HotSpot(TM) 64-Bit Server VM, 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.CollectIfTest.serial_lazy_streams_gsc
+
+# Run progress: 87.50% complete, ETA 00:08:25
+# Fork: 1 of 5
+# Warmup Iteration   1: 14.319 ops/s
+# Warmup Iteration   2: 15.286 ops/s
+# Warmup Iteration   3: 16.454 ops/s
+# Warmup Iteration   4: 16.774 ops/s
+# Warmup Iteration   5: 16.384 ops/s
+Iteration   1: 16.781 ops/s
+Iteration   2: 17.148 ops/s
+Iteration   3: 16.268 ops/s
+Iteration   4: 16.731 ops/s
+Iteration   5: 16.968 ops/s
+
+# Run progress: 90.00% complete, ETA 00:06:44
+# Fork: 2 of 5
+# Warmup Iteration   1: 14.286 ops/s
+# Warmup Iteration   2: 14.751 ops/s
+# Warmup Iteration   3: 16.557 ops/s
+# Warmup Iteration   4: 16.499 ops/s
+# Warmup Iteration   5: 16.013 ops/s
+Iteration   1: 16.583 ops/s
+Iteration   2: 16.953 ops/s
+Iteration   3: 16.563 ops/s
+Iteration   4: 16.622 ops/s
+Iteration   5: 16.884 ops/s
+
+# Run progress: 92.50% complete, ETA 00:05:03
+# Fork: 3 of 5
+# Warmup Iteration   1: 14.348 ops/s
+# Warmup Iteration   2: 15.846 ops/s
+# Warmup Iteration   3: 17.357 ops/s
+# Warmup Iteration   4: 17.018 ops/s
+# Warmup Iteration   5: 17.248 ops/s
+Iteration   1: 17.196 ops/s
+Iteration   2: 17.283 ops/s
+Iteration   3: 17.143 ops/s
+Iteration   4: 17.439 ops/s
+Iteration   5: 17.347 ops/s
+
+# Run progress: 95.00% complete, ETA 00:03:22
+# Fork: 4 of 5
+# Warmup Iteration   1: 14.347 ops/s
+# Warmup Iteration   2: 14.928 ops/s
+# Warmup Iteration   3: 16.778 ops/s
+# Warmup Iteration   4: 16.592 ops/s
+# Warmup Iteration   5: 16.661 ops/s
+Iteration   1: 16.913 ops/s
+Iteration   2: 17.292 ops/s
+Iteration   3: 16.377 ops/s
+Iteration   4: 16.567 ops/s
+Iteration   5: 16.773 ops/s
+
+# Run progress: 97.50% complete, ETA 00:01:41
+# Fork: 5 of 5
+# Warmup Iteration   1: 14.077 ops/s
+# Warmup Iteration   2: 15.864 ops/s
+# Warmup Iteration   3: 16.765 ops/s
+# Warmup Iteration   4: 16.488 ops/s
+# Warmup Iteration   5: 16.382 ops/s
+Iteration   1: 16.659 ops/s
+Iteration   2: 17.285 ops/s
+Iteration   3: 16.589 ops/s
+Iteration   4: 16.879 ops/s
+Iteration   5: 16.927 ops/s
+
+
+Result "com.gs.collections.impl.jmh.CollectIfTest.serial_lazy_streams_gsc":
+  16.887 ±(99.9%) 0.239 ops/s [Average]
+  (min, avg, max) = (16.268, 16.887, 17.439), stdev = 0.319
+  CI (99.9%): [16.648, 17.126] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:07:29
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                 Mode  Cnt    Score   Error  Units
+CollectIfTest.parallel_eager_gsc         thrpt   25  106.017 ± 0.911  ops/s
+CollectIfTest.parallel_lazy_gsc          thrpt   25   97.514 ± 0.925  ops/s
+CollectIfTest.parallel_lazy_jdk          thrpt   25   65.997 ± 0.110  ops/s
+CollectIfTest.parallel_lazy_streams_gsc  thrpt   25   63.630 ± 0.136  ops/s
+CollectIfTest.serial_eager_gsc           thrpt   25   17.451 ± 0.201  ops/s
+CollectIfTest.serial_lazy_gsc            thrpt   25   17.144 ± 0.244  ops/s
+CollectIfTest.serial_lazy_jdk            thrpt   25   17.795 ± 0.294  ops/s
+CollectIfTest.serial_lazy_streams_gsc    thrpt   25   16.887 ± 0.239  ops/s
+
+Benchmark result is saved to gs-collections/exp-RETU-DEAD-out/microbenchmarks-original_CollectIfTest_retu_trial1.csv

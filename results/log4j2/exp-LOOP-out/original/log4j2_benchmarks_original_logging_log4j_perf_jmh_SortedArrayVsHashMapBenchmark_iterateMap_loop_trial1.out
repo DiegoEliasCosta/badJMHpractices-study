@@ -1,0 +1,63 @@
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.apache.logging.log4j.perf.jmh.SortedArrayVsHashMapBenchmark.iterateMap
+# Parameters: (count = 5, length = 20)
+
+# Run progress: 0.00% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 43.505 ns/op
+# Warmup Iteration   2: 45.298 ns/op
+# Warmup Iteration   3: 33.093 ns/op
+# Warmup Iteration   4: 35.923 ns/op
+# Warmup Iteration   5: 35.909 ns/op
+Iteration   1: 35.991 ns/op
+Iteration   2: 33.284 ns/op
+Iteration   3: 33.016 ns/op
+Iteration   4: 32.941 ns/op
+Iteration   5: 33.215 ns/op
+
+
+Result: 33.689 ±(99.9%) 4.984 ns/op [Average]
+  Statistics: (min, avg, max) = (32.941, 33.689, 35.991), stdev = 1.294
+  Confidence interval (99.9%): [28.705, 38.673]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.apache.logging.log4j.perf.jmh.SortedArrayVsHashMapBenchmark.iterateMap
+# Parameters: (count = 500, length = 20)
+
+# Run progress: 50.00% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 3638.859 ns/op
+# Warmup Iteration   2: 3728.941 ns/op
+# Warmup Iteration   3: 3442.569 ns/op
+# Warmup Iteration   4: 3720.230 ns/op
+# Warmup Iteration   5: 3623.516 ns/op
+Iteration   1: 3697.306 ns/op
+Iteration   2: 3430.146 ns/op
+Iteration   3: 3418.601 ns/op
+Iteration   4: 3398.252 ns/op
+Iteration   5: 3435.428 ns/op
+
+
+Result: 3475.947 ±(99.9%) 479.651 ns/op [Average]
+  Statistics: (min, avg, max) = (3398.252, 3475.947, 3697.306), stdev = 124.564
+  Confidence interval (99.9%): [2996.296, 3955.597]
+
+
+# Run complete. Total time: 00:00:25
+
+Benchmark                                               (count)  (length)  Mode  Samples     Score     Error  Units
+o.a.l.l.p.j.SortedArrayVsHashMapBenchmark.iterateMap          5        20  avgt        5    33.689 ±   4.984  ns/op
+o.a.l.l.p.j.SortedArrayVsHashMapBenchmark.iterateMap        500        20  avgt        5  3475.947 ± 479.651  ns/op

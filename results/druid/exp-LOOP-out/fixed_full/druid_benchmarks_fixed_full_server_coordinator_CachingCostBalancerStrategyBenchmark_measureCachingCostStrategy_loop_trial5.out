@@ -1,0 +1,100 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone
+# Parameters: (rowsPerSegment = 750000, schema = basic)
+
+# Run progress: 0.00% complete, ETA 00:00:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 121904.952 us/op
+# Warmup Iteration   2: 116677.838 us/op
+# Warmup Iteration   3: 142937.169 us/op
+# Warmup Iteration   4: 116239.577 us/op
+# Warmup Iteration   5: 116029.703 us/op
+# Warmup Iteration   6: 116115.343 us/op
+# Warmup Iteration   7: 214182.577 us/op
+# Warmup Iteration   8: 116055.709 us/op
+# Warmup Iteration   9: 115988.500 us/op
+# Warmup Iteration  10: 116130.714 us/op
+Iteration   1: 129523.465 us/op
+Iteration   2: 115889.515 us/op
+Iteration   3: 116007.049 us/op
+Iteration   4: 115960.864 us/op
+Iteration   5: 182094.281 us/op
+Iteration   6: 115369.860 us/op
+Iteration   7: 115909.322 us/op
+Iteration   8: 115952.311 us/op
+Iteration   9: 115934.651 us/op
+Iteration  10: 134828.212 us/op
+Iteration  11: 115942.049 us/op
+Iteration  12: 115835.933 us/op
+Iteration  13: 116001.081 us/op
+Iteration  14: 115926.275 us/op
+Iteration  15: 181875.212 us/op
+Iteration  16: 115974.158 us/op
+Iteration  17: 115943.480 us/op
+Iteration  18: 116053.114 us/op
+Iteration  19: 116018.732 us/op
+Iteration  20: 116175.118 us/op
+Iteration  21: 176757.257 us/op
+Iteration  22: 119166.555 us/op
+Iteration  23: 115938.271 us/op
+Iteration  24: 115996.432 us/op
+Iteration  25: 115974.382 us/op
+
+
+Result "io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone":
+  125081.903 ±(99.9%) 15953.034 us/op [Average]
+  (min, avg, max) = (115369.860, 125081.903, 182094.281), stdev = 21296.844
+  CI (99.9%): [109128.869, 141034.937] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.server.coordinator.CachingCostBalancerStrategyBenchmark.measureCachingCostStrategy
+
+# Run progress: 70.00% complete, ETA 00:00:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.691 us/op
+# Warmup Iteration   2: 2.637 us/op
+# Warmup Iteration   3: 2.635 us/op
+# Warmup Iteration   4: 2.644 us/op
+# Warmup Iteration   5: 2.632 us/op
+Iteration   1: 2.631 us/op
+Iteration   2: 2.634 us/op
+Iteration   3: 2.637 us/op
+Iteration   4: 2.836 us/op
+Iteration   5: 2.830 us/op
+Iteration   6: 2.634 us/op
+Iteration   7: 2.637 us/op
+Iteration   8: 2.640 us/op
+Iteration   9: 2.637 us/op
+Iteration  10: 2.631 us/op
+
+
+Result "io.druid.server.coordinator.CachingCostBalancerStrategyBenchmark.measureCachingCostStrategy":
+  2.675 ±(99.9%) 0.126 us/op [Average]
+  (min, avg, max) = (2.631, 2.675, 2.836), stdev = 0.083
+  CI (99.9%): [2.549, 2.801] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:11
+
+Benchmark                                                                               (rowsPerSegment)  (schema)  Mode  Cnt       Score       Error  Units
+i.d.benchmark.FilterPartitionBenchmark.timeFilterNone                                             750000     basic  avgt   25  125081.903 ± 15953.034  us/op
+i.d.server.coordinator.CachingCostBalancerStrategyBenchmark.measureCachingCostStrategy               N/A       N/A  avgt   10       2.675 ±     0.126  us/op
+
+Benchmark result is saved to exp-LOOP-out/druid_benchmarks_fixed_full_server_coordinator_CachingCostBalancerStrategyBenchmark_measureCachingCostStrategy_loop_trial5.csv

@@ -1,0 +1,77 @@
+Benchmark Mode,Measurement Unit,Package,Class,Method,Full params,,Original,Fixed,Factor,Wilcoxom,Cliffs Delta Size,Cliffs Delta d
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,BagAddAllTest,gsc,,0,98.4485,99.45150000000001,1.0101880678730506,False,small,-0.2048611111111111
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,BagAddAllTest,guava,,0,48.74,48.538999999999994,0.9958760771440294,False,negligible,0.12
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,parallel_eager_gsc,,0,106.57600000000001,105.62299999999999,0.9910580243206724,False,medium,0.4144
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,parallel_lazy_gsc,,0,97.36200000000001,97.492,1.0013352231876913,False,negligible,0.0336
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,parallel_lazy_jdk,,0,65.962,65.249,0.9891907461871986,True,large,0.9648
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,parallel_lazy_streams_gsc,,0,63.607,63.232,0.994104422469225,True,large,0.6896
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,serial_eager_gsc,,0,17.527500000000003,17.3695,0.9909855940664667,False,small,0.14930555555555555
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,serial_lazy_gsc,,0,17.273,17.1,0.9899843686678632,False,small,0.1856
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,serial_lazy_jdk,,0,17.794,17.992,1.0111273462965045,False,negligible,-0.104
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,CollectIfTest,serial_lazy_streams_gsc,,0,16.884,16.678,0.9877990997393983,False,medium,0.4112
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FlatCollectTest,serial_eager_gsc,,0,301.51,301.954,1.0014725879738648,False,negligible,-0.0432
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FlatCollectTest,serial_lazy_gsc,,0,116.34299999999999,116.39399999999999,1.0004383589902273,False,negligible,-0.0064
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FlatCollectTest,serial_lazy_jdk,,0,106.109,106.432,1.0030440396196365,False,negligible,-0.0784
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FlatCollectTest,serial_lazy_streams_gsc,,0,91.919,92.337,1.0045474820222153,False,small,-0.1648
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala, (megamorphicWarmupLevel = 0),0,38.420500000000004,38.667500000000004,1.0064288595931858,False,small,-0.2375
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala, (megamorphicWarmupLevel = 1),0,37.8575,38.035,1.0046886350128772,False,small,-0.159375
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala, (megamorphicWarmupLevel = 2),0,37.732,38.156,1.0112371461889114,True,large,-0.510625
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala, (megamorphicWarmupLevel = 3),0,37.415499999999994,37.9875,1.01528778180166,False,large,-0.505625
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala_hand_coded, (megamorphicWarmupLevel = 0),0,61.4235,65.2965,1.0630540428337687,False,small,-0.14875
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala_hand_coded, (megamorphicWarmupLevel = 1),0,59.7535,59.7525,0.9999832645786438,False,negligible,0.0134375
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala_hand_coded, (megamorphicWarmupLevel = 2),0,60.432,60.723,1.0048153296266877,False,small,-0.2459375
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,parallel_lazy_scala_hand_coded, (megamorphicWarmupLevel = 3),0,60.243,59.5655,0.9887538801188519,True,medium,0.40125
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_eager_scala, (megamorphicWarmupLevel = 0),0,11.813,11.8145,1.0001269787522222,False,negligible,-0.045013850415512466
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_eager_scala, (megamorphicWarmupLevel = 1),0,9.3915,9.476,1.0089974977373157,False,negligible,-0.11911357340720222
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_eager_scala, (megamorphicWarmupLevel = 2),0,9.43,9.491,1.0064687168610817,False,small,-0.16173570019723865
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_eager_scala, (megamorphicWarmupLevel = 3),0,9.5245,9.491499999999998,0.9965352511942883,False,negligible,0.08379501385041552
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_lazy_scala, (megamorphicWarmupLevel = 0),0,15.457999999999998,16.179,1.046642515202484,False,small,-0.2513850415512465
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_lazy_scala, (megamorphicWarmupLevel = 1),0,13.177999999999999,12.894,0.9784489300349067,True,large,0.49506903353057197
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_lazy_scala, (megamorphicWarmupLevel = 2),0,13.167,13.277,1.0083542188805346,False,small,-0.2278393351800554
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,FunctionalInterfaceTest,serial_lazy_scala, (megamorphicWarmupLevel = 3),0,13.1705,13.186,1.0011768725560912,False,negligible,0.06440443213296398
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_10000_keys_parallel_lazy_scala,,0,14.9845,14.900500000000001,0.9943942073475925,False,small,0.243125
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_10000_keys_serial_eager_scala,,0,5.438,5.556,1.0216991541007725,False,small,-0.29625
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_10000_keys_serial_lazy_scala,,0,7.8625,7.9670000000000005,1.0132909379968205,False,small,-0.26177285318559557
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_100_keys_parallel_lazy_scala,,0,23.553,23.2025,0.9851186685347939,False,small,0.29375
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_100_keys_serial_eager_scala,,0,7.077999999999999,6.98,0.9861542808703024,False,medium,0.3550036523009496
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_100_keys_serial_lazy_scala,,0,15.703,15.707,1.000254728395848,False,negligible,-0.0381328073635766
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,GroupBySetTest,groupBy_2_keys_serial_eager_scala,,0,12.102,12.200999999999999,1.008180466038671,False,negligible,-0.09401709401709402
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = false, mapSizeDividedBy16000 = 1)",0,3.134,3.11,0.99234205488194,True,large,0.6796875
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = false, mapSizeDividedBy16000 = 10)",0,2.2030000000000003,2.2030000000000003,1.0,False,negligible,-0.023416169188763943
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = false, mapSizeDividedBy16000 = 100)",0,1.942,1.946,1.0020597322348095,True,medium,-0.4184180896978795
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = false, mapSizeDividedBy16000 = 10000)",0,0.968,0.9724999999999999,1.0046487603305785,False,small,-0.20693479938271606
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = false, mapSizeDividedBy16000 = 100000)",0,0.932,0.93,0.9978540772532188,False,negligible,-0.06770327178490444
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = true, mapSizeDividedBy16000 = 1)",0,4.885,4.851,0.9930399181166838,False,small,0.1983694428178911
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = true, mapSizeDividedBy16000 = 10)",0,3.2744999999999997,3.4194999999999998,1.0442815697052985,True,large,-0.5759555555555556
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = true, mapSizeDividedBy16000 = 100)",0,2.77,2.7319999999999998,0.9862815884476533,True,large,0.9173840665873959
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = true, mapSizeDividedBy16000 = 10000)",0,1.514,1.508,0.9960369881109643,True,small,0.2545235781387385
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,presizedPut," (fullyRandom = true, mapSizeDividedBy16000 = 100000)",0,1.675,1.671,0.9976119402985074,False,small,0.1880545921354894
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = false, mapSizeDividedBy16000 = 1)",0,3.182,3.168,0.9956002514142049,False,negligible,0.13168888888888888
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = false, mapSizeDividedBy16000 = 10)",0,2.19,2.188,0.9990867579908677,False,negligible,0.015595353787773613
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = false, mapSizeDividedBy16000 = 100)",0,1.925,1.929,1.0020779220779221,False,small,-0.2515012197410396
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = false, mapSizeDividedBy16000 = 10000)",0,0.961,0.9590000000000001,0.9979188345473466,False,negligible,-0.05946501051396156
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = false, mapSizeDividedBy16000 = 100000)",0,0.962,0.932,0.9688149688149689,False,negligible,-0.08782135485081628
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = true, mapSizeDividedBy16000 = 1)",0,5.362,5.569,1.0386049981350243,True,large,-0.7169777777777778
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = true, mapSizeDividedBy16000 = 10)",0,3.529,3.412,0.966846132048739,False,negligible,-0.062
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = true, mapSizeDividedBy16000 = 100)",0,2.762,2.758,0.998551774076756,False,small,0.18607987412652136
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = true, mapSizeDividedBy16000 = 10000)",0,1.51,1.506,0.9973509933774835,False,small,0.17257567607217958
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,put," (fullyRandom = true, mapSizeDividedBy16000 = 100000)",0,1.649,1.5759999999999998,0.95573074590661,True,large,0.543923900118906
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = false, mapSizeDividedBy16000 = 1)",0,8.869499999999999,8.077,0.9106488528101924,True,large,1.0
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = false, mapSizeDividedBy16000 = 10)",0,6.7275,6.541499999999999,0.9723522853957636,True,medium,0.3972
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = false, mapSizeDividedBy16000 = 100)",0,3.426,3.443,1.004962054874489,False,small,-0.23507950092338184
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = false, mapSizeDividedBy16000 = 10000)",0,1.7309999999999999,1.7409999999999999,1.0057770075101098,True,medium,-0.34456983024691357
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = false, mapSizeDividedBy16000 = 100000)",0,1.7369999999999999,1.7375,1.000287852619459,False,negligible,-0.007619598765432099
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = true, mapSizeDividedBy16000 = 1)",0,19.699,16.877,0.8567439971572159,True,large,1.0
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = true, mapSizeDividedBy16000 = 10)",0,7.7305,7.564,0.9784619364853502,True,large,0.6289777777777777
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = true, mapSizeDividedBy16000 = 100)",0,7.104,7.102,0.9997184684684685,True,small,-0.20586666666666667
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = true, mapSizeDividedBy16000 = 10000)",0,2.298,2.298,1.0,False,negligible,-0.11443865740740741
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,LongIntMapTest,remove," (fullyRandom = true, mapSizeDividedBy16000 = 100000)",0,2.633,2.634,1.0003797949107482,False,negligible,-0.07975940143772312
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_eager_gsc,,0,69.178,71.63600000000001,1.0355315273641912,False,large,-0.6096
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_eager_gsc_select_predicates_not,,0,61.777,61.165,0.9900934004564805,False,small,0.2144
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_lazy_gsc,,0,59.367,59.468,1.001701281856924,False,negligible,-0.0176
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_lazy_jdk_lambda_negate,,0,47.7315,47.869,1.0028806972334832,False,small,-0.22569444444444445
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_lazy_jdk_lambda_not,,0,68.717,68.796,1.001149642737605,False,negligible,-0.0144
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_lazy_streams_gsc_lambda_negate,,0,48.647000000000006,47.687,0.9802659979032621,True,large,0.6423611111111112
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,RejectTest,serial_lazy_streams_gsc_lambda_not,,0,53.518,54.148,1.0117717403490414,False,medium,-0.3408
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,SetAddAllTest,gsc,,0,135.494,134.394,0.9918815593310405,False,small,0.2096
+"Throughput, ops/time",ops/s, com.gs.collections.impl.jmh,SetAddAllTest,jdk,,0,70.449,71.082,1.0089852233530638,False,negligible,-0.072

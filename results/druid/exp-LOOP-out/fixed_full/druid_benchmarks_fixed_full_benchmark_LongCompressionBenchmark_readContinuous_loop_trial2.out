@@ -1,0 +1,1223 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone
+# Parameters: (rowsPerSegment = 750000, schema = basic)
+
+# Run progress: 0.00% complete, ETA 00:12:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 122490.835 us/op
+# Warmup Iteration   2: 116307.093 us/op
+# Warmup Iteration   3: 149212.800 us/op
+# Warmup Iteration   4: 116305.403 us/op
+# Warmup Iteration   5: 116374.681 us/op
+# Warmup Iteration   6: 164974.546 us/op
+# Warmup Iteration   7: 118470.716 us/op
+# Warmup Iteration   8: 115981.763 us/op
+# Warmup Iteration   9: 116147.621 us/op
+# Warmup Iteration  10: 136045.281 us/op
+Iteration   1: 130596.752 us/op
+Iteration   2: 116037.323 us/op
+Iteration   3: 116094.546 us/op
+Iteration   4: 172092.369 us/op
+Iteration   5: 133096.457 us/op
+Iteration   6: 115392.478 us/op
+Iteration   7: 116430.361 us/op
+Iteration   8: 116435.782 us/op
+Iteration   9: 140163.856 us/op
+Iteration  10: 116394.133 us/op
+Iteration  11: 116385.959 us/op
+Iteration  12: 116396.693 us/op
+Iteration  13: 116496.432 us/op
+Iteration  14: 184661.092 us/op
+Iteration  15: 116509.092 us/op
+Iteration  16: 116458.646 us/op
+Iteration  17: 116443.258 us/op
+Iteration  18: 116441.989 us/op
+Iteration  19: 116492.868 us/op
+Iteration  20: 167025.785 us/op
+Iteration  21: 117871.190 us/op
+Iteration  22: 116090.129 us/op
+Iteration  23: 116051.006 us/op
+Iteration  24: 116035.271 us/op
+Iteration  25: 160810.242 us/op
+
+
+Result "io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone":
+  127316.148 ±(99.9%) 15568.003 us/op [Average]
+  (min, avg, max) = (115392.478, 127316.148, 184661.092), stdev = 20782.839
+  CI (99.9%): [111748.145, 142884.152] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = enumerate, format = auto, strategy = lz4)
+
+# Run progress: 4.76% complete, ETA 00:18:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 56.818 ms/op
+# Warmup Iteration   2: 37.145 ms/op
+# Warmup Iteration   3: 37.125 ms/op
+# Warmup Iteration   4: 37.072 ms/op
+# Warmup Iteration   5: 37.063 ms/op
+# Warmup Iteration   6: 37.108 ms/op
+# Warmup Iteration   7: 37.509 ms/op
+# Warmup Iteration   8: 37.063 ms/op
+# Warmup Iteration   9: 37.125 ms/op
+# Warmup Iteration  10: 37.422 ms/op
+Iteration   1: 37.456 ms/op
+Iteration   2: 37.115 ms/op
+Iteration   3: 37.072 ms/op
+Iteration   4: 37.058 ms/op
+Iteration   5: 37.068 ms/op
+Iteration   6: 37.133 ms/op
+Iteration   7: 37.075 ms/op
+Iteration   8: 37.195 ms/op
+Iteration   9: 37.142 ms/op
+Iteration  10: 37.219 ms/op
+Iteration  11: 37.159 ms/op
+Iteration  12: 37.073 ms/op
+Iteration  13: 37.067 ms/op
+Iteration  14: 37.070 ms/op
+Iteration  15: 37.091 ms/op
+Iteration  16: 37.076 ms/op
+Iteration  17: 37.140 ms/op
+Iteration  18: 37.172 ms/op
+Iteration  19: 37.087 ms/op
+Iteration  20: 37.073 ms/op
+Iteration  21: 37.087 ms/op
+Iteration  22: 37.148 ms/op
+Iteration  23: 37.416 ms/op
+Iteration  24: 37.176 ms/op
+Iteration  25: 37.467 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  37.153 ±(99.9%) 0.090 ms/op [Average]
+  (min, avg, max) = (37.058, 37.153, 37.467), stdev = 0.120
+  CI (99.9%): [37.064, 37.243] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = enumerate, format = auto, strategy = none)
+
+# Run progress: 9.52% complete, ETA 00:14:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 36.005 ms/op
+# Warmup Iteration   2: 35.569 ms/op
+# Warmup Iteration   3: 35.544 ms/op
+# Warmup Iteration   4: 35.551 ms/op
+# Warmup Iteration   5: 36.193 ms/op
+# Warmup Iteration   6: 35.535 ms/op
+# Warmup Iteration   7: 35.537 ms/op
+# Warmup Iteration   8: 35.538 ms/op
+# Warmup Iteration   9: 35.534 ms/op
+# Warmup Iteration  10: 36.182 ms/op
+Iteration   1: 35.536 ms/op
+Iteration   2: 35.537 ms/op
+Iteration   3: 35.532 ms/op
+Iteration   4: 35.529 ms/op
+Iteration   5: 35.539 ms/op
+Iteration   6: 35.528 ms/op
+Iteration   7: 35.446 ms/op
+Iteration   8: 35.450 ms/op
+Iteration   9: 35.442 ms/op
+Iteration  10: 35.445 ms/op
+Iteration  11: 35.445 ms/op
+Iteration  12: 35.445 ms/op
+Iteration  13: 35.443 ms/op
+Iteration  14: 35.454 ms/op
+Iteration  15: 36.121 ms/op
+Iteration  16: 35.446 ms/op
+Iteration  17: 35.445 ms/op
+Iteration  18: 35.450 ms/op
+Iteration  19: 35.441 ms/op
+Iteration  20: 35.445 ms/op
+Iteration  21: 35.505 ms/op
+Iteration  22: 35.445 ms/op
+Iteration  23: 35.452 ms/op
+Iteration  24: 36.115 ms/op
+Iteration  25: 35.447 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  35.523 ±(99.9%) 0.137 ms/op [Average]
+  (min, avg, max) = (35.441, 35.523, 36.121), stdev = 0.183
+  CI (99.9%): [35.386, 35.660] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = enumerate, format = longs, strategy = lz4)
+
+# Run progress: 14.29% complete, ETA 00:12:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 39.175 ms/op
+# Warmup Iteration   2: 25.015 ms/op
+# Warmup Iteration   3: 24.982 ms/op
+# Warmup Iteration   4: 24.995 ms/op
+# Warmup Iteration   5: 25.132 ms/op
+# Warmup Iteration   6: 25.012 ms/op
+# Warmup Iteration   7: 25.114 ms/op
+# Warmup Iteration   8: 24.966 ms/op
+# Warmup Iteration   9: 25.163 ms/op
+# Warmup Iteration  10: 24.984 ms/op
+Iteration   1: 25.126 ms/op
+Iteration   2: 24.965 ms/op
+Iteration   3: 25.006 ms/op
+Iteration   4: 25.142 ms/op
+Iteration   5: 24.981 ms/op
+Iteration   6: 24.967 ms/op
+Iteration   7: 24.981 ms/op
+Iteration   8: 24.984 ms/op
+Iteration   9: 25.042 ms/op
+Iteration  10: 24.996 ms/op
+Iteration  11: 25.001 ms/op
+Iteration  12: 25.083 ms/op
+Iteration  13: 24.967 ms/op
+Iteration  14: 25.032 ms/op
+Iteration  15: 25.052 ms/op
+Iteration  16: 25.002 ms/op
+Iteration  17: 25.023 ms/op
+Iteration  18: 25.033 ms/op
+Iteration  19: 24.991 ms/op
+Iteration  20: 25.100 ms/op
+Iteration  21: 25.023 ms/op
+Iteration  22: 24.996 ms/op
+Iteration  23: 24.972 ms/op
+Iteration  24: 25.038 ms/op
+Iteration  25: 24.995 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  25.020 ±(99.9%) 0.037 ms/op [Average]
+  (min, avg, max) = (24.965, 25.020, 25.142), stdev = 0.049
+  CI (99.9%): [24.983, 25.057] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = enumerate, format = longs, strategy = none)
+
+# Run progress: 19.05% complete, ETA 00:11:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 25.976 ms/op
+# Warmup Iteration   2: 23.379 ms/op
+# Warmup Iteration   3: 23.349 ms/op
+# Warmup Iteration   4: 23.352 ms/op
+# Warmup Iteration   5: 23.352 ms/op
+# Warmup Iteration   6: 23.347 ms/op
+# Warmup Iteration   7: 23.345 ms/op
+# Warmup Iteration   8: 23.454 ms/op
+# Warmup Iteration   9: 23.371 ms/op
+# Warmup Iteration  10: 23.344 ms/op
+Iteration   1: 23.347 ms/op
+Iteration   2: 23.453 ms/op
+Iteration   3: 23.379 ms/op
+Iteration   4: 23.346 ms/op
+Iteration   5: 23.343 ms/op
+Iteration   6: 23.367 ms/op
+Iteration   7: 23.375 ms/op
+Iteration   8: 23.375 ms/op
+Iteration   9: 23.391 ms/op
+Iteration  10: 23.487 ms/op
+Iteration  11: 23.375 ms/op
+Iteration  12: 23.373 ms/op
+Iteration  13: 23.377 ms/op
+Iteration  14: 23.487 ms/op
+Iteration  15: 23.376 ms/op
+Iteration  16: 23.380 ms/op
+Iteration  17: 23.402 ms/op
+Iteration  18: 23.375 ms/op
+Iteration  19: 23.378 ms/op
+Iteration  20: 23.378 ms/op
+Iteration  21: 23.485 ms/op
+Iteration  22: 23.376 ms/op
+Iteration  23: 23.386 ms/op
+Iteration  24: 23.403 ms/op
+Iteration  25: 23.487 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  23.396 ±(99.9%) 0.034 ms/op [Average]
+  (min, avg, max) = (23.343, 23.396, 23.487), stdev = 0.045
+  CI (99.9%): [23.362, 23.430] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfLow, format = auto, strategy = lz4)
+
+# Run progress: 23.81% complete, ETA 00:10:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 56.504 ms/op
+# Warmup Iteration   2: 42.346 ms/op
+# Warmup Iteration   3: 42.285 ms/op
+# Warmup Iteration   4: 42.262 ms/op
+# Warmup Iteration   5: 42.329 ms/op
+# Warmup Iteration   6: 42.342 ms/op
+# Warmup Iteration   7: 42.270 ms/op
+# Warmup Iteration   8: 42.252 ms/op
+# Warmup Iteration   9: 42.265 ms/op
+# Warmup Iteration  10: 42.343 ms/op
+Iteration   1: 42.289 ms/op
+Iteration   2: 42.265 ms/op
+Iteration   3: 42.327 ms/op
+Iteration   4: 42.251 ms/op
+Iteration   5: 42.335 ms/op
+Iteration   6: 42.263 ms/op
+Iteration   7: 42.333 ms/op
+Iteration   8: 42.361 ms/op
+Iteration   9: 42.303 ms/op
+Iteration  10: 42.840 ms/op
+Iteration  11: 42.333 ms/op
+Iteration  12: 42.633 ms/op
+Iteration  13: 42.290 ms/op
+Iteration  14: 42.258 ms/op
+Iteration  15: 42.258 ms/op
+Iteration  16: 42.326 ms/op
+Iteration  17: 43.198 ms/op
+Iteration  18: 42.385 ms/op
+Iteration  19: 42.295 ms/op
+Iteration  20: 42.322 ms/op
+Iteration  21: 42.340 ms/op
+Iteration  22: 42.259 ms/op
+Iteration  23: 42.316 ms/op
+Iteration  24: 42.274 ms/op
+Iteration  25: 42.422 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  42.379 ±(99.9%) 0.160 ms/op [Average]
+  (min, avg, max) = (42.251, 42.379, 43.198), stdev = 0.214
+  CI (99.9%): [42.219, 42.539] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfLow, format = auto, strategy = none)
+
+# Run progress: 28.57% complete, ETA 00:09:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 42.255 ms/op
+# Warmup Iteration   2: 38.357 ms/op
+# Warmup Iteration   3: 38.251 ms/op
+# Warmup Iteration   4: 38.251 ms/op
+# Warmup Iteration   5: 38.252 ms/op
+# Warmup Iteration   6: 38.245 ms/op
+# Warmup Iteration   7: 38.330 ms/op
+# Warmup Iteration   8: 38.266 ms/op
+# Warmup Iteration   9: 38.247 ms/op
+# Warmup Iteration  10: 38.249 ms/op
+Iteration   1: 38.252 ms/op
+Iteration   2: 38.246 ms/op
+Iteration   3: 38.244 ms/op
+Iteration   4: 38.243 ms/op
+Iteration   5: 38.431 ms/op
+Iteration   6: 38.321 ms/op
+Iteration   7: 38.243 ms/op
+Iteration   8: 38.243 ms/op
+Iteration   9: 38.555 ms/op
+Iteration  10: 38.240 ms/op
+Iteration  11: 38.260 ms/op
+Iteration  12: 38.239 ms/op
+Iteration  13: 38.245 ms/op
+Iteration  14: 38.237 ms/op
+Iteration  15: 38.239 ms/op
+Iteration  16: 38.411 ms/op
+Iteration  17: 38.242 ms/op
+Iteration  18: 38.241 ms/op
+Iteration  19: 38.237 ms/op
+Iteration  20: 38.322 ms/op
+Iteration  21: 38.408 ms/op
+Iteration  22: 38.245 ms/op
+Iteration  23: 38.240 ms/op
+Iteration  24: 38.241 ms/op
+Iteration  25: 38.324 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  38.286 ±(99.9%) 0.061 ms/op [Average]
+  (min, avg, max) = (38.237, 38.286, 38.555), stdev = 0.082
+  CI (99.9%): [38.224, 38.347] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfLow, format = longs, strategy = lz4)
+
+# Run progress: 33.33% complete, ETA 00:09:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 53.191 ms/op
+# Warmup Iteration   2: 35.209 ms/op
+# Warmup Iteration   3: 35.044 ms/op
+# Warmup Iteration   4: 35.028 ms/op
+# Warmup Iteration   5: 35.058 ms/op
+# Warmup Iteration   6: 35.028 ms/op
+# Warmup Iteration   7: 35.162 ms/op
+# Warmup Iteration   8: 35.036 ms/op
+# Warmup Iteration   9: 35.083 ms/op
+# Warmup Iteration  10: 35.045 ms/op
+Iteration   1: 35.080 ms/op
+Iteration   2: 35.090 ms/op
+Iteration   3: 35.037 ms/op
+Iteration   4: 35.012 ms/op
+Iteration   5: 35.215 ms/op
+Iteration   6: 35.026 ms/op
+Iteration   7: 35.082 ms/op
+Iteration   8: 35.024 ms/op
+Iteration   9: 35.086 ms/op
+Iteration  10: 35.027 ms/op
+Iteration  11: 34.993 ms/op
+Iteration  12: 35.025 ms/op
+Iteration  13: 35.017 ms/op
+Iteration  14: 35.223 ms/op
+Iteration  15: 35.070 ms/op
+Iteration  16: 35.023 ms/op
+Iteration  17: 34.989 ms/op
+Iteration  18: 35.027 ms/op
+Iteration  19: 35.056 ms/op
+Iteration  20: 35.084 ms/op
+Iteration  21: 35.062 ms/op
+Iteration  22: 35.175 ms/op
+Iteration  23: 35.014 ms/op
+Iteration  24: 35.015 ms/op
+Iteration  25: 35.012 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  35.059 ±(99.9%) 0.047 ms/op [Average]
+  (min, avg, max) = (34.989, 35.059, 35.223), stdev = 0.063
+  CI (99.9%): [35.011, 35.106] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfLow, format = longs, strategy = none)
+
+# Run progress: 38.10% complete, ETA 00:08:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 26.437 ms/op
+# Warmup Iteration   2: 23.411 ms/op
+# Warmup Iteration   3: 23.409 ms/op
+# Warmup Iteration   4: 23.414 ms/op
+# Warmup Iteration   5: 23.411 ms/op
+# Warmup Iteration   6: 23.414 ms/op
+# Warmup Iteration   7: 23.407 ms/op
+# Warmup Iteration   8: 23.522 ms/op
+# Warmup Iteration   9: 23.413 ms/op
+# Warmup Iteration  10: 23.407 ms/op
+Iteration   1: 23.404 ms/op
+Iteration   2: 23.518 ms/op
+Iteration   3: 23.400 ms/op
+Iteration   4: 23.401 ms/op
+Iteration   5: 23.405 ms/op
+Iteration   6: 23.402 ms/op
+Iteration   7: 23.427 ms/op
+Iteration   8: 23.439 ms/op
+Iteration   9: 23.435 ms/op
+Iteration  10: 23.546 ms/op
+Iteration  11: 23.433 ms/op
+Iteration  12: 23.429 ms/op
+Iteration  13: 23.447 ms/op
+Iteration  14: 23.544 ms/op
+Iteration  15: 23.436 ms/op
+Iteration  16: 23.436 ms/op
+Iteration  17: 23.438 ms/op
+Iteration  18: 23.431 ms/op
+Iteration  19: 23.452 ms/op
+Iteration  20: 23.434 ms/op
+Iteration  21: 23.551 ms/op
+Iteration  22: 23.431 ms/op
+Iteration  23: 23.446 ms/op
+Iteration  24: 23.442 ms/op
+Iteration  25: 23.564 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  23.452 ±(99.9%) 0.038 ms/op [Average]
+  (min, avg, max) = (23.400, 23.452, 23.564), stdev = 0.050
+  CI (99.9%): [23.414, 23.489] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfHigh, format = auto, strategy = lz4)
+
+# Run progress: 42.86% complete, ETA 00:07:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 53.338 ms/op
+# Warmup Iteration   2: 32.756 ms/op
+# Warmup Iteration   3: 32.898 ms/op
+# Warmup Iteration   4: 32.636 ms/op
+# Warmup Iteration   5: 32.738 ms/op
+# Warmup Iteration   6: 32.586 ms/op
+# Warmup Iteration   7: 32.708 ms/op
+# Warmup Iteration   8: 32.653 ms/op
+# Warmup Iteration   9: 32.601 ms/op
+# Warmup Iteration  10: 33.725 ms/op
+Iteration   1: 32.956 ms/op
+Iteration   2: 32.680 ms/op
+Iteration   3: 32.654 ms/op
+Iteration   4: 32.680 ms/op
+Iteration   5: 33.228 ms/op
+Iteration   6: 32.661 ms/op
+Iteration   7: 32.756 ms/op
+Iteration   8: 32.640 ms/op
+Iteration   9: 32.542 ms/op
+Iteration  10: 32.618 ms/op
+Iteration  11: 33.261 ms/op
+Iteration  12: 32.679 ms/op
+Iteration  13: 32.677 ms/op
+Iteration  14: 32.687 ms/op
+Iteration  15: 32.527 ms/op
+Iteration  16: 32.640 ms/op
+Iteration  17: 33.277 ms/op
+Iteration  18: 32.751 ms/op
+Iteration  19: 35.240 ms/op
+Iteration  20: 33.608 ms/op
+Iteration  21: 32.592 ms/op
+Iteration  22: 32.527 ms/op
+Iteration  23: 33.595 ms/op
+Iteration  24: 32.888 ms/op
+Iteration  25: 32.639 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  32.920 ±(99.9%) 0.433 ms/op [Average]
+  (min, avg, max) = (32.527, 32.920, 35.240), stdev = 0.578
+  CI (99.9%): [32.487, 33.353] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfHigh, format = auto, strategy = none)
+
+# Run progress: 47.62% complete, ETA 00:06:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 32.839 ms/op
+# Warmup Iteration   2: 29.837 ms/op
+# Warmup Iteration   3: 29.958 ms/op
+# Warmup Iteration   4: 29.863 ms/op
+# Warmup Iteration   5: 29.868 ms/op
+# Warmup Iteration   6: 29.830 ms/op
+# Warmup Iteration   7: 29.959 ms/op
+# Warmup Iteration   8: 29.862 ms/op
+# Warmup Iteration   9: 29.864 ms/op
+# Warmup Iteration  10: 29.835 ms/op
+Iteration   1: 29.836 ms/op
+Iteration   2: 29.854 ms/op
+Iteration   3: 29.856 ms/op
+Iteration   4: 29.833 ms/op
+Iteration   5: 29.835 ms/op
+Iteration   6: 29.829 ms/op
+Iteration   7: 29.922 ms/op
+Iteration   8: 29.797 ms/op
+Iteration   9: 29.815 ms/op
+Iteration  10: 29.814 ms/op
+Iteration  11: 29.913 ms/op
+Iteration  12: 29.789 ms/op
+Iteration  13: 29.812 ms/op
+Iteration  14: 29.811 ms/op
+Iteration  15: 29.789 ms/op
+Iteration  16: 29.792 ms/op
+Iteration  17: 29.815 ms/op
+Iteration  18: 29.811 ms/op
+Iteration  19: 29.790 ms/op
+Iteration  20: 29.787 ms/op
+Iteration  21: 29.814 ms/op
+Iteration  22: 29.813 ms/op
+Iteration  23: 29.789 ms/op
+Iteration  24: 29.803 ms/op
+Iteration  25: 29.830 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  29.822 ±(99.9%) 0.026 ms/op [Average]
+  (min, avg, max) = (29.787, 29.822, 29.922), stdev = 0.035
+  CI (99.9%): [29.796, 29.848] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfHigh, format = longs, strategy = lz4)
+
+# Run progress: 52.38% complete, ETA 00:06:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 41.780 ms/op
+# Warmup Iteration   2: 27.038 ms/op
+# Warmup Iteration   3: 27.043 ms/op
+# Warmup Iteration   4: 27.057 ms/op
+# Warmup Iteration   5: 26.985 ms/op
+# Warmup Iteration   6: 26.998 ms/op
+# Warmup Iteration   7: 27.021 ms/op
+# Warmup Iteration   8: 27.032 ms/op
+# Warmup Iteration   9: 27.069 ms/op
+# Warmup Iteration  10: 27.008 ms/op
+Iteration   1: 26.987 ms/op
+Iteration   2: 27.004 ms/op
+Iteration   3: 27.105 ms/op
+Iteration   4: 26.991 ms/op
+Iteration   5: 26.999 ms/op
+Iteration   6: 27.053 ms/op
+Iteration   7: 27.004 ms/op
+Iteration   8: 27.017 ms/op
+Iteration   9: 27.106 ms/op
+Iteration  10: 27.036 ms/op
+Iteration  11: 27.004 ms/op
+Iteration  12: 27.054 ms/op
+Iteration  13: 27.101 ms/op
+Iteration  14: 26.986 ms/op
+Iteration  15: 26.980 ms/op
+Iteration  16: 27.107 ms/op
+Iteration  17: 27.064 ms/op
+Iteration  18: 27.039 ms/op
+Iteration  19: 26.994 ms/op
+Iteration  20: 26.992 ms/op
+Iteration  21: 27.069 ms/op
+Iteration  22: 26.991 ms/op
+Iteration  23: 26.995 ms/op
+Iteration  24: 26.990 ms/op
+Iteration  25: 27.161 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  27.033 ±(99.9%) 0.038 ms/op [Average]
+  (min, avg, max) = (26.980, 27.033, 27.161), stdev = 0.051
+  CI (99.9%): [26.995, 27.071] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = zipfHigh, format = longs, strategy = none)
+
+# Run progress: 57.14% complete, ETA 00:05:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 26.351 ms/op
+# Warmup Iteration   2: 23.422 ms/op
+# Warmup Iteration   3: 23.413 ms/op
+# Warmup Iteration   4: 23.425 ms/op
+# Warmup Iteration   5: 23.414 ms/op
+# Warmup Iteration   6: 23.423 ms/op
+# Warmup Iteration   7: 23.416 ms/op
+# Warmup Iteration   8: 23.528 ms/op
+# Warmup Iteration   9: 23.408 ms/op
+# Warmup Iteration  10: 23.413 ms/op
+Iteration   1: 23.408 ms/op
+Iteration   2: 23.527 ms/op
+Iteration   3: 23.408 ms/op
+Iteration   4: 23.408 ms/op
+Iteration   5: 23.405 ms/op
+Iteration   6: 23.408 ms/op
+Iteration   7: 23.438 ms/op
+Iteration   8: 23.487 ms/op
+Iteration   9: 23.438 ms/op
+Iteration  10: 23.550 ms/op
+Iteration  11: 23.440 ms/op
+Iteration  12: 23.433 ms/op
+Iteration  13: 23.439 ms/op
+Iteration  14: 23.548 ms/op
+Iteration  15: 23.442 ms/op
+Iteration  16: 23.443 ms/op
+Iteration  17: 23.441 ms/op
+Iteration  18: 23.433 ms/op
+Iteration  19: 23.436 ms/op
+Iteration  20: 23.435 ms/op
+Iteration  21: 23.557 ms/op
+Iteration  22: 23.453 ms/op
+Iteration  23: 23.436 ms/op
+Iteration  24: 23.441 ms/op
+Iteration  25: 23.552 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  23.456 ±(99.9%) 0.037 ms/op [Average]
+  (min, avg, max) = (23.405, 23.456, 23.557), stdev = 0.050
+  CI (99.9%): [23.419, 23.493] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = sequential, format = auto, strategy = lz4)
+
+# Run progress: 61.90% complete, ETA 00:04:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 56.012 ms/op
+# Warmup Iteration   2: 36.814 ms/op
+# Warmup Iteration   3: 37.357 ms/op
+# Warmup Iteration   4: 36.827 ms/op
+# Warmup Iteration   5: 36.961 ms/op
+# Warmup Iteration   6: 37.360 ms/op
+# Warmup Iteration   7: 36.859 ms/op
+# Warmup Iteration   8: 36.938 ms/op
+# Warmup Iteration   9: 36.955 ms/op
+# Warmup Iteration  10: 37.630 ms/op
+Iteration   1: 36.946 ms/op
+Iteration   2: 36.852 ms/op
+Iteration   3: 36.817 ms/op
+Iteration   4: 36.880 ms/op
+Iteration   5: 37.121 ms/op
+Iteration   6: 36.862 ms/op
+Iteration   7: 36.816 ms/op
+Iteration   8: 38.097 ms/op
+Iteration   9: 36.846 ms/op
+Iteration  10: 36.880 ms/op
+Iteration  11: 36.837 ms/op
+Iteration  12: 36.945 ms/op
+Iteration  13: 37.541 ms/op
+Iteration  14: 37.004 ms/op
+Iteration  15: 37.594 ms/op
+Iteration  16: 36.858 ms/op
+Iteration  17: 36.906 ms/op
+Iteration  18: 36.827 ms/op
+Iteration  19: 36.858 ms/op
+Iteration  20: 36.923 ms/op
+Iteration  21: 36.857 ms/op
+Iteration  22: 36.792 ms/op
+Iteration  23: 36.858 ms/op
+Iteration  24: 37.005 ms/op
+Iteration  25: 40.909 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  37.153 ±(99.9%) 0.629 ms/op [Average]
+  (min, avg, max) = (36.792, 37.153, 40.909), stdev = 0.840
+  CI (99.9%): [36.524, 37.782] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = sequential, format = auto, strategy = none)
+
+# Run progress: 66.67% complete, ETA 00:04:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 41.512 ms/op
+# Warmup Iteration   2: 35.489 ms/op
+# Warmup Iteration   3: 34.404 ms/op
+# Warmup Iteration   4: 34.395 ms/op
+# Warmup Iteration   5: 34.391 ms/op
+# Warmup Iteration   6: 34.404 ms/op
+# Warmup Iteration   7: 34.401 ms/op
+# Warmup Iteration   8: 34.385 ms/op
+# Warmup Iteration   9: 34.386 ms/op
+# Warmup Iteration  10: 35.204 ms/op
+Iteration   1: 34.404 ms/op
+Iteration   2: 34.401 ms/op
+Iteration   3: 34.386 ms/op
+Iteration   4: 34.401 ms/op
+Iteration   5: 34.382 ms/op
+Iteration   6: 34.380 ms/op
+Iteration   7: 34.399 ms/op
+Iteration   8: 34.374 ms/op
+Iteration   9: 34.450 ms/op
+Iteration  10: 34.399 ms/op
+Iteration  11: 34.401 ms/op
+Iteration  12: 34.378 ms/op
+Iteration  13: 34.387 ms/op
+Iteration  14: 34.400 ms/op
+Iteration  15: 35.213 ms/op
+Iteration  16: 34.406 ms/op
+Iteration  17: 34.381 ms/op
+Iteration  18: 34.385 ms/op
+Iteration  19: 34.396 ms/op
+Iteration  20: 34.399 ms/op
+Iteration  21: 34.385 ms/op
+Iteration  22: 34.388 ms/op
+Iteration  23: 34.427 ms/op
+Iteration  24: 35.215 ms/op
+Iteration  25: 36.103 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  34.530 ±(99.9%) 0.299 ms/op [Average]
+  (min, avg, max) = (34.374, 34.530, 36.103), stdev = 0.399
+  CI (99.9%): [34.231, 34.828] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = sequential, format = longs, strategy = lz4)
+
+# Run progress: 71.43% complete, ETA 00:03:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 84.721 ms/op
+# Warmup Iteration   2: 55.552 ms/op
+# Warmup Iteration   3: 55.424 ms/op
+# Warmup Iteration   4: 55.505 ms/op
+# Warmup Iteration   5: 55.415 ms/op
+# Warmup Iteration   6: 55.441 ms/op
+# Warmup Iteration   7: 55.454 ms/op
+# Warmup Iteration   8: 55.541 ms/op
+# Warmup Iteration   9: 55.440 ms/op
+# Warmup Iteration  10: 55.590 ms/op
+Iteration   1: 55.406 ms/op
+Iteration   2: 55.400 ms/op
+Iteration   3: 55.423 ms/op
+Iteration   4: 55.473 ms/op
+Iteration   5: 55.583 ms/op
+Iteration   6: 55.415 ms/op
+Iteration   7: 55.478 ms/op
+Iteration   8: 55.450 ms/op
+Iteration   9: 55.546 ms/op
+Iteration  10: 55.453 ms/op
+Iteration  11: 55.657 ms/op
+Iteration  12: 55.717 ms/op
+Iteration  13: 55.638 ms/op
+Iteration  14: 55.694 ms/op
+Iteration  15: 55.458 ms/op
+Iteration  16: 55.455 ms/op
+Iteration  17: 55.592 ms/op
+Iteration  18: 55.476 ms/op
+Iteration  19: 55.446 ms/op
+Iteration  20: 55.438 ms/op
+Iteration  21: 55.474 ms/op
+Iteration  22: 55.433 ms/op
+Iteration  23: 55.494 ms/op
+Iteration  24: 55.435 ms/op
+Iteration  25: 55.469 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  55.500 ±(99.9%) 0.069 ms/op [Average]
+  (min, avg, max) = (55.400, 55.500, 55.717), stdev = 0.092
+  CI (99.9%): [55.431, 55.569] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = sequential, format = longs, strategy = none)
+
+# Run progress: 76.19% complete, ETA 00:03:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 26.147 ms/op
+# Warmup Iteration   2: 23.413 ms/op
+# Warmup Iteration   3: 23.379 ms/op
+# Warmup Iteration   4: 23.387 ms/op
+# Warmup Iteration   5: 23.380 ms/op
+# Warmup Iteration   6: 23.382 ms/op
+# Warmup Iteration   7: 23.388 ms/op
+# Warmup Iteration   8: 23.488 ms/op
+# Warmup Iteration   9: 23.396 ms/op
+# Warmup Iteration  10: 23.373 ms/op
+Iteration   1: 23.369 ms/op
+Iteration   2: 23.479 ms/op
+Iteration   3: 23.395 ms/op
+Iteration   4: 23.371 ms/op
+Iteration   5: 23.368 ms/op
+Iteration   6: 23.395 ms/op
+Iteration   7: 23.748 ms/op
+Iteration   8: 23.753 ms/op
+Iteration   9: 23.747 ms/op
+Iteration  10: 23.855 ms/op
+Iteration  11: 23.754 ms/op
+Iteration  12: 23.753 ms/op
+Iteration  13: 23.750 ms/op
+Iteration  14: 23.857 ms/op
+Iteration  15: 23.750 ms/op
+Iteration  16: 23.755 ms/op
+Iteration  17: 23.773 ms/op
+Iteration  18: 23.750 ms/op
+Iteration  19: 23.756 ms/op
+Iteration  20: 23.750 ms/op
+Iteration  21: 23.855 ms/op
+Iteration  22: 23.749 ms/op
+Iteration  23: 23.746 ms/op
+Iteration  24: 23.751 ms/op
+Iteration  25: 23.854 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  23.683 ±(99.9%) 0.127 ms/op [Average]
+  (min, avg, max) = (23.368, 23.683, 23.857), stdev = 0.170
+  CI (99.9%): [23.556, 23.811] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = uniform, format = auto, strategy = lz4)
+
+# Run progress: 80.95% complete, ETA 00:02:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 59.401 ms/op
+# Warmup Iteration   2: 38.902 ms/op
+# Warmup Iteration   3: 38.801 ms/op
+# Warmup Iteration   4: 38.753 ms/op
+# Warmup Iteration   5: 38.785 ms/op
+# Warmup Iteration   6: 38.784 ms/op
+# Warmup Iteration   7: 38.796 ms/op
+# Warmup Iteration   8: 38.904 ms/op
+# Warmup Iteration   9: 38.785 ms/op
+# Warmup Iteration  10: 38.789 ms/op
+Iteration   1: 38.748 ms/op
+Iteration   2: 38.783 ms/op
+Iteration   3: 39.352 ms/op
+Iteration   4: 38.795 ms/op
+Iteration   5: 38.902 ms/op
+Iteration   6: 38.795 ms/op
+Iteration   7: 38.741 ms/op
+Iteration   8: 38.737 ms/op
+Iteration   9: 38.801 ms/op
+Iteration  10: 39.632 ms/op
+Iteration  11: 38.859 ms/op
+Iteration  12: 38.757 ms/op
+Iteration  13: 38.736 ms/op
+Iteration  14: 38.805 ms/op
+Iteration  15: 38.767 ms/op
+Iteration  16: 38.903 ms/op
+Iteration  17: 38.731 ms/op
+Iteration  18: 38.744 ms/op
+Iteration  19: 38.712 ms/op
+Iteration  20: 38.794 ms/op
+Iteration  21: 38.789 ms/op
+Iteration  22: 38.894 ms/op
+Iteration  23: 38.765 ms/op
+Iteration  24: 38.745 ms/op
+Iteration  25: 38.736 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  38.841 ±(99.9%) 0.155 ms/op [Average]
+  (min, avg, max) = (38.712, 38.841, 39.632), stdev = 0.207
+  CI (99.9%): [38.686, 38.996] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = uniform, format = auto, strategy = none)
+
+# Run progress: 85.71% complete, ETA 00:01:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 42.509 ms/op
+# Warmup Iteration   2: 38.251 ms/op
+# Warmup Iteration   3: 38.257 ms/op
+# Warmup Iteration   4: 38.262 ms/op
+# Warmup Iteration   5: 38.243 ms/op
+# Warmup Iteration   6: 38.415 ms/op
+# Warmup Iteration   7: 38.319 ms/op
+# Warmup Iteration   8: 38.242 ms/op
+# Warmup Iteration   9: 38.263 ms/op
+# Warmup Iteration  10: 38.245 ms/op
+Iteration   1: 38.243 ms/op
+Iteration   2: 38.318 ms/op
+Iteration   3: 38.235 ms/op
+Iteration   4: 38.243 ms/op
+Iteration   5: 38.236 ms/op
+Iteration   6: 38.320 ms/op
+Iteration   7: 38.408 ms/op
+Iteration   8: 38.238 ms/op
+Iteration   9: 38.240 ms/op
+Iteration  10: 38.236 ms/op
+Iteration  11: 38.312 ms/op
+Iteration  12: 38.238 ms/op
+Iteration  13: 38.233 ms/op
+Iteration  14: 38.240 ms/op
+Iteration  15: 38.236 ms/op
+Iteration  16: 38.238 ms/op
+Iteration  17: 38.238 ms/op
+Iteration  18: 38.241 ms/op
+Iteration  19: 38.522 ms/op
+Iteration  20: 38.251 ms/op
+Iteration  21: 38.406 ms/op
+Iteration  22: 38.236 ms/op
+Iteration  23: 38.232 ms/op
+Iteration  24: 38.246 ms/op
+Iteration  25: 38.317 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  38.276 ±(99.9%) 0.054 ms/op [Average]
+  (min, avg, max) = (38.232, 38.276, 38.522), stdev = 0.073
+  CI (99.9%): [38.222, 38.330] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = uniform, format = longs, strategy = lz4)
+
+# Run progress: 90.48% complete, ETA 00:01:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 49.174 ms/op
+# Warmup Iteration   2: 32.986 ms/op
+# Warmup Iteration   3: 32.995 ms/op
+# Warmup Iteration   4: 33.054 ms/op
+# Warmup Iteration   5: 32.966 ms/op
+# Warmup Iteration   6: 33.036 ms/op
+# Warmup Iteration   7: 32.954 ms/op
+# Warmup Iteration   8: 33.095 ms/op
+# Warmup Iteration   9: 33.044 ms/op
+# Warmup Iteration  10: 32.979 ms/op
+Iteration   1: 32.951 ms/op
+Iteration   2: 40.864 ms/op
+Iteration   3: 32.970 ms/op
+Iteration   4: 32.988 ms/op
+Iteration   5: 33.029 ms/op
+Iteration   6: 32.936 ms/op
+Iteration   7: 32.945 ms/op
+Iteration   8: 33.057 ms/op
+Iteration   9: 32.965 ms/op
+Iteration  10: 33.039 ms/op
+Iteration  11: 33.179 ms/op
+Iteration  12: 32.974 ms/op
+Iteration  13: 32.977 ms/op
+Iteration  14: 33.046 ms/op
+Iteration  15: 32.971 ms/op
+Iteration  16: 33.032 ms/op
+Iteration  17: 32.951 ms/op
+Iteration  18: 32.972 ms/op
+Iteration  19: 33.045 ms/op
+Iteration  20: 32.966 ms/op
+Iteration  21: 32.967 ms/op
+Iteration  22: 32.996 ms/op
+Iteration  23: 32.968 ms/op
+Iteration  24: 33.029 ms/op
+Iteration  25: 33.125 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  33.318 ±(99.9%) 1.179 ms/op [Average]
+  (min, avg, max) = (32.936, 33.318, 40.864), stdev = 1.573
+  CI (99.9%): [32.139, 34.496] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LongCompressionBenchmark.readContinuous
+# Parameters: (dirPath = longCompress/, file = uniform, format = longs, strategy = none)
+
+# Run progress: 95.24% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 26.056 ms/op
+# Warmup Iteration   2: 23.458 ms/op
+# Warmup Iteration   3: 23.416 ms/op
+# Warmup Iteration   4: 23.424 ms/op
+# Warmup Iteration   5: 23.417 ms/op
+# Warmup Iteration   6: 23.420 ms/op
+# Warmup Iteration   7: 23.413 ms/op
+# Warmup Iteration   8: 23.531 ms/op
+# Warmup Iteration   9: 23.415 ms/op
+# Warmup Iteration  10: 23.415 ms/op
+Iteration   1: 23.409 ms/op
+Iteration   2: 23.410 ms/op
+Iteration   3: 23.412 ms/op
+Iteration   4: 23.410 ms/op
+Iteration   5: 23.529 ms/op
+Iteration   6: 23.411 ms/op
+Iteration   7: 23.457 ms/op
+Iteration   8: 23.443 ms/op
+Iteration   9: 23.448 ms/op
+Iteration  10: 23.560 ms/op
+Iteration  11: 23.446 ms/op
+Iteration  12: 23.442 ms/op
+Iteration  13: 23.449 ms/op
+Iteration  14: 23.558 ms/op
+Iteration  15: 23.452 ms/op
+Iteration  16: 23.445 ms/op
+Iteration  17: 23.449 ms/op
+Iteration  18: 23.454 ms/op
+Iteration  19: 23.460 ms/op
+Iteration  20: 23.460 ms/op
+Iteration  21: 23.574 ms/op
+Iteration  22: 23.458 ms/op
+Iteration  23: 23.459 ms/op
+Iteration  24: 23.456 ms/op
+Iteration  25: 23.581 ms/op
+
+
+Result "io.druid.benchmark.LongCompressionBenchmark.readContinuous":
+  23.465 ±(99.9%) 0.039 ms/op [Average]
+  (min, avg, max) = (23.409, 23.465, 23.581), stdev = 0.052
+  CI (99.9%): [23.426, 23.504] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:12:56
+
+Benchmark                                    (dirPath)      (file)  (format)  (rowsPerSegment)  (schema)  (strategy)  Mode  Cnt       Score       Error  Units
+FilterPartitionBenchmark.timeFilterNone            N/A         N/A       N/A            750000     basic         N/A  avgt   25  127316.148 ± 15568.003  us/op
+LongCompressionBenchmark.readContinuous  longCompress/   enumerate      auto               N/A       N/A         lz4  avgt   25      37.153 ±     0.090  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/   enumerate      auto               N/A       N/A        none  avgt   25      35.523 ±     0.137  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/   enumerate     longs               N/A       N/A         lz4  avgt   25      25.020 ±     0.037  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/   enumerate     longs               N/A       N/A        none  avgt   25      23.396 ±     0.034  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     zipfLow      auto               N/A       N/A         lz4  avgt   25      42.379 ±     0.160  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     zipfLow      auto               N/A       N/A        none  avgt   25      38.286 ±     0.061  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     zipfLow     longs               N/A       N/A         lz4  avgt   25      35.059 ±     0.047  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     zipfLow     longs               N/A       N/A        none  avgt   25      23.452 ±     0.038  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/    zipfHigh      auto               N/A       N/A         lz4  avgt   25      32.920 ±     0.433  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/    zipfHigh      auto               N/A       N/A        none  avgt   25      29.822 ±     0.026  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/    zipfHigh     longs               N/A       N/A         lz4  avgt   25      27.033 ±     0.038  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/    zipfHigh     longs               N/A       N/A        none  avgt   25      23.456 ±     0.037  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/  sequential      auto               N/A       N/A         lz4  avgt   25      37.153 ±     0.629  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/  sequential      auto               N/A       N/A        none  avgt   25      34.530 ±     0.299  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/  sequential     longs               N/A       N/A         lz4  avgt   25      55.500 ±     0.069  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/  sequential     longs               N/A       N/A        none  avgt   25      23.683 ±     0.127  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     uniform      auto               N/A       N/A         lz4  avgt   25      38.841 ±     0.155  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     uniform      auto               N/A       N/A        none  avgt   25      38.276 ±     0.054  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     uniform     longs               N/A       N/A         lz4  avgt   25      33.318 ±     1.179  ms/op
+LongCompressionBenchmark.readContinuous  longCompress/     uniform     longs               N/A       N/A        none  avgt   25      23.465 ±     0.039  ms/op
+
+Benchmark result is saved to exp-LOOP-out/druid_benchmarks_fixed_full_benchmark_LongCompressionBenchmark_readContinuous_loop_trial2.csv

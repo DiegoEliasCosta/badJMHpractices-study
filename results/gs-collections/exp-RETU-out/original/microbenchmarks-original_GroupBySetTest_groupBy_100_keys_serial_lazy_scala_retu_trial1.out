@@ -1,0 +1,96 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.GroupBySetTest.groupBy_100_keys_serial_lazy_scala
+
+# Run progress: 0.00% complete, ETA 00:02:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 8.877 ops/s
+# Warmup Iteration   2: 14.345 ops/s
+# Warmup Iteration   3: 15.455 ops/s
+# Warmup Iteration   4: 13.351 ops/s
+# Warmup Iteration   5: 15.269 ops/s
+# Warmup Iteration   6: 15.616 ops/s
+# Warmup Iteration   7: 13.528 ops/s
+# Warmup Iteration   8: 12.648 ops/s
+# Warmup Iteration   9: 15.321 ops/s
+# Warmup Iteration  10: 15.551 ops/s
+# Warmup Iteration  11: 14.521 ops/s
+# Warmup Iteration  12: 14.219 ops/s
+# Warmup Iteration  13: 15.543 ops/s
+# Warmup Iteration  14: 13.192 ops/s
+# Warmup Iteration  15: 15.513 ops/s
+# Warmup Iteration  16: 15.606 ops/s
+# Warmup Iteration  17: 13.716 ops/s
+# Warmup Iteration  18: 15.541 ops/s
+# Warmup Iteration  19: 15.652 ops/s
+# Warmup Iteration  20: 15.589 ops/s
+Iteration   1: 15.457 ops/s
+Iteration   2: 15.740 ops/s
+Iteration   3: 12.187 ops/s
+Iteration   4: 14.921 ops/s
+Iteration   5: 15.710 ops/s
+Iteration   6: 15.595 ops/s
+Iteration   7: 15.578 ops/s
+Iteration   8: 15.657 ops/s
+Iteration   9: 15.026 ops/s
+Iteration  10: 13.830 ops/s
+
+# Run progress: 50.00% complete, ETA 00:01:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 11.395 ops/s
+# Warmup Iteration   2: 14.953 ops/s
+# Warmup Iteration   3: 16.234 ops/s
+# Warmup Iteration   4: 14.087 ops/s
+# Warmup Iteration   5: 15.742 ops/s
+# Warmup Iteration   6: 15.893 ops/s
+# Warmup Iteration   7: 13.308 ops/s
+# Warmup Iteration   8: 13.685 ops/s
+# Warmup Iteration   9: 15.290 ops/s
+# Warmup Iteration  10: 15.154 ops/s
+# Warmup Iteration  11: 15.801 ops/s
+# Warmup Iteration  12: 15.784 ops/s
+# Warmup Iteration  13: 14.754 ops/s
+# Warmup Iteration  14: 14.142 ops/s
+# Warmup Iteration  15: 15.780 ops/s
+# Warmup Iteration  16: 15.704 ops/s
+# Warmup Iteration  17: 15.741 ops/s
+# Warmup Iteration  18: 15.226 ops/s
+# Warmup Iteration  19: 14.602 ops/s
+# Warmup Iteration  20: 13.498 ops/s
+Iteration   1: 14.570 ops/s
+Iteration   2: 15.521 ops/s
+Iteration   3: 15.869 ops/s
+Iteration   4: 15.841 ops/s
+Iteration   5: 15.819 ops/s
+Iteration   6: 15.756 ops/s
+Iteration   7: 15.925 ops/s
+Iteration   8: 15.929 ops/s
+Iteration   9: 14.948 ops/s
+Iteration  10: 15.941 ops/s
+
+
+Result "com.gs.collections.impl.jmh.GroupBySetTest.groupBy_100_keys_serial_lazy_scala":
+  15.291 ±(99.9%) 0.790 ops/s [Average]
+  (min, avg, max) = (12.187, 15.291, 15.941), stdev = 0.910
+  CI (99.9%): [14.500, 16.081] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:03
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                           Mode  Cnt   Score   Error  Units
+GroupBySetTest.groupBy_100_keys_serial_lazy_scala  thrpt   20  15.291 ± 0.790  ops/s
+
+Benchmark result is saved to gs-collections/exp-RETU-STATIC-out/microbenchmarks-original_GroupBySetTest_groupBy_100_keys_serial_lazy_scala_retu_trial1.csv

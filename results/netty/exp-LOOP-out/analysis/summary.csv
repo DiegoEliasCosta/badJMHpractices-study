@@ -1,0 +1,11 @@
+Benchmark Mode,Measurement Unit,Package,Class,Method,Full params,,Original,Fixed,Factor,Wilcoxom,Cliffs Delta Size,Cliffs Delta d
+"Throughput, ops/time",ops/s, io.netty.microbench.concurrent,FastThreadLocalFastPathBenchmark,fastThreadLocal,,0,49284.838,40372.558999999994,0.8191679355829472,True,large,0.8018
+"Throughput, ops/time",ops/s, io.netty.microbench.concurrent,FastThreadLocalFastPathBenchmark,jdkThreadLocalGet,,0,76862.7775,53313.870500000005,0.6936240431852727,True,large,0.9928
+"Throughput, ops/time",ops/s, io.netty.microbench.concurrent,FastThreadLocalSlowPathBenchmark,fastThreadLocal,,0,56384.474,40933.563500000004,0.7259722508008145,True,large,0.913
+"Throughput, ops/time",ops/s, io.netty.microbench.concurrent,FastThreadLocalSlowPathBenchmark,jdkThreadLocalGet,,0,74901.05900000001,53565.593,0.7151513438548311,True,large,1.0
+"Throughput, ops/time",ops/us, io.netty.handler.codec.http,HttpMethodMapBenchmark,newMapKnownMethods,,0,23.851,17.325,0.7263846379606725,True,large,1.0
+"Throughput, ops/time",ops/us, io.netty.handler.codec.http,HttpMethodMapBenchmark,newMapMixMethods,,0,16.5385,13.06,0.7896725821567857,True,large,1.0
+"Throughput, ops/time",ops/us, io.netty.handler.codec.http,HttpMethodMapBenchmark,newMapUnknownMethods,,0,35.27,32.964,0.9346186560816557,True,large,0.7054959141163275
+"Throughput, ops/time",ops/us, io.netty.handler.codec.http,HttpMethodMapBenchmark,oldMapKnownMethods,,0,19.753999999999998,14.533,0.7356990989166752,True,large,1.0
+"Throughput, ops/time",ops/us, io.netty.handler.codec.http,HttpMethodMapBenchmark,oldMapMixMethods,,0,14.482,10.8595,0.7498618975279658,True,large,1.0
+"Throughput, ops/time",ops/us, io.netty.handler.codec.http,HttpMethodMapBenchmark,oldMapUnknownMethods,,0,38.192499999999995,43.782000000000004,1.1463507233095505,True,large,-0.8111760409057707

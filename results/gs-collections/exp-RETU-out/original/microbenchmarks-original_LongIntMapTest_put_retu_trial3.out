@@ -1,0 +1,1861 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = true, mapSizeDividedBy16000 = 1)
+
+# Run progress: 0.00% complete, ETA 00:25:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 4.231 ops/s
+# Warmup Iteration   2: 4.658 ops/s
+# Warmup Iteration   3: 5.413 ops/s
+# Warmup Iteration   4: 5.410 ops/s
+# Warmup Iteration   5: 5.404 ops/s
+# Warmup Iteration   6: 5.401 ops/s
+# Warmup Iteration   7: 5.394 ops/s
+# Warmup Iteration   8: 5.381 ops/s
+# Warmup Iteration   9: 5.375 ops/s
+# Warmup Iteration  10: 5.335 ops/s
+# Warmup Iteration  11: 5.382 ops/s
+# Warmup Iteration  12: 5.300 ops/s
+# Warmup Iteration  13: 5.326 ops/s
+# Warmup Iteration  14: 5.358 ops/s
+# Warmup Iteration  15: 5.358 ops/s
+# Warmup Iteration  16: 5.354 ops/s
+# Warmup Iteration  17: 5.284 ops/s
+# Warmup Iteration  18: 5.324 ops/s
+# Warmup Iteration  19: 5.339 ops/s
+# Warmup Iteration  20: 5.365 ops/s
+Iteration   1: 5.345 ops/s
+Iteration   2: 5.357 ops/s
+Iteration   3: 5.325 ops/s
+Iteration   4: 5.353 ops/s
+Iteration   5: 5.350 ops/s
+Iteration   6: 5.289 ops/s
+Iteration   7: 5.360 ops/s
+Iteration   8: 5.381 ops/s
+Iteration   9: 5.370 ops/s
+Iteration  10: 5.313 ops/s
+
+# Run progress: 2.00% complete, ETA 00:27:47
+# Fork: 2 of 5
+# Warmup Iteration   1: 4.719 ops/s
+# Warmup Iteration   2: 4.785 ops/s
+# Warmup Iteration   3: 5.556 ops/s
+# Warmup Iteration   4: 5.558 ops/s
+# Warmup Iteration   5: 5.553 ops/s
+# Warmup Iteration   6: 5.542 ops/s
+# Warmup Iteration   7: 5.537 ops/s
+# Warmup Iteration   8: 5.517 ops/s
+# Warmup Iteration   9: 5.518 ops/s
+# Warmup Iteration  10: 5.509 ops/s
+# Warmup Iteration  11: 5.503 ops/s
+# Warmup Iteration  12: 5.508 ops/s
+# Warmup Iteration  13: 5.526 ops/s
+# Warmup Iteration  14: 5.505 ops/s
+# Warmup Iteration  15: 5.504 ops/s
+# Warmup Iteration  16: 5.513 ops/s
+# Warmup Iteration  17: 5.394 ops/s
+# Warmup Iteration  18: 5.435 ops/s
+# Warmup Iteration  19: 5.479 ops/s
+# Warmup Iteration  20: 5.444 ops/s
+Iteration   1: 5.480 ops/s
+Iteration   2: 5.457 ops/s
+Iteration   3: 5.476 ops/s
+Iteration   4: 5.487 ops/s
+Iteration   5: 5.346 ops/s
+Iteration   6: 5.482 ops/s
+Iteration   7: 5.460 ops/s
+Iteration   8: 5.472 ops/s
+Iteration   9: 5.464 ops/s
+Iteration  10: 5.464 ops/s
+
+# Run progress: 4.00% complete, ETA 00:26:49
+# Fork: 3 of 5
+# Warmup Iteration   1: 4.707 ops/s
+# Warmup Iteration   2: 4.776 ops/s
+# Warmup Iteration   3: 5.508 ops/s
+# Warmup Iteration   4: 5.544 ops/s
+# Warmup Iteration   5: 5.533 ops/s
+# Warmup Iteration   6: 5.537 ops/s
+# Warmup Iteration   7: 5.511 ops/s
+# Warmup Iteration   8: 5.488 ops/s
+# Warmup Iteration   9: 5.521 ops/s
+# Warmup Iteration  10: 5.512 ops/s
+# Warmup Iteration  11: 5.517 ops/s
+# Warmup Iteration  12: 5.520 ops/s
+# Warmup Iteration  13: 5.521 ops/s
+# Warmup Iteration  14: 5.521 ops/s
+# Warmup Iteration  15: 5.517 ops/s
+# Warmup Iteration  16: 5.520 ops/s
+# Warmup Iteration  17: 5.478 ops/s
+# Warmup Iteration  18: 5.501 ops/s
+# Warmup Iteration  19: 5.492 ops/s
+# Warmup Iteration  20: 5.501 ops/s
+Iteration   1: 5.495 ops/s
+Iteration   2: 5.499 ops/s
+Iteration   3: 5.454 ops/s
+Iteration   4: 5.490 ops/s
+Iteration   5: 5.489 ops/s
+Iteration   6: 5.495 ops/s
+Iteration   7: 5.493 ops/s
+Iteration   8: 5.496 ops/s
+Iteration   9: 5.488 ops/s
+Iteration  10: 5.473 ops/s
+
+# Run progress: 6.00% complete, ETA 00:26:07
+# Fork: 4 of 5
+# Warmup Iteration   1: 4.655 ops/s
+# Warmup Iteration   2: 4.694 ops/s
+# Warmup Iteration   3: 5.411 ops/s
+# Warmup Iteration   4: 5.416 ops/s
+# Warmup Iteration   5: 5.402 ops/s
+# Warmup Iteration   6: 5.402 ops/s
+# Warmup Iteration   7: 5.406 ops/s
+# Warmup Iteration   8: 5.387 ops/s
+# Warmup Iteration   9: 5.382 ops/s
+# Warmup Iteration  10: 5.373 ops/s
+# Warmup Iteration  11: 5.374 ops/s
+# Warmup Iteration  12: 5.367 ops/s
+# Warmup Iteration  13: 5.237 ops/s
+# Warmup Iteration  14: 5.329 ops/s
+# Warmup Iteration  15: 5.368 ops/s
+# Warmup Iteration  16: 5.359 ops/s
+# Warmup Iteration  17: 5.326 ops/s
+# Warmup Iteration  18: 5.380 ops/s
+# Warmup Iteration  19: 5.371 ops/s
+# Warmup Iteration  20: 5.361 ops/s
+Iteration   1: 5.326 ops/s
+Iteration   2: 5.383 ops/s
+Iteration   3: 5.369 ops/s
+Iteration   4: 5.371 ops/s
+Iteration   5: 5.382 ops/s
+Iteration   6: 5.379 ops/s
+Iteration   7: 5.363 ops/s
+Iteration   8: 5.371 ops/s
+Iteration   9: 5.366 ops/s
+Iteration  10: 5.373 ops/s
+
+# Run progress: 8.00% complete, ETA 00:25:38
+# Fork: 5 of 5
+# Warmup Iteration   1: 4.401 ops/s
+# Warmup Iteration   2: 4.590 ops/s
+# Warmup Iteration   3: 5.245 ops/s
+# Warmup Iteration   4: 5.237 ops/s
+# Warmup Iteration   5: 5.252 ops/s
+# Warmup Iteration   6: 5.243 ops/s
+# Warmup Iteration   7: 5.244 ops/s
+# Warmup Iteration   8: 5.237 ops/s
+# Warmup Iteration   9: 5.219 ops/s
+# Warmup Iteration  10: 5.215 ops/s
+# Warmup Iteration  11: 5.159 ops/s
+# Warmup Iteration  12: 5.166 ops/s
+# Warmup Iteration  13: 5.225 ops/s
+# Warmup Iteration  14: 5.198 ops/s
+# Warmup Iteration  15: 5.209 ops/s
+# Warmup Iteration  16: 5.218 ops/s
+# Warmup Iteration  17: 5.216 ops/s
+# Warmup Iteration  18: 5.206 ops/s
+# Warmup Iteration  19: 5.218 ops/s
+# Warmup Iteration  20: 5.184 ops/s
+Iteration   1: 5.191 ops/s
+Iteration   2: 5.225 ops/s
+Iteration   3: 5.219 ops/s
+Iteration   4: 5.233 ops/s
+Iteration   5: 5.225 ops/s
+Iteration   6: 5.231 ops/s
+Iteration   7: 5.225 ops/s
+Iteration   8: 5.197 ops/s
+Iteration   9: 5.226 ops/s
+Iteration  10: 5.222 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  5.376 ±(99.9%) 0.049 ops/s [Average]
+  (min, avg, max) = (5.191, 5.376, 5.499), stdev = 0.098
+  CI (99.9%): [5.327, 5.424] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = true, mapSizeDividedBy16000 = 10)
+
+# Run progress: 10.00% complete, ETA 00:25:16
+# Fork: 1 of 5
+# Warmup Iteration   1: 2.952 ops/s
+# Warmup Iteration   2: 3.220 ops/s
+# Warmup Iteration   3: 3.596 ops/s
+# Warmup Iteration   4: 3.585 ops/s
+# Warmup Iteration   5: 3.585 ops/s
+# Warmup Iteration   6: 3.555 ops/s
+# Warmup Iteration   7: 3.537 ops/s
+# Warmup Iteration   8: 3.551 ops/s
+# Warmup Iteration   9: 3.549 ops/s
+# Warmup Iteration  10: 3.547 ops/s
+# Warmup Iteration  11: 3.553 ops/s
+# Warmup Iteration  12: 3.488 ops/s
+# Warmup Iteration  13: 3.532 ops/s
+# Warmup Iteration  14: 3.553 ops/s
+# Warmup Iteration  15: 3.536 ops/s
+# Warmup Iteration  16: 3.553 ops/s
+# Warmup Iteration  17: 3.558 ops/s
+# Warmup Iteration  18: 3.551 ops/s
+# Warmup Iteration  19: 3.566 ops/s
+# Warmup Iteration  20: 3.566 ops/s
+Iteration   1: 3.558 ops/s
+Iteration   2: 3.515 ops/s
+Iteration   3: 3.532 ops/s
+Iteration   4: 3.556 ops/s
+Iteration   5: 3.558 ops/s
+Iteration   6: 3.552 ops/s
+Iteration   7: 3.552 ops/s
+Iteration   8: 3.560 ops/s
+Iteration   9: 3.555 ops/s
+Iteration  10: 3.556 ops/s
+
+# Run progress: 12.00% complete, ETA 00:24:46
+# Fork: 2 of 5
+# Warmup Iteration   1: 2.900 ops/s
+# Warmup Iteration   2: 3.198 ops/s
+# Warmup Iteration   3: 3.573 ops/s
+# Warmup Iteration   4: 3.565 ops/s
+# Warmup Iteration   5: 3.566 ops/s
+# Warmup Iteration   6: 3.560 ops/s
+# Warmup Iteration   7: 3.561 ops/s
+# Warmup Iteration   8: 3.553 ops/s
+# Warmup Iteration   9: 3.542 ops/s
+# Warmup Iteration  10: 3.537 ops/s
+# Warmup Iteration  11: 3.547 ops/s
+# Warmup Iteration  12: 3.544 ops/s
+# Warmup Iteration  13: 3.537 ops/s
+# Warmup Iteration  14: 3.528 ops/s
+# Warmup Iteration  15: 3.537 ops/s
+# Warmup Iteration  16: 3.517 ops/s
+# Warmup Iteration  17: 3.537 ops/s
+# Warmup Iteration  18: 3.536 ops/s
+# Warmup Iteration  19: 3.533 ops/s
+# Warmup Iteration  20: 3.536 ops/s
+Iteration   1: 3.510 ops/s
+Iteration   2: 3.541 ops/s
+Iteration   3: 3.540 ops/s
+Iteration   4: 3.527 ops/s
+Iteration   5: 3.533 ops/s
+Iteration   6: 3.529 ops/s
+Iteration   7: 3.512 ops/s
+Iteration   8: 3.539 ops/s
+Iteration   9: 3.506 ops/s
+Iteration  10: 3.503 ops/s
+
+# Run progress: 14.00% complete, ETA 00:24:15
+# Fork: 3 of 5
+# Warmup Iteration   1: 2.910 ops/s
+# Warmup Iteration   2: 3.211 ops/s
+# Warmup Iteration   3: 3.589 ops/s
+# Warmup Iteration   4: 3.575 ops/s
+# Warmup Iteration   5: 3.576 ops/s
+# Warmup Iteration   6: 3.571 ops/s
+# Warmup Iteration   7: 3.573 ops/s
+# Warmup Iteration   8: 3.559 ops/s
+# Warmup Iteration   9: 3.550 ops/s
+# Warmup Iteration  10: 3.555 ops/s
+# Warmup Iteration  11: 3.549 ops/s
+# Warmup Iteration  12: 3.550 ops/s
+# Warmup Iteration  13: 3.554 ops/s
+# Warmup Iteration  14: 3.560 ops/s
+# Warmup Iteration  15: 3.545 ops/s
+# Warmup Iteration  16: 3.554 ops/s
+# Warmup Iteration  17: 3.567 ops/s
+# Warmup Iteration  18: 3.567 ops/s
+# Warmup Iteration  19: 3.541 ops/s
+# Warmup Iteration  20: 3.570 ops/s
+Iteration   1: 3.562 ops/s
+Iteration   2: 3.568 ops/s
+Iteration   3: 3.556 ops/s
+Iteration   4: 3.563 ops/s
+Iteration   5: 3.568 ops/s
+Iteration   6: 3.561 ops/s
+Iteration   7: 3.563 ops/s
+Iteration   8: 3.507 ops/s
+Iteration   9: 3.520 ops/s
+Iteration  10: 3.567 ops/s
+
+# Run progress: 16.00% complete, ETA 00:23:42
+# Fork: 4 of 5
+# Warmup Iteration   1: 2.955 ops/s
+# Warmup Iteration   2: 3.231 ops/s
+# Warmup Iteration   3: 3.573 ops/s
+# Warmup Iteration   4: 3.606 ops/s
+# Warmup Iteration   5: 3.593 ops/s
+# Warmup Iteration   6: 3.561 ops/s
+# Warmup Iteration   7: 3.539 ops/s
+# Warmup Iteration   8: 3.580 ops/s
+# Warmup Iteration   9: 3.584 ops/s
+# Warmup Iteration  10: 3.556 ops/s
+# Warmup Iteration  11: 3.581 ops/s
+# Warmup Iteration  12: 3.529 ops/s
+# Warmup Iteration  13: 3.565 ops/s
+# Warmup Iteration  14: 3.564 ops/s
+# Warmup Iteration  15: 3.589 ops/s
+# Warmup Iteration  16: 3.567 ops/s
+# Warmup Iteration  17: 3.599 ops/s
+# Warmup Iteration  18: 3.595 ops/s
+# Warmup Iteration  19: 3.610 ops/s
+# Warmup Iteration  20: 3.579 ops/s
+Iteration   1: 3.608 ops/s
+Iteration   2: 3.556 ops/s
+Iteration   3: 3.595 ops/s
+Iteration   4: 3.589 ops/s
+Iteration   5: 3.590 ops/s
+Iteration   6: 3.597 ops/s
+Iteration   7: 3.595 ops/s
+Iteration   8: 3.607 ops/s
+Iteration   9: 3.571 ops/s
+Iteration  10: 3.554 ops/s
+
+# Run progress: 18.00% complete, ETA 00:23:08
+# Fork: 5 of 5
+# Warmup Iteration   1: 2.948 ops/s
+# Warmup Iteration   2: 3.231 ops/s
+# Warmup Iteration   3: 3.597 ops/s
+# Warmup Iteration   4: 3.617 ops/s
+# Warmup Iteration   5: 3.574 ops/s
+# Warmup Iteration   6: 3.596 ops/s
+# Warmup Iteration   7: 3.597 ops/s
+# Warmup Iteration   8: 3.586 ops/s
+# Warmup Iteration   9: 3.550 ops/s
+# Warmup Iteration  10: 3.583 ops/s
+# Warmup Iteration  11: 3.583 ops/s
+# Warmup Iteration  12: 3.574 ops/s
+# Warmup Iteration  13: 3.580 ops/s
+# Warmup Iteration  14: 3.538 ops/s
+# Warmup Iteration  15: 3.588 ops/s
+# Warmup Iteration  16: 3.591 ops/s
+# Warmup Iteration  17: 3.578 ops/s
+# Warmup Iteration  18: 3.566 ops/s
+# Warmup Iteration  19: 3.578 ops/s
+# Warmup Iteration  20: 3.568 ops/s
+Iteration   1: 3.544 ops/s
+Iteration   2: 3.540 ops/s
+Iteration   3: 3.558 ops/s
+Iteration   4: 3.563 ops/s
+Iteration   5: 3.564 ops/s
+Iteration   6: 3.563 ops/s
+Iteration   7: 3.539 ops/s
+Iteration   8: 3.544 ops/s
+Iteration   9: 3.560 ops/s
+Iteration  10: 3.566 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  3.553 ±(99.9%) 0.013 ops/s [Average]
+  (min, avg, max) = (3.503, 3.553, 3.608), stdev = 0.026
+  CI (99.9%): [3.541, 3.566] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = true, mapSizeDividedBy16000 = 100)
+
+# Run progress: 20.00% complete, ETA 00:22:35
+# Fork: 1 of 5
+# Warmup Iteration   1: 2.600 ops/s
+# Warmup Iteration   2: 2.678 ops/s
+# Warmup Iteration   3: 2.849 ops/s
+# Warmup Iteration   4: 2.785 ops/s
+# Warmup Iteration   5: 2.780 ops/s
+# Warmup Iteration   6: 2.780 ops/s
+# Warmup Iteration   7: 2.773 ops/s
+# Warmup Iteration   8: 2.768 ops/s
+# Warmup Iteration   9: 2.770 ops/s
+# Warmup Iteration  10: 2.762 ops/s
+# Warmup Iteration  11: 2.772 ops/s
+# Warmup Iteration  12: 2.779 ops/s
+# Warmup Iteration  13: 2.771 ops/s
+# Warmup Iteration  14: 2.770 ops/s
+# Warmup Iteration  15: 2.733 ops/s
+# Warmup Iteration  16: 2.766 ops/s
+# Warmup Iteration  17: 2.769 ops/s
+# Warmup Iteration  18: 2.766 ops/s
+# Warmup Iteration  19: 2.767 ops/s
+# Warmup Iteration  20: 2.761 ops/s
+Iteration   1: 2.777 ops/s
+Iteration   2: 2.773 ops/s
+Iteration   3: 2.768 ops/s
+Iteration   4: 2.768 ops/s
+Iteration   5: 2.768 ops/s
+Iteration   6: 2.769 ops/s
+Iteration   7: 2.765 ops/s
+Iteration   8: 2.765 ops/s
+Iteration   9: 2.771 ops/s
+Iteration  10: 2.759 ops/s
+
+# Run progress: 22.00% complete, ETA 00:21:57
+# Fork: 2 of 5
+# Warmup Iteration   1: 2.601 ops/s
+# Warmup Iteration   2: 2.683 ops/s
+# Warmup Iteration   3: 2.836 ops/s
+# Warmup Iteration   4: 2.782 ops/s
+# Warmup Iteration   5: 2.776 ops/s
+# Warmup Iteration   6: 2.774 ops/s
+# Warmup Iteration   7: 2.766 ops/s
+# Warmup Iteration   8: 2.760 ops/s
+# Warmup Iteration   9: 2.766 ops/s
+# Warmup Iteration  10: 2.754 ops/s
+# Warmup Iteration  11: 2.770 ops/s
+# Warmup Iteration  12: 2.770 ops/s
+# Warmup Iteration  13: 2.748 ops/s
+# Warmup Iteration  14: 2.762 ops/s
+# Warmup Iteration  15: 2.775 ops/s
+# Warmup Iteration  16: 2.766 ops/s
+# Warmup Iteration  17: 2.764 ops/s
+# Warmup Iteration  18: 2.760 ops/s
+# Warmup Iteration  19: 2.765 ops/s
+# Warmup Iteration  20: 2.753 ops/s
+Iteration   1: 2.774 ops/s
+Iteration   2: 2.767 ops/s
+Iteration   3: 2.761 ops/s
+Iteration   4: 2.722 ops/s
+Iteration   5: 2.734 ops/s
+Iteration   6: 2.759 ops/s
+Iteration   7: 2.756 ops/s
+Iteration   8: 2.736 ops/s
+Iteration   9: 2.759 ops/s
+Iteration  10: 2.756 ops/s
+
+# Run progress: 24.00% complete, ETA 00:21:21
+# Fork: 3 of 5
+# Warmup Iteration   1: 2.604 ops/s
+# Warmup Iteration   2: 2.664 ops/s
+# Warmup Iteration   3: 2.852 ops/s
+# Warmup Iteration   4: 2.766 ops/s
+# Warmup Iteration   5: 2.756 ops/s
+# Warmup Iteration   6: 2.775 ops/s
+# Warmup Iteration   7: 2.769 ops/s
+# Warmup Iteration   8: 2.762 ops/s
+# Warmup Iteration   9: 2.764 ops/s
+# Warmup Iteration  10: 2.757 ops/s
+# Warmup Iteration  11: 2.776 ops/s
+# Warmup Iteration  12: 2.775 ops/s
+# Warmup Iteration  13: 2.768 ops/s
+# Warmup Iteration  14: 2.759 ops/s
+# Warmup Iteration  15: 2.767 ops/s
+# Warmup Iteration  16: 2.772 ops/s
+# Warmup Iteration  17: 2.762 ops/s
+# Warmup Iteration  18: 2.757 ops/s
+# Warmup Iteration  19: 2.759 ops/s
+# Warmup Iteration  20: 2.772 ops/s
+Iteration   1: 2.767 ops/s
+Iteration   2: 2.758 ops/s
+Iteration   3: 2.762 ops/s
+Iteration   4: 2.761 ops/s
+Iteration   5: 2.755 ops/s
+Iteration   6: 2.762 ops/s
+Iteration   7: 2.767 ops/s
+Iteration   8: 2.757 ops/s
+Iteration   9: 2.760 ops/s
+Iteration  10: 2.756 ops/s
+
+# Run progress: 26.00% complete, ETA 00:20:45
+# Fork: 4 of 5
+# Warmup Iteration   1: 2.601 ops/s
+# Warmup Iteration   2: 2.682 ops/s
+# Warmup Iteration   3: 2.852 ops/s
+# Warmup Iteration   4: 2.700 ops/s
+# Warmup Iteration   5: 2.693 ops/s
+# Warmup Iteration   6: 2.692 ops/s
+# Warmup Iteration   7: 2.684 ops/s
+# Warmup Iteration   8: 2.667 ops/s
+# Warmup Iteration   9: 2.652 ops/s
+# Warmup Iteration  10: 2.689 ops/s
+# Warmup Iteration  11: 2.689 ops/s
+# Warmup Iteration  12: 2.680 ops/s
+# Warmup Iteration  13: 2.687 ops/s
+# Warmup Iteration  14: 2.683 ops/s
+# Warmup Iteration  15: 2.685 ops/s
+# Warmup Iteration  16: 2.687 ops/s
+# Warmup Iteration  17: 2.768 ops/s
+# Warmup Iteration  18: 2.775 ops/s
+# Warmup Iteration  19: 2.765 ops/s
+# Warmup Iteration  20: 2.779 ops/s
+Iteration   1: 2.772 ops/s
+Iteration   2: 2.774 ops/s
+Iteration   3: 2.771 ops/s
+Iteration   4: 2.770 ops/s
+Iteration   5: 2.769 ops/s
+Iteration   6: 2.773 ops/s
+Iteration   7: 2.769 ops/s
+Iteration   8: 2.772 ops/s
+Iteration   9: 2.772 ops/s
+Iteration  10: 2.752 ops/s
+
+# Run progress: 28.00% complete, ETA 00:20:11
+# Fork: 5 of 5
+# Warmup Iteration   1: 2.568 ops/s
+# Warmup Iteration   2: 2.760 ops/s
+# Warmup Iteration   3: 2.783 ops/s
+# Warmup Iteration   4: 2.719 ops/s
+# Warmup Iteration   5: 2.730 ops/s
+# Warmup Iteration   6: 2.731 ops/s
+# Warmup Iteration   7: 2.724 ops/s
+# Warmup Iteration   8: 2.723 ops/s
+# Warmup Iteration   9: 2.733 ops/s
+# Warmup Iteration  10: 2.723 ops/s
+# Warmup Iteration  11: 2.725 ops/s
+# Warmup Iteration  12: 2.729 ops/s
+# Warmup Iteration  13: 2.722 ops/s
+# Warmup Iteration  14: 2.723 ops/s
+# Warmup Iteration  15: 2.727 ops/s
+# Warmup Iteration  16: 2.688 ops/s
+# Warmup Iteration  17: 2.716 ops/s
+# Warmup Iteration  18: 2.743 ops/s
+# Warmup Iteration  19: 2.730 ops/s
+# Warmup Iteration  20: 2.744 ops/s
+Iteration   1: 2.720 ops/s
+Iteration   2: 2.737 ops/s
+Iteration   3: 2.722 ops/s
+Iteration   4: 2.729 ops/s
+Iteration   5: 2.739 ops/s
+Iteration   6: 2.734 ops/s
+Iteration   7: 2.733 ops/s
+Iteration   8: 2.735 ops/s
+Iteration   9: 2.734 ops/s
+Iteration  10: 2.699 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  2.756 ±(99.9%) 0.009 ops/s [Average]
+  (min, avg, max) = (2.699, 2.756, 2.777), stdev = 0.018
+  CI (99.9%): [2.747, 2.765] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = true, mapSizeDividedBy16000 = 10000)
+
+# Run progress: 30.00% complete, ETA 00:19:36
+# Fork: 1 of 5
+# Warmup Iteration   1: 1.381 ops/s
+# Warmup Iteration   2: 1.416 ops/s
+# Warmup Iteration   3: 1.496 ops/s
+# Warmup Iteration   4: 1.357 ops/s
+# Warmup Iteration   5: 1.514 ops/s
+# Warmup Iteration   6: 1.512 ops/s
+# Warmup Iteration   7: 1.411 ops/s
+# Warmup Iteration   8: 1.288 ops/s
+# Warmup Iteration   9: 1.455 ops/s
+# Warmup Iteration  10: 1.516 ops/s
+# Warmup Iteration  11: 1.511 ops/s
+# Warmup Iteration  12: 1.508 ops/s
+# Warmup Iteration  13: 1.512 ops/s
+# Warmup Iteration  14: 1.393 ops/s
+# Warmup Iteration  15: 1.424 ops/s
+# Warmup Iteration  16: 1.515 ops/s
+# Warmup Iteration  17: 1.511 ops/s
+# Warmup Iteration  18: 1.495 ops/s
+# Warmup Iteration  19: 1.519 ops/s
+# Warmup Iteration  20: 1.507 ops/s
+Iteration   1: 1.495 ops/s
+Iteration   2: 1.433 ops/s
+Iteration   3: 1.517 ops/s
+Iteration   4: 1.513 ops/s
+Iteration   5: 1.509 ops/s
+Iteration   6: 1.517 ops/s
+Iteration   7: 1.509 ops/s
+Iteration   8: 1.509 ops/s
+Iteration   9: 1.514 ops/s
+Iteration  10: 1.504 ops/s
+
+# Run progress: 32.00% complete, ETA 00:19:19
+# Fork: 2 of 5
+# Warmup Iteration   1: 1.265 ops/s
+# Warmup Iteration   2: 1.418 ops/s
+# Warmup Iteration   3: 1.495 ops/s
+# Warmup Iteration   4: 1.353 ops/s
+# Warmup Iteration   5: 1.516 ops/s
+# Warmup Iteration   6: 1.506 ops/s
+# Warmup Iteration   7: 1.405 ops/s
+# Warmup Iteration   8: 1.302 ops/s
+# Warmup Iteration   9: 1.507 ops/s
+# Warmup Iteration  10: 1.510 ops/s
+# Warmup Iteration  11: 1.508 ops/s
+# Warmup Iteration  12: 1.463 ops/s
+# Warmup Iteration  13: 1.322 ops/s
+# Warmup Iteration  14: 1.282 ops/s
+# Warmup Iteration  15: 1.422 ops/s
+# Warmup Iteration  16: 1.508 ops/s
+# Warmup Iteration  17: 1.512 ops/s
+# Warmup Iteration  18: 1.501 ops/s
+# Warmup Iteration  19: 1.497 ops/s
+# Warmup Iteration  20: 1.513 ops/s
+Iteration   1: 1.470 ops/s
+Iteration   2: 1.430 ops/s
+Iteration   3: 1.517 ops/s
+Iteration   4: 1.519 ops/s
+Iteration   5: 1.506 ops/s
+Iteration   6: 1.517 ops/s
+Iteration   7: 1.517 ops/s
+Iteration   8: 1.512 ops/s
+Iteration   9: 1.446 ops/s
+Iteration  10: 1.489 ops/s
+
+# Run progress: 34.00% complete, ETA 00:19:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 1.384 ops/s
+# Warmup Iteration   2: 1.417 ops/s
+# Warmup Iteration   3: 1.498 ops/s
+# Warmup Iteration   4: 1.358 ops/s
+# Warmup Iteration   5: 1.521 ops/s
+# Warmup Iteration   6: 1.516 ops/s
+# Warmup Iteration   7: 1.411 ops/s
+# Warmup Iteration   8: 1.297 ops/s
+# Warmup Iteration   9: 1.519 ops/s
+# Warmup Iteration  10: 1.515 ops/s
+# Warmup Iteration  11: 1.513 ops/s
+# Warmup Iteration  12: 1.514 ops/s
+# Warmup Iteration  13: 1.517 ops/s
+# Warmup Iteration  14: 1.363 ops/s
+# Warmup Iteration  15: 1.299 ops/s
+# Warmup Iteration  16: 1.517 ops/s
+# Warmup Iteration  17: 1.455 ops/s
+# Warmup Iteration  18: 1.486 ops/s
+# Warmup Iteration  19: 1.520 ops/s
+# Warmup Iteration  20: 1.514 ops/s
+Iteration   1: 1.517 ops/s
+Iteration   2: 1.429 ops/s
+Iteration   3: 1.518 ops/s
+Iteration   4: 1.515 ops/s
+Iteration   5: 1.512 ops/s
+Iteration   6: 1.523 ops/s
+Iteration   7: 1.518 ops/s
+Iteration   8: 1.514 ops/s
+Iteration   9: 1.519 ops/s
+Iteration  10: 1.516 ops/s
+
+# Run progress: 36.00% complete, ETA 00:18:37
+# Fork: 4 of 5
+# Warmup Iteration   1: 1.268 ops/s
+# Warmup Iteration   2: 1.420 ops/s
+# Warmup Iteration   3: 1.496 ops/s
+# Warmup Iteration   4: 1.354 ops/s
+# Warmup Iteration   5: 1.516 ops/s
+# Warmup Iteration   6: 1.508 ops/s
+# Warmup Iteration   7: 1.404 ops/s
+# Warmup Iteration   8: 1.298 ops/s
+# Warmup Iteration   9: 1.508 ops/s
+# Warmup Iteration  10: 1.512 ops/s
+# Warmup Iteration  11: 1.332 ops/s
+# Warmup Iteration  12: 1.497 ops/s
+# Warmup Iteration  13: 1.432 ops/s
+# Warmup Iteration  14: 1.269 ops/s
+# Warmup Iteration  15: 1.335 ops/s
+# Warmup Iteration  16: 1.509 ops/s
+# Warmup Iteration  17: 1.509 ops/s
+# Warmup Iteration  18: 1.498 ops/s
+# Warmup Iteration  19: 1.376 ops/s
+# Warmup Iteration  20: 1.508 ops/s
+Iteration   1: 1.509 ops/s
+Iteration   2: 1.439 ops/s
+Iteration   3: 1.515 ops/s
+Iteration   4: 1.513 ops/s
+Iteration   5: 1.499 ops/s
+Iteration   6: 1.509 ops/s
+Iteration   7: 1.510 ops/s
+Iteration   8: 1.509 ops/s
+Iteration   9: 1.508 ops/s
+Iteration  10: 1.505 ops/s
+
+# Run progress: 38.00% complete, ETA 00:18:14
+# Fork: 5 of 5
+# Warmup Iteration   1: 1.258 ops/s
+# Warmup Iteration   2: 1.412 ops/s
+# Warmup Iteration   3: 1.491 ops/s
+# Warmup Iteration   4: 1.207 ops/s
+# Warmup Iteration   5: 1.493 ops/s
+# Warmup Iteration   6: 1.506 ops/s
+# Warmup Iteration   7: 1.399 ops/s
+# Warmup Iteration   8: 1.300 ops/s
+# Warmup Iteration   9: 1.507 ops/s
+# Warmup Iteration  10: 1.509 ops/s
+# Warmup Iteration  11: 1.502 ops/s
+# Warmup Iteration  12: 1.509 ops/s
+# Warmup Iteration  13: 1.512 ops/s
+# Warmup Iteration  14: 1.384 ops/s
+# Warmup Iteration  15: 1.412 ops/s
+# Warmup Iteration  16: 1.508 ops/s
+# Warmup Iteration  17: 1.505 ops/s
+# Warmup Iteration  18: 1.498 ops/s
+# Warmup Iteration  19: 1.505 ops/s
+# Warmup Iteration  20: 1.510 ops/s
+Iteration   1: 1.509 ops/s
+Iteration   2: 1.510 ops/s
+Iteration   3: 1.507 ops/s
+Iteration   4: 1.511 ops/s
+Iteration   5: 1.500 ops/s
+Iteration   6: 1.517 ops/s
+Iteration   7: 1.507 ops/s
+Iteration   8: 1.510 ops/s
+Iteration   9: 1.513 ops/s
+Iteration  10: 1.507 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  1.503 ±(99.9%) 0.012 ops/s [Average]
+  (min, avg, max) = (1.429, 1.503, 1.523), stdev = 0.024
+  CI (99.9%): [1.491, 1.515] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = true, mapSizeDividedBy16000 = 100000)
+
+# Run progress: 40.00% complete, ETA 00:17:48
+# Fork: 1 of 5
+# Warmup Iteration   1: 1.499 ops/s
+# Warmup Iteration   2: 1.532 ops/s
+# Warmup Iteration   3: 1.542 ops/s
+# Warmup Iteration   4: 1.615 ops/s
+# Warmup Iteration   5: 1.658 ops/s
+# Warmup Iteration   6: 1.562 ops/s
+# Warmup Iteration   7: 1.672 ops/s
+# Warmup Iteration   8: 1.587 ops/s
+# Warmup Iteration   9: 1.671 ops/s
+# Warmup Iteration  10: 1.634 ops/s
+# Warmup Iteration  11: 1.421 ops/s
+# Warmup Iteration  12: 1.671 ops/s
+# Warmup Iteration  13: 1.667 ops/s
+# Warmup Iteration  14: 1.535 ops/s
+# Warmup Iteration  15: 1.507 ops/s
+# Warmup Iteration  16: 1.673 ops/s
+# Warmup Iteration  17: 1.657 ops/s
+# Warmup Iteration  18: 1.606 ops/s
+# Warmup Iteration  19: 1.520 ops/s
+# Warmup Iteration  20: 1.652 ops/s
+Iteration   1: 1.663 ops/s
+Iteration   2: 1.673 ops/s
+Iteration   3: 1.670 ops/s
+Iteration   4: 1.577 ops/s
+Iteration   5: 1.657 ops/s
+Iteration   6: 1.658 ops/s
+Iteration   7: 1.634 ops/s
+Iteration   8: 1.610 ops/s
+Iteration   9: 1.527 ops/s
+Iteration  10: 1.573 ops/s
+
+# Run progress: 42.00% complete, ETA 00:17:17
+# Fork: 2 of 5
+# Warmup Iteration   1: 1.505 ops/s
+# Warmup Iteration   2: 1.542 ops/s
+# Warmup Iteration   3: 1.539 ops/s
+# Warmup Iteration   4: 1.546 ops/s
+# Warmup Iteration   5: 1.658 ops/s
+# Warmup Iteration   6: 1.513 ops/s
+# Warmup Iteration   7: 1.306 ops/s
+# Warmup Iteration   8: 1.295 ops/s
+# Warmup Iteration   9: 1.674 ops/s
+# Warmup Iteration  10: 1.648 ops/s
+# Warmup Iteration  11: 1.529 ops/s
+# Warmup Iteration  12: 1.561 ops/s
+# Warmup Iteration  13: 1.670 ops/s
+# Warmup Iteration  14: 1.668 ops/s
+# Warmup Iteration  15: 1.610 ops/s
+# Warmup Iteration  16: 1.633 ops/s
+# Warmup Iteration  17: 1.018 ops/s
+# Warmup Iteration  18: 1.298 ops/s
+# Warmup Iteration  19: 1.558 ops/s
+# Warmup Iteration  20: 1.567 ops/s
+Iteration   1: 1.672 ops/s
+Iteration   2: 1.649 ops/s
+Iteration   3: 1.665 ops/s
+Iteration   4: 1.667 ops/s
+Iteration   5: 1.506 ops/s
+Iteration   6: 1.534 ops/s
+Iteration   7: 1.476 ops/s
+Iteration   8: 1.604 ops/s
+Iteration   9: 1.625 ops/s
+Iteration  10: 1.519 ops/s
+
+# Run progress: 44.00% complete, ETA 00:16:48
+# Fork: 3 of 5
+# Warmup Iteration   1: 1.514 ops/s
+# Warmup Iteration   2: 1.502 ops/s
+# Warmup Iteration   3: 1.544 ops/s
+# Warmup Iteration   4: 1.618 ops/s
+# Warmup Iteration   5: 1.662 ops/s
+# Warmup Iteration   6: 1.512 ops/s
+# Warmup Iteration   7: 1.675 ops/s
+# Warmup Iteration   8: 1.605 ops/s
+# Warmup Iteration   9: 1.674 ops/s
+# Warmup Iteration  10: 1.650 ops/s
+# Warmup Iteration  11: 1.525 ops/s
+# Warmup Iteration  12: 1.427 ops/s
+# Warmup Iteration  13: 1.038 ops/s
+# Warmup Iteration  14: 1.235 ops/s
+# Warmup Iteration  15: 1.602 ops/s
+# Warmup Iteration  16: 1.671 ops/s
+# Warmup Iteration  17: 1.664 ops/s
+# Warmup Iteration  18: 1.675 ops/s
+# Warmup Iteration  19: 1.585 ops/s
+# Warmup Iteration  20: 1.521 ops/s
+Iteration   1: 1.672 ops/s
+Iteration   2: 1.661 ops/s
+Iteration   3: 1.673 ops/s
+Iteration   4: 1.674 ops/s
+Iteration   5: 1.614 ops/s
+Iteration   6: 1.457 ops/s
+Iteration   7: 1.656 ops/s
+Iteration   8: 1.657 ops/s
+Iteration   9: 1.595 ops/s
+Iteration  10: 1.459 ops/s
+
+# Run progress: 46.00% complete, ETA 00:16:18
+# Fork: 4 of 5
+# Warmup Iteration   1: 1.495 ops/s
+# Warmup Iteration   2: 1.548 ops/s
+# Warmup Iteration   3: 1.541 ops/s
+# Warmup Iteration   4: 1.617 ops/s
+# Warmup Iteration   5: 1.657 ops/s
+# Warmup Iteration   6: 1.539 ops/s
+# Warmup Iteration   7: 1.675 ops/s
+# Warmup Iteration   8: 1.596 ops/s
+# Warmup Iteration   9: 1.674 ops/s
+# Warmup Iteration  10: 1.637 ops/s
+# Warmup Iteration  11: 1.423 ops/s
+# Warmup Iteration  12: 1.663 ops/s
+# Warmup Iteration  13: 1.664 ops/s
+# Warmup Iteration  14: 1.675 ops/s
+# Warmup Iteration  15: 1.625 ops/s
+# Warmup Iteration  16: 1.657 ops/s
+# Warmup Iteration  17: 1.662 ops/s
+# Warmup Iteration  18: 1.547 ops/s
+# Warmup Iteration  19: 1.460 ops/s
+# Warmup Iteration  20: 1.672 ops/s
+Iteration   1: 1.667 ops/s
+Iteration   2: 1.670 ops/s
+Iteration   3: 1.665 ops/s
+Iteration   4: 1.640 ops/s
+Iteration   5: 1.665 ops/s
+Iteration   6: 1.668 ops/s
+Iteration   7: 1.667 ops/s
+Iteration   8: 1.671 ops/s
+Iteration   9: 1.568 ops/s
+Iteration  10: 1.539 ops/s
+
+# Run progress: 48.00% complete, ETA 00:15:45
+# Fork: 5 of 5
+# Warmup Iteration   1: 1.560 ops/s
+# Warmup Iteration   2: 1.534 ops/s
+# Warmup Iteration   3: 1.560 ops/s
+# Warmup Iteration   4: 1.642 ops/s
+# Warmup Iteration   5: 1.676 ops/s
+# Warmup Iteration   6: 1.556 ops/s
+# Warmup Iteration   7: 1.697 ops/s
+# Warmup Iteration   8: 1.572 ops/s
+# Warmup Iteration   9: 1.695 ops/s
+# Warmup Iteration  10: 1.676 ops/s
+# Warmup Iteration  11: 1.541 ops/s
+# Warmup Iteration  12: 1.618 ops/s
+# Warmup Iteration  13: 1.684 ops/s
+# Warmup Iteration  14: 1.689 ops/s
+# Warmup Iteration  15: 1.646 ops/s
+# Warmup Iteration  16: 1.693 ops/s
+# Warmup Iteration  17: 1.691 ops/s
+# Warmup Iteration  18: 1.687 ops/s
+# Warmup Iteration  19: 1.569 ops/s
+# Warmup Iteration  20: 1.583 ops/s
+Iteration   1: 1.689 ops/s
+Iteration   2: 1.685 ops/s
+Iteration   3: 1.690 ops/s
+Iteration   4: 1.533 ops/s
+Iteration   5: 1.698 ops/s
+Iteration   6: 1.690 ops/s
+Iteration   7: 1.594 ops/s
+Iteration   8: 1.499 ops/s
+Iteration   9: 1.542 ops/s
+Iteration  10: 1.547 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  1.617 ±(99.9%) 0.034 ops/s [Average]
+  (min, avg, max) = (1.457, 1.617, 1.698), stdev = 0.069
+  CI (99.9%): [1.583, 1.651] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = false, mapSizeDividedBy16000 = 1)
+
+# Run progress: 50.00% complete, ETA 00:15:11
+# Fork: 1 of 5
+# Warmup Iteration   1: 2.923 ops/s
+# Warmup Iteration   2: 3.167 ops/s
+# Warmup Iteration   3: 3.203 ops/s
+# Warmup Iteration   4: 3.199 ops/s
+# Warmup Iteration   5: 3.192 ops/s
+# Warmup Iteration   6: 3.200 ops/s
+# Warmup Iteration   7: 3.190 ops/s
+# Warmup Iteration   8: 3.195 ops/s
+# Warmup Iteration   9: 3.199 ops/s
+# Warmup Iteration  10: 3.190 ops/s
+# Warmup Iteration  11: 3.193 ops/s
+# Warmup Iteration  12: 3.192 ops/s
+# Warmup Iteration  13: 3.196 ops/s
+# Warmup Iteration  14: 3.193 ops/s
+# Warmup Iteration  15: 3.199 ops/s
+# Warmup Iteration  16: 3.195 ops/s
+# Warmup Iteration  17: 3.196 ops/s
+# Warmup Iteration  18: 3.190 ops/s
+# Warmup Iteration  19: 3.194 ops/s
+# Warmup Iteration  20: 3.199 ops/s
+Iteration   1: 3.200 ops/s
+Iteration   2: 3.192 ops/s
+Iteration   3: 3.198 ops/s
+Iteration   4: 3.196 ops/s
+Iteration   5: 3.165 ops/s
+Iteration   6: 3.195 ops/s
+Iteration   7: 3.187 ops/s
+Iteration   8: 3.205 ops/s
+Iteration   9: 3.197 ops/s
+Iteration  10: 3.191 ops/s
+
+# Run progress: 52.00% complete, ETA 00:14:35
+# Fork: 2 of 5
+# Warmup Iteration   1: 2.905 ops/s
+# Warmup Iteration   2: 3.155 ops/s
+# Warmup Iteration   3: 3.198 ops/s
+# Warmup Iteration   4: 3.185 ops/s
+# Warmup Iteration   5: 3.179 ops/s
+# Warmup Iteration   6: 3.171 ops/s
+# Warmup Iteration   7: 3.186 ops/s
+# Warmup Iteration   8: 3.183 ops/s
+# Warmup Iteration   9: 3.179 ops/s
+# Warmup Iteration  10: 3.185 ops/s
+# Warmup Iteration  11: 3.177 ops/s
+# Warmup Iteration  12: 3.184 ops/s
+# Warmup Iteration  13: 3.185 ops/s
+# Warmup Iteration  14: 3.185 ops/s
+# Warmup Iteration  15: 3.183 ops/s
+# Warmup Iteration  16: 3.184 ops/s
+# Warmup Iteration  17: 3.187 ops/s
+# Warmup Iteration  18: 3.184 ops/s
+# Warmup Iteration  19: 3.186 ops/s
+# Warmup Iteration  20: 3.183 ops/s
+Iteration   1: 3.179 ops/s
+Iteration   2: 3.151 ops/s
+Iteration   3: 3.163 ops/s
+Iteration   4: 3.177 ops/s
+Iteration   5: 3.190 ops/s
+Iteration   6: 3.184 ops/s
+Iteration   7: 3.181 ops/s
+Iteration   8: 3.183 ops/s
+Iteration   9: 3.185 ops/s
+Iteration  10: 3.180 ops/s
+
+# Run progress: 54.00% complete, ETA 00:14:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 3.167 ops/s
+# Warmup Iteration   2: 3.448 ops/s
+# Warmup Iteration   3: 3.449 ops/s
+# Warmup Iteration   4: 3.434 ops/s
+# Warmup Iteration   5: 3.449 ops/s
+# Warmup Iteration   6: 3.442 ops/s
+# Warmup Iteration   7: 3.434 ops/s
+# Warmup Iteration   8: 3.438 ops/s
+# Warmup Iteration   9: 3.437 ops/s
+# Warmup Iteration  10: 3.437 ops/s
+# Warmup Iteration  11: 3.448 ops/s
+# Warmup Iteration  12: 3.436 ops/s
+# Warmup Iteration  13: 3.437 ops/s
+# Warmup Iteration  14: 3.434 ops/s
+# Warmup Iteration  15: 3.443 ops/s
+# Warmup Iteration  16: 3.436 ops/s
+# Warmup Iteration  17: 3.432 ops/s
+# Warmup Iteration  18: 3.437 ops/s
+# Warmup Iteration  19: 3.441 ops/s
+# Warmup Iteration  20: 3.414 ops/s
+Iteration   1: 3.416 ops/s
+Iteration   2: 3.436 ops/s
+Iteration   3: 3.432 ops/s
+Iteration   4: 3.430 ops/s
+Iteration   5: 3.424 ops/s
+Iteration   6: 3.392 ops/s
+Iteration   7: 3.435 ops/s
+Iteration   8: 3.433 ops/s
+Iteration   9: 3.438 ops/s
+Iteration  10: 3.430 ops/s
+
+# Run progress: 56.00% complete, ETA 00:13:22
+# Fork: 4 of 5
+# Warmup Iteration   1: 2.578 ops/s
+# Warmup Iteration   2: 3.154 ops/s
+# Warmup Iteration   3: 3.161 ops/s
+# Warmup Iteration   4: 3.131 ops/s
+# Warmup Iteration   5: 3.162 ops/s
+# Warmup Iteration   6: 3.155 ops/s
+# Warmup Iteration   7: 3.160 ops/s
+# Warmup Iteration   8: 3.158 ops/s
+# Warmup Iteration   9: 3.159 ops/s
+# Warmup Iteration  10: 3.154 ops/s
+# Warmup Iteration  11: 3.167 ops/s
+# Warmup Iteration  12: 3.142 ops/s
+# Warmup Iteration  13: 3.156 ops/s
+# Warmup Iteration  14: 3.162 ops/s
+# Warmup Iteration  15: 3.162 ops/s
+# Warmup Iteration  16: 3.161 ops/s
+# Warmup Iteration  17: 3.158 ops/s
+# Warmup Iteration  18: 3.160 ops/s
+# Warmup Iteration  19: 3.167 ops/s
+# Warmup Iteration  20: 3.168 ops/s
+Iteration   1: 3.166 ops/s
+Iteration   2: 3.167 ops/s
+Iteration   3: 3.158 ops/s
+Iteration   4: 3.167 ops/s
+Iteration   5: 3.163 ops/s
+Iteration   6: 3.158 ops/s
+Iteration   7: 3.155 ops/s
+Iteration   8: 3.163 ops/s
+Iteration   9: 3.159 ops/s
+Iteration  10: 3.165 ops/s
+
+# Run progress: 58.00% complete, ETA 00:12:47
+# Fork: 5 of 5
+# Warmup Iteration   1: 2.906 ops/s
+# Warmup Iteration   2: 3.153 ops/s
+# Warmup Iteration   3: 3.191 ops/s
+# Warmup Iteration   4: 3.185 ops/s
+# Warmup Iteration   5: 3.177 ops/s
+# Warmup Iteration   6: 3.178 ops/s
+# Warmup Iteration   7: 3.178 ops/s
+# Warmup Iteration   8: 3.178 ops/s
+# Warmup Iteration   9: 3.158 ops/s
+# Warmup Iteration  10: 3.179 ops/s
+# Warmup Iteration  11: 3.178 ops/s
+# Warmup Iteration  12: 3.179 ops/s
+# Warmup Iteration  13: 3.177 ops/s
+# Warmup Iteration  14: 3.156 ops/s
+# Warmup Iteration  15: 3.180 ops/s
+# Warmup Iteration  16: 3.166 ops/s
+# Warmup Iteration  17: 3.156 ops/s
+# Warmup Iteration  18: 3.173 ops/s
+# Warmup Iteration  19: 3.183 ops/s
+# Warmup Iteration  20: 3.156 ops/s
+Iteration   1: 3.142 ops/s
+Iteration   2: 3.173 ops/s
+Iteration   3: 3.161 ops/s
+Iteration   4: 3.181 ops/s
+Iteration   5: 3.177 ops/s
+Iteration   6: 3.177 ops/s
+Iteration   7: 3.190 ops/s
+Iteration   8: 3.182 ops/s
+Iteration   9: 3.147 ops/s
+Iteration  10: 3.182 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  3.226 ±(99.9%) 0.051 ops/s [Average]
+  (min, avg, max) = (3.142, 3.226, 3.438), stdev = 0.102
+  CI (99.9%): [3.175, 3.277] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = false, mapSizeDividedBy16000 = 10)
+
+# Run progress: 60.00% complete, ETA 00:12:12
+# Fork: 1 of 5
+# Warmup Iteration   1: 1.910 ops/s
+# Warmup Iteration   2: 2.172 ops/s
+# Warmup Iteration   3: 2.171 ops/s
+# Warmup Iteration   4: 2.190 ops/s
+# Warmup Iteration   5: 2.199 ops/s
+# Warmup Iteration   6: 2.194 ops/s
+# Warmup Iteration   7: 2.181 ops/s
+# Warmup Iteration   8: 2.189 ops/s
+# Warmup Iteration   9: 2.194 ops/s
+# Warmup Iteration  10: 2.189 ops/s
+# Warmup Iteration  11: 2.191 ops/s
+# Warmup Iteration  12: 2.177 ops/s
+# Warmup Iteration  13: 2.172 ops/s
+# Warmup Iteration  14: 2.168 ops/s
+# Warmup Iteration  15: 2.187 ops/s
+# Warmup Iteration  16: 2.193 ops/s
+# Warmup Iteration  17: 2.191 ops/s
+# Warmup Iteration  18: 2.188 ops/s
+# Warmup Iteration  19: 2.189 ops/s
+# Warmup Iteration  20: 2.187 ops/s
+Iteration   1: 2.191 ops/s
+Iteration   2: 2.189 ops/s
+Iteration   3: 2.191 ops/s
+Iteration   4: 2.169 ops/s
+Iteration   5: 2.186 ops/s
+Iteration   6: 2.187 ops/s
+Iteration   7: 2.188 ops/s
+Iteration   8: 2.188 ops/s
+Iteration   9: 2.187 ops/s
+Iteration  10: 2.190 ops/s
+
+# Run progress: 62.00% complete, ETA 00:11:38
+# Fork: 2 of 5
+# Warmup Iteration   1: 1.928 ops/s
+# Warmup Iteration   2: 2.189 ops/s
+# Warmup Iteration   3: 2.210 ops/s
+# Warmup Iteration   4: 2.209 ops/s
+# Warmup Iteration   5: 2.190 ops/s
+# Warmup Iteration   6: 2.197 ops/s
+# Warmup Iteration   7: 2.192 ops/s
+# Warmup Iteration   8: 2.193 ops/s
+# Warmup Iteration   9: 2.190 ops/s
+# Warmup Iteration  10: 2.196 ops/s
+# Warmup Iteration  11: 2.191 ops/s
+# Warmup Iteration  12: 2.194 ops/s
+# Warmup Iteration  13: 2.191 ops/s
+# Warmup Iteration  14: 2.192 ops/s
+# Warmup Iteration  15: 2.191 ops/s
+# Warmup Iteration  16: 2.191 ops/s
+# Warmup Iteration  17: 2.190 ops/s
+# Warmup Iteration  18: 2.194 ops/s
+# Warmup Iteration  19: 2.189 ops/s
+# Warmup Iteration  20: 2.193 ops/s
+Iteration   1: 2.175 ops/s
+Iteration   2: 2.194 ops/s
+Iteration   3: 2.190 ops/s
+Iteration   4: 2.190 ops/s
+Iteration   5: 2.194 ops/s
+Iteration   6: 2.190 ops/s
+Iteration   7: 2.190 ops/s
+Iteration   8: 2.194 ops/s
+Iteration   9: 2.195 ops/s
+Iteration  10: 2.196 ops/s
+
+# Run progress: 64.00% complete, ETA 00:11:03
+# Fork: 3 of 5
+# Warmup Iteration   1: 2.048 ops/s
+# Warmup Iteration   2: 2.077 ops/s
+# Warmup Iteration   3: 2.197 ops/s
+# Warmup Iteration   4: 2.194 ops/s
+# Warmup Iteration   5: 2.194 ops/s
+# Warmup Iteration   6: 2.186 ops/s
+# Warmup Iteration   7: 2.185 ops/s
+# Warmup Iteration   8: 2.177 ops/s
+# Warmup Iteration   9: 2.183 ops/s
+# Warmup Iteration  10: 2.185 ops/s
+# Warmup Iteration  11: 2.181 ops/s
+# Warmup Iteration  12: 2.177 ops/s
+# Warmup Iteration  13: 2.183 ops/s
+# Warmup Iteration  14: 2.186 ops/s
+# Warmup Iteration  15: 2.181 ops/s
+# Warmup Iteration  16: 2.184 ops/s
+# Warmup Iteration  17: 2.162 ops/s
+# Warmup Iteration  18: 2.180 ops/s
+# Warmup Iteration  19: 2.179 ops/s
+# Warmup Iteration  20: 2.184 ops/s
+Iteration   1: 2.178 ops/s
+Iteration   2: 2.183 ops/s
+Iteration   3: 2.165 ops/s
+Iteration   4: 2.183 ops/s
+Iteration   5: 2.178 ops/s
+Iteration   6: 2.187 ops/s
+Iteration   7: 2.176 ops/s
+Iteration   8: 2.165 ops/s
+Iteration   9: 2.184 ops/s
+Iteration  10: 2.184 ops/s
+
+# Run progress: 66.00% complete, ETA 00:10:29
+# Fork: 4 of 5
+# Warmup Iteration   1: 1.993 ops/s
+# Warmup Iteration   2: 2.211 ops/s
+# Warmup Iteration   3: 2.211 ops/s
+# Warmup Iteration   4: 2.209 ops/s
+# Warmup Iteration   5: 2.204 ops/s
+# Warmup Iteration   6: 2.201 ops/s
+# Warmup Iteration   7: 2.182 ops/s
+# Warmup Iteration   8: 2.192 ops/s
+# Warmup Iteration   9: 2.168 ops/s
+# Warmup Iteration  10: 2.196 ops/s
+# Warmup Iteration  11: 2.194 ops/s
+# Warmup Iteration  12: 2.198 ops/s
+# Warmup Iteration  13: 2.205 ops/s
+# Warmup Iteration  14: 2.185 ops/s
+# Warmup Iteration  15: 2.174 ops/s
+# Warmup Iteration  16: 2.197 ops/s
+# Warmup Iteration  17: 2.193 ops/s
+# Warmup Iteration  18: 2.199 ops/s
+# Warmup Iteration  19: 2.202 ops/s
+# Warmup Iteration  20: 2.200 ops/s
+Iteration   1: 2.205 ops/s
+Iteration   2: 2.200 ops/s
+Iteration   3: 2.201 ops/s
+Iteration   4: 2.202 ops/s
+Iteration   5: 2.173 ops/s
+Iteration   6: 2.194 ops/s
+Iteration   7: 2.197 ops/s
+Iteration   8: 2.195 ops/s
+Iteration   9: 2.194 ops/s
+Iteration  10: 2.197 ops/s
+
+# Run progress: 68.00% complete, ETA 00:09:54
+# Fork: 5 of 5
+# Warmup Iteration   1: 2.060 ops/s
+# Warmup Iteration   2: 2.192 ops/s
+# Warmup Iteration   3: 2.185 ops/s
+# Warmup Iteration   4: 2.209 ops/s
+# Warmup Iteration   5: 2.188 ops/s
+# Warmup Iteration   6: 2.202 ops/s
+# Warmup Iteration   7: 2.197 ops/s
+# Warmup Iteration   8: 2.199 ops/s
+# Warmup Iteration   9: 2.200 ops/s
+# Warmup Iteration  10: 2.207 ops/s
+# Warmup Iteration  11: 2.201 ops/s
+# Warmup Iteration  12: 2.201 ops/s
+# Warmup Iteration  13: 2.197 ops/s
+# Warmup Iteration  14: 2.202 ops/s
+# Warmup Iteration  15: 2.201 ops/s
+# Warmup Iteration  16: 2.200 ops/s
+# Warmup Iteration  17: 2.199 ops/s
+# Warmup Iteration  18: 2.200 ops/s
+# Warmup Iteration  19: 2.202 ops/s
+# Warmup Iteration  20: 2.201 ops/s
+Iteration   1: 2.205 ops/s
+Iteration   2: 2.198 ops/s
+Iteration   3: 2.200 ops/s
+Iteration   4: 2.200 ops/s
+Iteration   5: 2.199 ops/s
+Iteration   6: 2.200 ops/s
+Iteration   7: 2.197 ops/s
+Iteration   8: 2.195 ops/s
+Iteration   9: 2.200 ops/s
+Iteration  10: 2.197 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  2.190 ±(99.9%) 0.005 ops/s [Average]
+  (min, avg, max) = (2.165, 2.190, 2.205), stdev = 0.010
+  CI (99.9%): [2.185, 2.195] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = false, mapSizeDividedBy16000 = 100)
+
+# Run progress: 70.00% complete, ETA 00:09:19
+# Fork: 1 of 5
+# Warmup Iteration   1: 1.797 ops/s
+# Warmup Iteration   2: 1.921 ops/s
+# Warmup Iteration   3: 1.929 ops/s
+# Warmup Iteration   4: 1.933 ops/s
+# Warmup Iteration   5: 1.918 ops/s
+# Warmup Iteration   6: 1.898 ops/s
+# Warmup Iteration   7: 1.921 ops/s
+# Warmup Iteration   8: 1.928 ops/s
+# Warmup Iteration   9: 1.926 ops/s
+# Warmup Iteration  10: 1.925 ops/s
+# Warmup Iteration  11: 1.908 ops/s
+# Warmup Iteration  12: 1.925 ops/s
+# Warmup Iteration  13: 1.924 ops/s
+# Warmup Iteration  14: 1.928 ops/s
+# Warmup Iteration  15: 1.929 ops/s
+# Warmup Iteration  16: 1.931 ops/s
+# Warmup Iteration  17: 1.924 ops/s
+# Warmup Iteration  18: 1.927 ops/s
+# Warmup Iteration  19: 1.934 ops/s
+# Warmup Iteration  20: 1.929 ops/s
+Iteration   1: 1.913 ops/s
+Iteration   2: 1.910 ops/s
+Iteration   3: 1.920 ops/s
+Iteration   4: 1.910 ops/s
+Iteration   5: 1.921 ops/s
+Iteration   6: 1.911 ops/s
+Iteration   7: 1.922 ops/s
+Iteration   8: 1.920 ops/s
+Iteration   9: 1.921 ops/s
+Iteration  10: 1.923 ops/s
+
+# Run progress: 72.00% complete, ETA 00:08:39
+# Fork: 2 of 5
+# Warmup Iteration   1: 1.806 ops/s
+# Warmup Iteration   2: 1.920 ops/s
+# Warmup Iteration   3: 1.918 ops/s
+# Warmup Iteration   4: 1.934 ops/s
+# Warmup Iteration   5: 1.929 ops/s
+# Warmup Iteration   6: 1.924 ops/s
+# Warmup Iteration   7: 1.922 ops/s
+# Warmup Iteration   8: 1.923 ops/s
+# Warmup Iteration   9: 1.929 ops/s
+# Warmup Iteration  10: 1.926 ops/s
+# Warmup Iteration  11: 1.925 ops/s
+# Warmup Iteration  12: 1.912 ops/s
+# Warmup Iteration  13: 1.923 ops/s
+# Warmup Iteration  14: 1.926 ops/s
+# Warmup Iteration  15: 1.930 ops/s
+# Warmup Iteration  16: 1.925 ops/s
+# Warmup Iteration  17: 1.926 ops/s
+# Warmup Iteration  18: 1.927 ops/s
+# Warmup Iteration  19: 1.910 ops/s
+# Warmup Iteration  20: 1.928 ops/s
+Iteration   1: 1.927 ops/s
+Iteration   2: 1.924 ops/s
+Iteration   3: 1.926 ops/s
+Iteration   4: 1.935 ops/s
+Iteration   5: 1.929 ops/s
+Iteration   6: 1.925 ops/s
+Iteration   7: 1.926 ops/s
+Iteration   8: 1.923 ops/s
+Iteration   9: 1.926 ops/s
+Iteration  10: 1.927 ops/s
+
+# Run progress: 74.00% complete, ETA 00:08:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 1.865 ops/s
+# Warmup Iteration   2: 2.000 ops/s
+# Warmup Iteration   3: 1.994 ops/s
+# Warmup Iteration   4: 2.006 ops/s
+# Warmup Iteration   5: 1.984 ops/s
+# Warmup Iteration   6: 2.001 ops/s
+# Warmup Iteration   7: 2.004 ops/s
+# Warmup Iteration   8: 1.987 ops/s
+# Warmup Iteration   9: 1.996 ops/s
+# Warmup Iteration  10: 1.998 ops/s
+# Warmup Iteration  11: 2.002 ops/s
+# Warmup Iteration  12: 2.004 ops/s
+# Warmup Iteration  13: 1.999 ops/s
+# Warmup Iteration  14: 1.996 ops/s
+# Warmup Iteration  15: 2.002 ops/s
+# Warmup Iteration  16: 1.997 ops/s
+# Warmup Iteration  17: 2.002 ops/s
+# Warmup Iteration  18: 1.999 ops/s
+# Warmup Iteration  19: 1.996 ops/s
+# Warmup Iteration  20: 2.000 ops/s
+Iteration   1: 1.994 ops/s
+Iteration   2: 1.998 ops/s
+Iteration   3: 1.999 ops/s
+Iteration   4: 2.000 ops/s
+Iteration   5: 1.997 ops/s
+Iteration   6: 1.999 ops/s
+Iteration   7: 1.997 ops/s
+Iteration   8: 2.001 ops/s
+Iteration   9: 1.981 ops/s
+Iteration  10: 1.996 ops/s
+
+# Run progress: 76.00% complete, ETA 00:07:23
+# Fork: 4 of 5
+# Warmup Iteration   1: 1.874 ops/s
+# Warmup Iteration   2: 1.994 ops/s
+# Warmup Iteration   3: 2.016 ops/s
+# Warmup Iteration   4: 2.010 ops/s
+# Warmup Iteration   5: 2.010 ops/s
+# Warmup Iteration   6: 2.006 ops/s
+# Warmup Iteration   7: 2.006 ops/s
+# Warmup Iteration   8: 2.010 ops/s
+# Warmup Iteration   9: 2.010 ops/s
+# Warmup Iteration  10: 2.002 ops/s
+# Warmup Iteration  11: 1.996 ops/s
+# Warmup Iteration  12: 2.005 ops/s
+# Warmup Iteration  13: 1.999 ops/s
+# Warmup Iteration  14: 2.005 ops/s
+# Warmup Iteration  15: 1.998 ops/s
+# Warmup Iteration  16: 1.982 ops/s
+# Warmup Iteration  17: 1.995 ops/s
+# Warmup Iteration  18: 2.007 ops/s
+# Warmup Iteration  19: 2.008 ops/s
+# Warmup Iteration  20: 2.009 ops/s
+Iteration   1: 2.006 ops/s
+Iteration   2: 2.006 ops/s
+Iteration   3: 2.006 ops/s
+Iteration   4: 2.008 ops/s
+Iteration   5: 2.006 ops/s
+Iteration   6: 2.004 ops/s
+Iteration   7: 2.007 ops/s
+Iteration   8: 2.005 ops/s
+Iteration   9: 2.004 ops/s
+Iteration  10: 2.006 ops/s
+
+# Run progress: 78.00% complete, ETA 00:06:48
+# Fork: 5 of 5
+# Warmup Iteration   1: 1.804 ops/s
+# Warmup Iteration   2: 1.921 ops/s
+# Warmup Iteration   3: 1.935 ops/s
+# Warmup Iteration   4: 1.934 ops/s
+# Warmup Iteration   5: 1.927 ops/s
+# Warmup Iteration   6: 1.926 ops/s
+# Warmup Iteration   7: 1.924 ops/s
+# Warmup Iteration   8: 1.926 ops/s
+# Warmup Iteration   9: 1.921 ops/s
+# Warmup Iteration  10: 1.926 ops/s
+# Warmup Iteration  11: 1.925 ops/s
+# Warmup Iteration  12: 1.921 ops/s
+# Warmup Iteration  13: 1.928 ops/s
+# Warmup Iteration  14: 1.924 ops/s
+# Warmup Iteration  15: 1.922 ops/s
+# Warmup Iteration  16: 1.920 ops/s
+# Warmup Iteration  17: 1.924 ops/s
+# Warmup Iteration  18: 1.924 ops/s
+# Warmup Iteration  19: 1.924 ops/s
+# Warmup Iteration  20: 1.925 ops/s
+Iteration   1: 1.921 ops/s
+Iteration   2: 1.928 ops/s
+Iteration   3: 1.922 ops/s
+Iteration   4: 1.916 ops/s
+Iteration   5: 1.920 ops/s
+Iteration   6: 1.932 ops/s
+Iteration   7: 1.925 ops/s
+Iteration   8: 1.930 ops/s
+Iteration   9: 1.927 ops/s
+Iteration  10: 1.927 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  1.954 ±(99.9%) 0.019 ops/s [Average]
+  (min, avg, max) = (1.910, 1.954, 2.008), stdev = 0.039
+  CI (99.9%): [1.935, 1.974] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = false, mapSizeDividedBy16000 = 10000)
+
+# Run progress: 80.00% complete, ETA 00:06:09
+# Fork: 1 of 5
+# Warmup Iteration   1: 0.913 ops/s
+# Warmup Iteration   2: 0.912 ops/s
+# Warmup Iteration   3: 0.946 ops/s
+# Warmup Iteration   4: 0.918 ops/s
+# Warmup Iteration   5: 0.953 ops/s
+# Warmup Iteration   6: 0.972 ops/s
+# Warmup Iteration   7: 0.894 ops/s
+# Warmup Iteration   8: 0.900 ops/s
+# Warmup Iteration   9: 0.953 ops/s
+# Warmup Iteration  10: 0.912 ops/s
+# Warmup Iteration  11: 0.964 ops/s
+# Warmup Iteration  12: 0.849 ops/s
+# Warmup Iteration  13: 0.951 ops/s
+# Warmup Iteration  14: 0.889 ops/s
+# Warmup Iteration  15: 0.795 ops/s
+# Warmup Iteration  16: 0.878 ops/s
+# Warmup Iteration  17: 0.972 ops/s
+# Warmup Iteration  18: 0.972 ops/s
+# Warmup Iteration  19: 0.972 ops/s
+# Warmup Iteration  20: 0.970 ops/s
+Iteration   1: 0.970 ops/s
+Iteration   2: 0.957 ops/s
+Iteration   3: 0.961 ops/s
+Iteration   4: 0.925 ops/s
+Iteration   5: 0.735 ops/s
+Iteration   6: 0.961 ops/s
+Iteration   7: 0.969 ops/s
+Iteration   8: 0.972 ops/s
+Iteration   9: 0.969 ops/s
+Iteration  10: 0.975 ops/s
+
+# Run progress: 82.00% complete, ETA 00:05:32
+# Fork: 2 of 5
+# Warmup Iteration   1: 0.914 ops/s
+# Warmup Iteration   2: 0.909 ops/s
+# Warmup Iteration   3: 0.949 ops/s
+# Warmup Iteration   4: 0.915 ops/s
+# Warmup Iteration   5: 0.951 ops/s
+# Warmup Iteration   6: 0.968 ops/s
+# Warmup Iteration   7: 0.894 ops/s
+# Warmup Iteration   8: 0.900 ops/s
+# Warmup Iteration   9: 0.969 ops/s
+# Warmup Iteration  10: 0.969 ops/s
+# Warmup Iteration  11: 0.965 ops/s
+# Warmup Iteration  12: 0.966 ops/s
+# Warmup Iteration  13: 0.965 ops/s
+# Warmup Iteration  14: 0.890 ops/s
+# Warmup Iteration  15: 0.875 ops/s
+# Warmup Iteration  16: 0.884 ops/s
+# Warmup Iteration  17: 0.969 ops/s
+# Warmup Iteration  18: 0.973 ops/s
+# Warmup Iteration  19: 0.970 ops/s
+# Warmup Iteration  20: 0.970 ops/s
+Iteration   1: 0.970 ops/s
+Iteration   2: 0.955 ops/s
+Iteration   3: 0.909 ops/s
+Iteration   4: 0.961 ops/s
+Iteration   5: 0.960 ops/s
+Iteration   6: 0.813 ops/s
+Iteration   7: 0.933 ops/s
+Iteration   8: 0.972 ops/s
+Iteration   9: 0.969 ops/s
+Iteration  10: 0.974 ops/s
+
+# Run progress: 84.00% complete, ETA 00:04:54
+# Fork: 3 of 5
+# Warmup Iteration   1: 0.912 ops/s
+# Warmup Iteration   2: 0.892 ops/s
+# Warmup Iteration   3: 0.872 ops/s
+# Warmup Iteration   4: 0.925 ops/s
+# Warmup Iteration   5: 0.918 ops/s
+# Warmup Iteration   6: 0.849 ops/s
+# Warmup Iteration   7: 0.775 ops/s
+# Warmup Iteration   8: 0.896 ops/s
+# Warmup Iteration   9: 0.970 ops/s
+# Warmup Iteration  10: 0.976 ops/s
+# Warmup Iteration  11: 0.968 ops/s
+# Warmup Iteration  12: 0.973 ops/s
+# Warmup Iteration  13: 0.971 ops/s
+# Warmup Iteration  14: 0.891 ops/s
+# Warmup Iteration  15: 0.875 ops/s
+# Warmup Iteration  16: 0.889 ops/s
+# Warmup Iteration  17: 0.977 ops/s
+# Warmup Iteration  18: 0.974 ops/s
+# Warmup Iteration  19: 0.975 ops/s
+# Warmup Iteration  20: 0.925 ops/s
+Iteration   1: 0.922 ops/s
+Iteration   2: 0.966 ops/s
+Iteration   3: 0.969 ops/s
+Iteration   4: 0.965 ops/s
+Iteration   5: 0.964 ops/s
+Iteration   6: 0.964 ops/s
+Iteration   7: 0.976 ops/s
+Iteration   8: 0.838 ops/s
+Iteration   9: 0.863 ops/s
+Iteration  10: 0.975 ops/s
+
+# Run progress: 86.00% complete, ETA 00:04:16
+# Fork: 4 of 5
+# Warmup Iteration   1: 0.913 ops/s
+# Warmup Iteration   2: 0.911 ops/s
+# Warmup Iteration   3: 0.937 ops/s
+# Warmup Iteration   4: 0.832 ops/s
+# Warmup Iteration   5: 0.916 ops/s
+# Warmup Iteration   6: 0.948 ops/s
+# Warmup Iteration   7: 0.894 ops/s
+# Warmup Iteration   8: 0.904 ops/s
+# Warmup Iteration   9: 0.967 ops/s
+# Warmup Iteration  10: 0.972 ops/s
+# Warmup Iteration  11: 0.961 ops/s
+# Warmup Iteration  12: 0.968 ops/s
+# Warmup Iteration  13: 0.969 ops/s
+# Warmup Iteration  14: 0.846 ops/s
+# Warmup Iteration  15: 0.876 ops/s
+# Warmup Iteration  16: 0.886 ops/s
+# Warmup Iteration  17: 0.972 ops/s
+# Warmup Iteration  18: 0.974 ops/s
+# Warmup Iteration  19: 0.973 ops/s
+# Warmup Iteration  20: 0.971 ops/s
+Iteration   1: 0.972 ops/s
+Iteration   2: 0.954 ops/s
+Iteration   3: 0.959 ops/s
+Iteration   4: 0.962 ops/s
+Iteration   5: 0.960 ops/s
+Iteration   6: 0.962 ops/s
+Iteration   7: 0.969 ops/s
+Iteration   8: 0.972 ops/s
+Iteration   9: 0.972 ops/s
+Iteration  10: 0.904 ops/s
+
+# Run progress: 88.00% complete, ETA 00:03:39
+# Fork: 5 of 5
+# Warmup Iteration   1: 0.800 ops/s
+# Warmup Iteration   2: 0.896 ops/s
+# Warmup Iteration   3: 0.863 ops/s
+# Warmup Iteration   4: 0.884 ops/s
+# Warmup Iteration   5: 0.924 ops/s
+# Warmup Iteration   6: 0.871 ops/s
+# Warmup Iteration   7: 0.751 ops/s
+# Warmup Iteration   8: 0.761 ops/s
+# Warmup Iteration   9: 0.931 ops/s
+# Warmup Iteration  10: 0.936 ops/s
+# Warmup Iteration  11: 0.933 ops/s
+# Warmup Iteration  12: 0.939 ops/s
+# Warmup Iteration  13: 0.939 ops/s
+# Warmup Iteration  14: 0.831 ops/s
+# Warmup Iteration  15: 0.794 ops/s
+# Warmup Iteration  16: 0.833 ops/s
+# Warmup Iteration  17: 0.902 ops/s
+# Warmup Iteration  18: 0.938 ops/s
+# Warmup Iteration  19: 0.935 ops/s
+# Warmup Iteration  20: 0.936 ops/s
+Iteration   1: 0.943 ops/s
+Iteration   2: 0.936 ops/s
+Iteration   3: 0.937 ops/s
+Iteration   4: 0.940 ops/s
+Iteration   5: 0.936 ops/s
+Iteration   6: 0.935 ops/s
+Iteration   7: 0.945 ops/s
+Iteration   8: 0.910 ops/s
+Iteration   9: 0.853 ops/s
+Iteration  10: 0.946 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  0.942 ±(99.9%) 0.023 ops/s [Average]
+  (min, avg, max) = (0.735, 0.942, 0.976), stdev = 0.047
+  CI (99.9%): [0.918, 0.965] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.LongIntMapTest.put
+# Parameters: (fullyRandom = false, mapSizeDividedBy16000 = 100000)
+
+# Run progress: 90.00% complete, ETA 00:03:02
+# Fork: 1 of 5
+# Warmup Iteration   1: 0.945 ops/s
+# Warmup Iteration   2: 0.865 ops/s
+# Warmup Iteration   3: 0.912 ops/s
+# Warmup Iteration   4: 0.965 ops/s
+# Warmup Iteration   5: 0.881 ops/s
+# Warmup Iteration   6: 0.979 ops/s
+# Warmup Iteration   7: 0.966 ops/s
+# Warmup Iteration   8: 0.946 ops/s
+# Warmup Iteration   9: 0.979 ops/s
+# Warmup Iteration  10: 0.965 ops/s
+# Warmup Iteration  11: 0.932 ops/s
+# Warmup Iteration  12: 0.949 ops/s
+# Warmup Iteration  13: 0.981 ops/s
+# Warmup Iteration  14: 0.981 ops/s
+# Warmup Iteration  15: 0.978 ops/s
+# Warmup Iteration  16: 0.922 ops/s
+# Warmup Iteration  17: 0.976 ops/s
+# Warmup Iteration  18: 0.980 ops/s
+# Warmup Iteration  19: 0.981 ops/s
+# Warmup Iteration  20: 0.970 ops/s
+Iteration   1: 0.925 ops/s
+Iteration   2: 0.927 ops/s
+Iteration   3: 0.767 ops/s
+Iteration   4: 0.669 ops/s
+Iteration   5: 0.918 ops/s
+Iteration   6: 0.978 ops/s
+Iteration   7: 0.975 ops/s
+Iteration   8: 0.976 ops/s
+Iteration   9: 0.979 ops/s
+Iteration  10: 0.975 ops/s
+
+# Run progress: 92.00% complete, ETA 00:02:25
+# Fork: 2 of 5
+# Warmup Iteration   1: 0.945 ops/s
+# Warmup Iteration   2: 0.874 ops/s
+# Warmup Iteration   3: 0.917 ops/s
+# Warmup Iteration   4: 0.963 ops/s
+# Warmup Iteration   5: 0.879 ops/s
+# Warmup Iteration   6: 0.978 ops/s
+# Warmup Iteration   7: 0.969 ops/s
+# Warmup Iteration   8: 0.944 ops/s
+# Warmup Iteration   9: 0.982 ops/s
+# Warmup Iteration  10: 0.971 ops/s
+# Warmup Iteration  11: 0.930 ops/s
+# Warmup Iteration  12: 0.949 ops/s
+# Warmup Iteration  13: 0.982 ops/s
+# Warmup Iteration  14: 0.978 ops/s
+# Warmup Iteration  15: 0.975 ops/s
+# Warmup Iteration  16: 0.924 ops/s
+# Warmup Iteration  17: 0.951 ops/s
+# Warmup Iteration  18: 0.868 ops/s
+# Warmup Iteration  19: 0.904 ops/s
+# Warmup Iteration  20: 0.974 ops/s
+Iteration   1: 0.926 ops/s
+Iteration   2: 0.928 ops/s
+Iteration   3: 0.828 ops/s
+Iteration   4: 0.971 ops/s
+Iteration   5: 0.974 ops/s
+Iteration   6: 0.975 ops/s
+Iteration   7: 0.975 ops/s
+Iteration   8: 0.821 ops/s
+Iteration   9: 0.784 ops/s
+Iteration  10: 0.913 ops/s
+
+# Run progress: 94.00% complete, ETA 00:01:49
+# Fork: 3 of 5
+# Warmup Iteration   1: 0.945 ops/s
+# Warmup Iteration   2: 0.876 ops/s
+# Warmup Iteration   3: 0.913 ops/s
+# Warmup Iteration   4: 0.962 ops/s
+# Warmup Iteration   5: 0.878 ops/s
+# Warmup Iteration   6: 0.977 ops/s
+# Warmup Iteration   7: 0.903 ops/s
+# Warmup Iteration   8: 0.946 ops/s
+# Warmup Iteration   9: 0.978 ops/s
+# Warmup Iteration  10: 0.968 ops/s
+# Warmup Iteration  11: 0.926 ops/s
+# Warmup Iteration  12: 0.949 ops/s
+# Warmup Iteration  13: 0.976 ops/s
+# Warmup Iteration  14: 0.978 ops/s
+# Warmup Iteration  15: 0.974 ops/s
+# Warmup Iteration  16: 0.922 ops/s
+# Warmup Iteration  17: 0.974 ops/s
+# Warmup Iteration  18: 0.975 ops/s
+# Warmup Iteration  19: 0.978 ops/s
+# Warmup Iteration  20: 0.970 ops/s
+Iteration   1: 0.924 ops/s
+Iteration   2: 0.923 ops/s
+Iteration   3: 0.831 ops/s
+Iteration   4: 0.972 ops/s
+Iteration   5: 0.975 ops/s
+Iteration   6: 0.975 ops/s
+Iteration   7: 0.912 ops/s
+Iteration   8: 0.866 ops/s
+Iteration   9: 0.930 ops/s
+Iteration  10: 0.968 ops/s
+
+# Run progress: 96.00% complete, ETA 00:01:12
+# Fork: 4 of 5
+# Warmup Iteration   1: 0.942 ops/s
+# Warmup Iteration   2: 0.873 ops/s
+# Warmup Iteration   3: 0.911 ops/s
+# Warmup Iteration   4: 0.958 ops/s
+# Warmup Iteration   5: 0.897 ops/s
+# Warmup Iteration   6: 0.977 ops/s
+# Warmup Iteration   7: 0.955 ops/s
+# Warmup Iteration   8: 0.970 ops/s
+# Warmup Iteration   9: 0.982 ops/s
+# Warmup Iteration  10: 0.969 ops/s
+# Warmup Iteration  11: 0.930 ops/s
+# Warmup Iteration  12: 0.911 ops/s
+# Warmup Iteration  13: 0.904 ops/s
+# Warmup Iteration  14: 0.978 ops/s
+# Warmup Iteration  15: 0.976 ops/s
+# Warmup Iteration  16: 0.935 ops/s
+# Warmup Iteration  17: 0.975 ops/s
+# Warmup Iteration  18: 0.980 ops/s
+# Warmup Iteration  19: 0.981 ops/s
+# Warmup Iteration  20: 0.973 ops/s
+Iteration   1: 0.927 ops/s
+Iteration   2: 0.928 ops/s
+Iteration   3: 0.834 ops/s
+Iteration   4: 0.979 ops/s
+Iteration   5: 0.980 ops/s
+Iteration   6: 0.979 ops/s
+Iteration   7: 0.977 ops/s
+Iteration   8: 0.982 ops/s
+Iteration   9: 0.979 ops/s
+Iteration  10: 0.974 ops/s
+
+# Run progress: 98.00% complete, ETA 00:00:36
+# Fork: 5 of 5
+# Warmup Iteration   1: 0.937 ops/s
+# Warmup Iteration   2: 0.873 ops/s
+# Warmup Iteration   3: 0.853 ops/s
+# Warmup Iteration   4: 0.966 ops/s
+# Warmup Iteration   5: 0.878 ops/s
+# Warmup Iteration   6: 0.977 ops/s
+# Warmup Iteration   7: 0.884 ops/s
+# Warmup Iteration   8: 0.890 ops/s
+# Warmup Iteration   9: 0.968 ops/s
+# Warmup Iteration  10: 0.899 ops/s
+# Warmup Iteration  11: 0.930 ops/s
+# Warmup Iteration  12: 0.921 ops/s
+# Warmup Iteration  13: 0.978 ops/s
+# Warmup Iteration  14: 0.979 ops/s
+# Warmup Iteration  15: 0.951 ops/s
+# Warmup Iteration  16: 0.900 ops/s
+# Warmup Iteration  17: 0.977 ops/s
+# Warmup Iteration  18: 0.982 ops/s
+# Warmup Iteration  19: 0.981 ops/s
+# Warmup Iteration  20: 0.975 ops/s
+Iteration   1: 0.903 ops/s
+Iteration   2: 0.885 ops/s
+Iteration   3: 0.926 ops/s
+Iteration   4: 0.944 ops/s
+Iteration   5: 0.979 ops/s
+Iteration   6: 0.982 ops/s
+Iteration   7: 0.980 ops/s
+Iteration   8: 0.981 ops/s
+Iteration   9: 0.978 ops/s
+Iteration  10: 0.973 ops/s
+
+
+Result "com.gs.collections.impl.jmh.LongIntMapTest.put":
+  0.931 ±(99.9%) 0.033 ops/s [Average]
+  (min, avg, max) = (0.669, 0.931, 0.982), stdev = 0.067
+  CI (99.9%): [0.897, 0.964] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:30:14
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark           (fullyRandom)  (mapSizeDividedBy16000)   Mode  Cnt  Score   Error  Units
+LongIntMapTest.put           true                        1  thrpt   50  5.376 ± 0.049  ops/s
+LongIntMapTest.put           true                       10  thrpt   50  3.553 ± 0.013  ops/s
+LongIntMapTest.put           true                      100  thrpt   50  2.756 ± 0.009  ops/s
+LongIntMapTest.put           true                    10000  thrpt   50  1.503 ± 0.012  ops/s
+LongIntMapTest.put           true                   100000  thrpt   50  1.617 ± 0.034  ops/s
+LongIntMapTest.put          false                        1  thrpt   50  3.226 ± 0.051  ops/s
+LongIntMapTest.put          false                       10  thrpt   50  2.190 ± 0.005  ops/s
+LongIntMapTest.put          false                      100  thrpt   50  1.954 ± 0.019  ops/s
+LongIntMapTest.put          false                    10000  thrpt   50  0.942 ± 0.023  ops/s
+LongIntMapTest.put          false                   100000  thrpt   50  0.931 ± 0.033  ops/s
+
+Benchmark result is saved to gs-collections/exp-RETU-out-jdk8/microbenchmarks-original_LongIntMapTest_put_retu_trial3.csv

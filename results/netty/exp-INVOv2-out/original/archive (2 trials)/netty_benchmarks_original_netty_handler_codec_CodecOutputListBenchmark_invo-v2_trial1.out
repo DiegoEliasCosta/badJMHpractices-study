@@ -1,0 +1,401 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.CodecOutputListBenchmark.arrayList
+# Parameters: (elements = 1)
+
+# Run progress: 0.00% complete, ETA 00:04:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 26257846.475 ops/s
+# Warmup Iteration   2: 29759731.624 ops/s
+# Warmup Iteration   3: 32992705.527 ops/s
+# Warmup Iteration   4: 32910162.809 ops/s
+# Warmup Iteration   5: 32962391.974 ops/s
+# Warmup Iteration   6: 32922237.269 ops/s
+# Warmup Iteration   7: 32946320.422 ops/s
+# Warmup Iteration   8: 32918708.571 ops/s
+# Warmup Iteration   9: 32934911.994 ops/s
+# Warmup Iteration  10: 32943123.627 ops/s
+Iteration   1: 32926416.647 ops/s
+Iteration   2: 32936933.874 ops/s
+Iteration   3: 32957622.508 ops/s
+Iteration   4: 32926027.064 ops/s
+Iteration   5: 28506027.147 ops/s
+Iteration   6: 26459576.800 ops/s
+Iteration   7: 33031729.355 ops/s
+Iteration   8: 33022461.100 ops/s
+Iteration   9: 26739017.467 ops/s
+Iteration  10: 32936908.100 ops/s
+
+# Run progress: 8.33% complete, ETA 00:03:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 26624269.138 ops/s
+# Warmup Iteration   2: 32449972.582 ops/s
+# Warmup Iteration   3: 33110557.790 ops/s
+# Warmup Iteration   4: 33062730.783 ops/s
+# Warmup Iteration   5: 33157160.960 ops/s
+# Warmup Iteration   6: 33091631.807 ops/s
+# Warmup Iteration   7: 33079802.362 ops/s
+# Warmup Iteration   8: 33108796.797 ops/s
+# Warmup Iteration   9: 33112822.514 ops/s
+# Warmup Iteration  10: 33103331.672 ops/s
+Iteration   1: 33082766.876 ops/s
+Iteration   2: 33089904.927 ops/s
+Iteration   3: 33106007.176 ops/s
+Iteration   4: 33094967.129 ops/s
+Iteration   5: 33080575.918 ops/s
+Iteration   6: 33084553.381 ops/s
+Iteration   7: 33170945.632 ops/s
+Iteration   8: 33184217.562 ops/s
+Iteration   9: 33185402.262 ops/s
+Iteration  10: 31680979.233 ops/s
+
+
+Result "io.netty.handler.codec.CodecOutputListBenchmark.arrayList":
+  32110152.008 ±(99.9%) 1871392.925 ops/s [Average]
+  (min, avg, max) = (26459576.800, 32110152.008, 33185402.262), stdev = 2155098.875
+  CI (99.9%): [30238759.083, 33981544.932] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.CodecOutputListBenchmark.arrayList
+# Parameters: (elements = 4)
+
+# Run progress: 16.67% complete, ETA 00:03:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 16628111.023 ops/s
+# Warmup Iteration   2: 21799187.760 ops/s
+# Warmup Iteration   3: 20263240.863 ops/s
+# Warmup Iteration   4: 19961290.300 ops/s
+# Warmup Iteration   5: 20203196.532 ops/s
+# Warmup Iteration   6: 20114371.204 ops/s
+# Warmup Iteration   7: 20007132.425 ops/s
+# Warmup Iteration   8: 19998464.120 ops/s
+# Warmup Iteration   9: 19986632.655 ops/s
+# Warmup Iteration  10: 19981667.909 ops/s
+Iteration   1: 19967036.356 ops/s
+Iteration   2: 19961869.463 ops/s
+Iteration   3: 19976031.308 ops/s
+Iteration   4: 19970597.041 ops/s
+Iteration   5: 19976557.380 ops/s
+Iteration   6: 19961350.202 ops/s
+Iteration   7: 19876545.112 ops/s
+Iteration   8: 19867922.191 ops/s
+Iteration   9: 19838522.390 ops/s
+Iteration  10: 19858004.821 ops/s
+
+# Run progress: 25.00% complete, ETA 00:03:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 17376756.006 ops/s
+# Warmup Iteration   2: 20696656.966 ops/s
+# Warmup Iteration   3: 18114637.241 ops/s
+# Warmup Iteration   4: 16252162.276 ops/s
+# Warmup Iteration   5: 16773272.506 ops/s
+# Warmup Iteration   6: 17413650.533 ops/s
+# Warmup Iteration   7: 20759447.115 ops/s
+# Warmup Iteration   8: 20752874.352 ops/s
+# Warmup Iteration   9: 19765057.914 ops/s
+# Warmup Iteration  10: 18955337.737 ops/s
+Iteration   1: 20792801.292 ops/s
+Iteration   2: 20769051.880 ops/s
+Iteration   3: 20724849.296 ops/s
+Iteration   4: 20713794.050 ops/s
+Iteration   5: 20761803.256 ops/s
+Iteration   6: 20728026.287 ops/s
+Iteration   7: 20570186.727 ops/s
+Iteration   8: 20653234.316 ops/s
+Iteration   9: 20621160.490 ops/s
+Iteration  10: 20561252.009 ops/s
+
+
+Result "io.netty.handler.codec.CodecOutputListBenchmark.arrayList":
+  20307529.793 ±(99.9%) 345703.290 ops/s [Average]
+  (min, avg, max) = (19838522.390, 20307529.793, 20792801.292), stdev = 398112.423
+  CI (99.9%): [19961826.504, 20653233.083] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.CodecOutputListBenchmark.codecOutList
+# Parameters: (elements = 1)
+
+# Run progress: 33.33% complete, ETA 00:02:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 35273278.395 ops/s
+# Warmup Iteration   2: 39197105.513 ops/s
+# Warmup Iteration   3: 42889193.214 ops/s
+# Warmup Iteration   4: 42837168.712 ops/s
+# Warmup Iteration   5: 38075653.503 ops/s
+# Warmup Iteration   6: 36242947.329 ops/s
+# Warmup Iteration   7: 39499992.196 ops/s
+# Warmup Iteration   8: 38376036.832 ops/s
+# Warmup Iteration   9: 39479391.485 ops/s
+# Warmup Iteration  10: 42842439.649 ops/s
+Iteration   1: 42842570.055 ops/s
+Iteration   2: 42850419.838 ops/s
+Iteration   3: 42853867.513 ops/s
+Iteration   4: 42818079.320 ops/s
+Iteration   5: 42808542.966 ops/s
+Iteration   6: 42836222.028 ops/s
+Iteration   7: 42848231.679 ops/s
+Iteration   8: 42826281.436 ops/s
+Iteration   9: 42817632.449 ops/s
+Iteration  10: 42811539.965 ops/s
+
+# Run progress: 41.67% complete, ETA 00:02:22
+# Fork: 2 of 2
+# Warmup Iteration   1: 34680323.591 ops/s
+# Warmup Iteration   2: 36319186.085 ops/s
+# Warmup Iteration   3: 44122612.250 ops/s
+# Warmup Iteration   4: 44099197.302 ops/s
+# Warmup Iteration   5: 44096080.304 ops/s
+# Warmup Iteration   6: 44039040.556 ops/s
+# Warmup Iteration   7: 44054723.551 ops/s
+# Warmup Iteration   8: 44039229.638 ops/s
+# Warmup Iteration   9: 44035123.638 ops/s
+# Warmup Iteration  10: 44066543.949 ops/s
+Iteration   1: 44042821.173 ops/s
+Iteration   2: 44029748.622 ops/s
+Iteration   3: 44044555.812 ops/s
+Iteration   4: 44032708.389 ops/s
+Iteration   5: 44031166.635 ops/s
+Iteration   6: 44033870.226 ops/s
+Iteration   7: 36275394.278 ops/s
+Iteration   8: 43174912.277 ops/s
+Iteration   9: 43988298.019 ops/s
+Iteration  10: 44005053.442 ops/s
+
+
+Result "io.netty.handler.codec.CodecOutputListBenchmark.codecOutList":
+  42998595.806 ±(99.9%) 1463412.681 ops/s [Average]
+  (min, avg, max) = (36275394.278, 42998595.806, 44044555.812), stdev = 1685268.220
+  CI (99.9%): [41535183.125, 44462008.487] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.CodecOutputListBenchmark.codecOutList
+# Parameters: (elements = 4)
+
+# Run progress: 50.00% complete, ETA 00:02:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 31086453.460 ops/s
+# Warmup Iteration   2: 36810545.256 ops/s
+# Warmup Iteration   3: 37492340.340 ops/s
+# Warmup Iteration   4: 37483872.099 ops/s
+# Warmup Iteration   5: 37510763.259 ops/s
+# Warmup Iteration   6: 37461875.378 ops/s
+# Warmup Iteration   7: 37466948.600 ops/s
+# Warmup Iteration   8: 37490328.468 ops/s
+# Warmup Iteration   9: 37500976.582 ops/s
+# Warmup Iteration  10: 37487436.631 ops/s
+Iteration   1: 37467716.031 ops/s
+Iteration   2: 37480504.819 ops/s
+Iteration   3: 37446690.733 ops/s
+Iteration   4: 37503618.689 ops/s
+Iteration   5: 37448831.026 ops/s
+Iteration   6: 37474436.599 ops/s
+Iteration   7: 37417253.746 ops/s
+Iteration   8: 37411046.599 ops/s
+Iteration   9: 37407642.090 ops/s
+Iteration  10: 37408380.740 ops/s
+
+# Run progress: 58.33% complete, ETA 00:01:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 30872145.460 ops/s
+# Warmup Iteration   2: 35034158.421 ops/s
+# Warmup Iteration   3: 37116540.981 ops/s
+# Warmup Iteration   4: 36998708.963 ops/s
+# Warmup Iteration   5: 37143003.999 ops/s
+# Warmup Iteration   6: 37012386.697 ops/s
+# Warmup Iteration   7: 37020361.389 ops/s
+# Warmup Iteration   8: 37003657.515 ops/s
+# Warmup Iteration   9: 36999897.274 ops/s
+# Warmup Iteration  10: 37022699.558 ops/s
+Iteration   1: 37016078.651 ops/s
+Iteration   2: 37028810.679 ops/s
+Iteration   3: 37001778.221 ops/s
+Iteration   4: 34082642.231 ops/s
+Iteration   5: 35610915.581 ops/s
+Iteration   6: 37030388.272 ops/s
+Iteration   7: 36996714.300 ops/s
+Iteration   8: 37014528.543 ops/s
+Iteration   9: 37004307.196 ops/s
+Iteration  10: 37017452.956 ops/s
+
+
+Result "io.netty.handler.codec.CodecOutputListBenchmark.codecOutList":
+  37013486.885 ±(99.9%) 702773.024 ops/s [Average]
+  (min, avg, max) = (34082642.231, 37013486.885, 37503618.689), stdev = 809314.460
+  CI (99.9%): [36310713.861, 37716259.910] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.CodecOutputListBenchmark.recyclableArrayList
+# Parameters: (elements = 1)
+
+# Run progress: 66.67% complete, ETA 00:01:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 28754415.286 ops/s
+# Warmup Iteration   2: 28320114.379 ops/s
+# Warmup Iteration   3: 36279292.400 ops/s
+# Warmup Iteration   4: 36223289.101 ops/s
+# Warmup Iteration   5: 36310964.776 ops/s
+# Warmup Iteration   6: 36249433.411 ops/s
+# Warmup Iteration   7: 36220865.305 ops/s
+# Warmup Iteration   8: 36221094.108 ops/s
+# Warmup Iteration   9: 36237055.913 ops/s
+# Warmup Iteration  10: 36245680.473 ops/s
+Iteration   1: 36229174.528 ops/s
+Iteration   2: 36246926.366 ops/s
+Iteration   3: 36240172.662 ops/s
+Iteration   4: 36236054.304 ops/s
+Iteration   5: 36239647.207 ops/s
+Iteration   6: 36237227.003 ops/s
+Iteration   7: 36268337.646 ops/s
+Iteration   8: 36228137.609 ops/s
+Iteration   9: 36236074.643 ops/s
+Iteration  10: 36219880.819 ops/s
+
+# Run progress: 75.00% complete, ETA 00:01:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 33325166.176 ops/s
+# Warmup Iteration   2: 27477070.657 ops/s
+# Warmup Iteration   3: 28990480.910 ops/s
+# Warmup Iteration   4: 34547409.350 ops/s
+# Warmup Iteration   5: 35579939.436 ops/s
+# Warmup Iteration   6: 35505674.973 ops/s
+# Warmup Iteration   7: 35509932.027 ops/s
+# Warmup Iteration   8: 35548610.445 ops/s
+# Warmup Iteration   9: 35481190.076 ops/s
+# Warmup Iteration  10: 26814636.217 ops/s
+Iteration   1: 31122109.650 ops/s
+Iteration   2: 35491406.424 ops/s
+Iteration   3: 28907505.845 ops/s
+Iteration   4: 33511548.973 ops/s
+Iteration   5: 35494542.632 ops/s
+Iteration   6: 33617312.767 ops/s
+Iteration   7: 25335976.878 ops/s
+Iteration   8: 33523465.854 ops/s
+Iteration   9: 35566937.420 ops/s
+Iteration  10: 35589113.559 ops/s
+
+
+Result "io.netty.handler.codec.CodecOutputListBenchmark.recyclableArrayList":
+  34527077.639 ±(99.9%) 2550185.027 ops/s [Average]
+  (min, avg, max) = (25335976.878, 34527077.639, 36268337.646), stdev = 2936796.869
+  CI (99.9%): [31976892.613, 37077262.666] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.CodecOutputListBenchmark.recyclableArrayList
+# Parameters: (elements = 4)
+
+# Run progress: 83.33% complete, ETA 00:00:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 20053516.124 ops/s
+# Warmup Iteration   2: 22629368.143 ops/s
+# Warmup Iteration   3: 23537999.361 ops/s
+# Warmup Iteration   4: 23503476.834 ops/s
+# Warmup Iteration   5: 23547554.463 ops/s
+# Warmup Iteration   6: 23513789.317 ops/s
+# Warmup Iteration   7: 23501361.449 ops/s
+# Warmup Iteration   8: 23535240.297 ops/s
+# Warmup Iteration   9: 23559009.638 ops/s
+# Warmup Iteration  10: 23557514.359 ops/s
+Iteration   1: 23558425.983 ops/s
+Iteration   2: 23502986.614 ops/s
+Iteration   3: 19052992.121 ops/s
+Iteration   4: 19125817.860 ops/s
+Iteration   5: 23441656.570 ops/s
+Iteration   6: 23513732.037 ops/s
+Iteration   7: 23474990.824 ops/s
+Iteration   8: 19018411.261 ops/s
+Iteration   9: 23458877.404 ops/s
+Iteration  10: 23456412.633 ops/s
+
+# Run progress: 91.67% complete, ETA 00:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 20062426.062 ops/s
+# Warmup Iteration   2: 20543947.896 ops/s
+# Warmup Iteration   3: 24959460.869 ops/s
+# Warmup Iteration   4: 24943495.454 ops/s
+# Warmup Iteration   5: 24351065.686 ops/s
+# Warmup Iteration   6: 20162794.799 ops/s
+# Warmup Iteration   7: 24969700.979 ops/s
+# Warmup Iteration   8: 24960985.894 ops/s
+# Warmup Iteration   9: 24942320.218 ops/s
+# Warmup Iteration  10: 21271824.237 ops/s
+Iteration   1: 20097122.293 ops/s
+Iteration   2: 24944736.695 ops/s
+Iteration   3: 24276000.890 ops/s
+Iteration   4: 21083445.037 ops/s
+Iteration   5: 17531535.099 ops/s
+Iteration   6: 23637547.488 ops/s
+Iteration   7: 24583472.030 ops/s
+Iteration   8: 21560220.679 ops/s
+Iteration   9: 25488620.654 ops/s
+Iteration  10: 25528022.251 ops/s
+
+
+Result "io.netty.handler.codec.CodecOutputListBenchmark.recyclableArrayList":
+  22516751.321 ±(99.9%) 2074358.392 ops/s [Average]
+  (min, avg, max) = (17531535.099, 22516751.321, 25528022.251), stdev = 2388834.209
+  CI (99.9%): [20442392.929, 24591109.713] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:04:04
+
+Benchmark                                     (elements)   Mode  Cnt         Score         Error  Units
+CodecOutputListBenchmark.arrayList                     1  thrpt   20  32110152.008 ± 1871392.925  ops/s
+CodecOutputListBenchmark.arrayList                     4  thrpt   20  20307529.793 ±  345703.290  ops/s
+CodecOutputListBenchmark.codecOutList                  1  thrpt   20  42998595.806 ± 1463412.681  ops/s
+CodecOutputListBenchmark.codecOutList                  4  thrpt   20  37013486.885 ±  702773.024  ops/s
+CodecOutputListBenchmark.recyclableArrayList           1  thrpt   20  34527077.639 ± 2550185.027  ops/s
+CodecOutputListBenchmark.recyclableArrayList           4  thrpt   20  22516751.321 ± 2074358.392  ops/s
+
+Benchmark result is saved to netty/exp-INVOv2-out/netty_benchmarks_original_netty_handler_codec_CodecOutputListBenchmark_invo-v2_trial1.csv

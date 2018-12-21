@@ -1,0 +1,23 @@
+fix: configure benchmark forks to greater than zero
+
+Benchmarks configured with zero forks are prone to profile-guided optimization from JVM and other
+effects that offsets the measurement considerably.
+JMH strongly warns against using zero forks, and without the '-f' option being specified in the command line
+jmh will run every bench in the same VM, using optimizations guided from the first benchmarks and artificially 
+speeding-up later ones.
+ 
+We run the benchmarks 10 times with same number of iterations and warmups, and we observe:
+ - after the fix some benchmarks are up to 4x slower 
+
+- Class: AddPaddingZeros 
+- Mode: Average time 
+- Unit: ns/op  
+- Score reported as median
+- Every comparison had significant diference (Moore median's test)
+Method	    Full params		        Factor	Fixed	    Original
+charArray	(nanos = 1000)		    1.19	76.1785	    63.7505
+charArray	(nanos = 1000000)		1.69	83.483	    49.188
+charArray	(nanos = 100000000)		1.72	93.252	    54.14
+insert	    (nanos = 1000)	    	4.14	113.9615	27.521
+insert	    (nanos = 1000000)		3.19	118.592	    37.082
+insert	    (nanos = 100000000)		3.51	94.9735	    27.0565

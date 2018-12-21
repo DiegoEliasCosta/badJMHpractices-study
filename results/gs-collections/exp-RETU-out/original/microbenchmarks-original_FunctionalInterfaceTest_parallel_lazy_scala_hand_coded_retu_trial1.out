@@ -1,0 +1,355 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded
+# Parameters: (megamorphicWarmupLevel = 0)
+
+# Run progress: 0.00% complete, ETA 00:08:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 55.911 ops/s
+# Warmup Iteration   2: 66.137 ops/s
+# Warmup Iteration   3: 70.556 ops/s
+# Warmup Iteration   4: 75.088 ops/s
+# Warmup Iteration   5: 74.237 ops/s
+# Warmup Iteration   6: 74.673 ops/s
+# Warmup Iteration   7: 74.590 ops/s
+# Warmup Iteration   8: 72.825 ops/s
+# Warmup Iteration   9: 74.015 ops/s
+# Warmup Iteration  10: 73.547 ops/s
+# Warmup Iteration  11: 74.196 ops/s
+# Warmup Iteration  12: 73.579 ops/s
+# Warmup Iteration  13: 73.670 ops/s
+# Warmup Iteration  14: 73.896 ops/s
+# Warmup Iteration  15: 73.181 ops/s
+# Warmup Iteration  16: 74.549 ops/s
+# Warmup Iteration  17: 73.381 ops/s
+# Warmup Iteration  18: 73.963 ops/s
+# Warmup Iteration  19: 73.622 ops/s
+# Warmup Iteration  20: 73.959 ops/s
+Iteration   1: 74.845 ops/s
+Iteration   2: 74.343 ops/s
+Iteration   3: 73.363 ops/s
+Iteration   4: 73.814 ops/s
+Iteration   5: 74.413 ops/s
+Iteration   6: 74.529 ops/s
+Iteration   7: 73.741 ops/s
+Iteration   8: 73.617 ops/s
+Iteration   9: 74.624 ops/s
+Iteration  10: 73.801 ops/s
+
+# Run progress: 12.50% complete, ETA 00:07:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 47.310 ops/s
+# Warmup Iteration   2: 55.757 ops/s
+# Warmup Iteration   3: 58.066 ops/s
+# Warmup Iteration   4: 60.889 ops/s
+# Warmup Iteration   5: 60.557 ops/s
+# Warmup Iteration   6: 60.379 ops/s
+# Warmup Iteration   7: 60.707 ops/s
+# Warmup Iteration   8: 60.363 ops/s
+# Warmup Iteration   9: 60.853 ops/s
+# Warmup Iteration  10: 59.979 ops/s
+# Warmup Iteration  11: 61.475 ops/s
+# Warmup Iteration  12: 61.118 ops/s
+# Warmup Iteration  13: 61.461 ops/s
+# Warmup Iteration  14: 61.410 ops/s
+# Warmup Iteration  15: 60.779 ops/s
+# Warmup Iteration  16: 60.494 ops/s
+# Warmup Iteration  17: 60.718 ops/s
+# Warmup Iteration  18: 60.398 ops/s
+# Warmup Iteration  19: 60.492 ops/s
+# Warmup Iteration  20: 61.705 ops/s
+Iteration   1: 60.463 ops/s
+Iteration   2: 61.110 ops/s
+Iteration   3: 61.276 ops/s
+Iteration   4: 60.918 ops/s
+Iteration   5: 61.439 ops/s
+Iteration   6: 60.609 ops/s
+Iteration   7: 61.190 ops/s
+Iteration   8: 60.613 ops/s
+Iteration   9: 61.367 ops/s
+Iteration  10: 60.533 ops/s
+
+
+Result "com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded":
+  67.530 ±(99.9%) 5.873 ops/s [Average]
+  (min, avg, max) = (60.463, 67.530, 74.845), stdev = 6.763
+  CI (99.9%): [61.658, 73.403] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded
+# Parameters: (megamorphicWarmupLevel = 1)
+
+# Run progress: 25.00% complete, ETA 00:06:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 49.982 ops/s
+# Warmup Iteration   2: 56.039 ops/s
+# Warmup Iteration   3: 58.629 ops/s
+# Warmup Iteration   4: 58.814 ops/s
+# Warmup Iteration   5: 58.125 ops/s
+# Warmup Iteration   6: 58.626 ops/s
+# Warmup Iteration   7: 58.015 ops/s
+# Warmup Iteration   8: 58.682 ops/s
+# Warmup Iteration   9: 58.988 ops/s
+# Warmup Iteration  10: 58.608 ops/s
+# Warmup Iteration  11: 58.414 ops/s
+# Warmup Iteration  12: 58.174 ops/s
+# Warmup Iteration  13: 58.831 ops/s
+# Warmup Iteration  14: 57.849 ops/s
+# Warmup Iteration  15: 58.027 ops/s
+# Warmup Iteration  16: 58.928 ops/s
+# Warmup Iteration  17: 58.617 ops/s
+# Warmup Iteration  18: 58.838 ops/s
+# Warmup Iteration  19: 59.294 ops/s
+# Warmup Iteration  20: 58.186 ops/s
+Iteration   1: 57.932 ops/s
+Iteration   2: 58.299 ops/s
+Iteration   3: 59.158 ops/s
+Iteration   4: 59.315 ops/s
+Iteration   5: 59.282 ops/s
+Iteration   6: 59.369 ops/s
+Iteration   7: 59.248 ops/s
+Iteration   8: 59.090 ops/s
+Iteration   9: 58.871 ops/s
+Iteration  10: 59.005 ops/s
+
+# Run progress: 37.50% complete, ETA 00:05:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 49.801 ops/s
+# Warmup Iteration   2: 57.954 ops/s
+# Warmup Iteration   3: 60.359 ops/s
+# Warmup Iteration   4: 60.587 ops/s
+# Warmup Iteration   5: 60.402 ops/s
+# Warmup Iteration   6: 60.923 ops/s
+# Warmup Iteration   7: 61.394 ops/s
+# Warmup Iteration   8: 61.555 ops/s
+# Warmup Iteration   9: 60.548 ops/s
+# Warmup Iteration  10: 60.295 ops/s
+# Warmup Iteration  11: 60.485 ops/s
+# Warmup Iteration  12: 60.237 ops/s
+# Warmup Iteration  13: 60.914 ops/s
+# Warmup Iteration  14: 60.679 ops/s
+# Warmup Iteration  15: 60.339 ops/s
+# Warmup Iteration  16: 60.817 ops/s
+# Warmup Iteration  17: 60.824 ops/s
+# Warmup Iteration  18: 61.201 ops/s
+# Warmup Iteration  19: 60.308 ops/s
+# Warmup Iteration  20: 60.745 ops/s
+Iteration   1: 61.212 ops/s
+Iteration   2: 61.360 ops/s
+Iteration   3: 59.959 ops/s
+Iteration   4: 61.220 ops/s
+Iteration   5: 60.458 ops/s
+Iteration   6: 60.435 ops/s
+Iteration   7: 60.782 ops/s
+Iteration   8: 61.029 ops/s
+Iteration   9: 60.061 ops/s
+Iteration  10: 60.238 ops/s
+
+
+Result "com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded":
+  59.816 ±(99.9%) 0.873 ops/s [Average]
+  (min, avg, max) = (57.932, 59.816, 61.360), stdev = 1.005
+  CI (99.9%): [58.944, 60.689] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded
+# Parameters: (megamorphicWarmupLevel = 2)
+
+# Run progress: 50.00% complete, ETA 00:04:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 51.121 ops/s
+# Warmup Iteration   2: 58.387 ops/s
+# Warmup Iteration   3: 60.847 ops/s
+# Warmup Iteration   4: 60.132 ops/s
+# Warmup Iteration   5: 60.364 ops/s
+# Warmup Iteration   6: 60.067 ops/s
+# Warmup Iteration   7: 60.579 ops/s
+# Warmup Iteration   8: 60.859 ops/s
+# Warmup Iteration   9: 60.301 ops/s
+# Warmup Iteration  10: 60.226 ops/s
+# Warmup Iteration  11: 60.212 ops/s
+# Warmup Iteration  12: 60.478 ops/s
+# Warmup Iteration  13: 60.682 ops/s
+# Warmup Iteration  14: 59.909 ops/s
+# Warmup Iteration  15: 59.973 ops/s
+# Warmup Iteration  16: 60.326 ops/s
+# Warmup Iteration  17: 60.278 ops/s
+# Warmup Iteration  18: 60.679 ops/s
+# Warmup Iteration  19: 60.151 ops/s
+# Warmup Iteration  20: 60.085 ops/s
+Iteration   1: 60.698 ops/s
+Iteration   2: 60.160 ops/s
+Iteration   3: 60.066 ops/s
+Iteration   4: 58.533 ops/s
+Iteration   5: 60.666 ops/s
+Iteration   6: 60.353 ops/s
+Iteration   7: 60.454 ops/s
+Iteration   8: 59.701 ops/s
+Iteration   9: 60.489 ops/s
+Iteration  10: 61.556 ops/s
+
+# Run progress: 62.50% complete, ETA 00:03:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 51.184 ops/s
+# Warmup Iteration   2: 58.112 ops/s
+# Warmup Iteration   3: 60.908 ops/s
+# Warmup Iteration   4: 60.919 ops/s
+# Warmup Iteration   5: 61.116 ops/s
+# Warmup Iteration   6: 61.549 ops/s
+# Warmup Iteration   7: 60.953 ops/s
+# Warmup Iteration   8: 61.315 ops/s
+# Warmup Iteration   9: 60.427 ops/s
+# Warmup Iteration  10: 61.090 ops/s
+# Warmup Iteration  11: 60.572 ops/s
+# Warmup Iteration  12: 61.290 ops/s
+# Warmup Iteration  13: 61.182 ops/s
+# Warmup Iteration  14: 61.278 ops/s
+# Warmup Iteration  15: 60.908 ops/s
+# Warmup Iteration  16: 61.168 ops/s
+# Warmup Iteration  17: 61.205 ops/s
+# Warmup Iteration  18: 61.061 ops/s
+# Warmup Iteration  19: 61.818 ops/s
+# Warmup Iteration  20: 61.055 ops/s
+Iteration   1: 61.333 ops/s
+Iteration   2: 61.326 ops/s
+Iteration   3: 61.402 ops/s
+Iteration   4: 61.261 ops/s
+Iteration   5: 61.338 ops/s
+Iteration   6: 60.259 ops/s
+Iteration   7: 61.397 ops/s
+Iteration   8: 61.157 ops/s
+Iteration   9: 61.140 ops/s
+Iteration  10: 61.008 ops/s
+
+
+Result "com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded":
+  60.715 ±(99.9%) 0.646 ops/s [Average]
+  (min, avg, max) = (58.533, 60.715, 61.556), stdev = 0.744
+  CI (99.9%): [60.068, 61.361] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_181, OpenJDK 64-Bit Server VM, 25.181-b13
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded
+# Parameters: (megamorphicWarmupLevel = 3)
+
+# Run progress: 75.00% complete, ETA 00:02:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 49.254 ops/s
+# Warmup Iteration   2: 55.938 ops/s
+# Warmup Iteration   3: 59.040 ops/s
+# Warmup Iteration   4: 59.281 ops/s
+# Warmup Iteration   5: 59.836 ops/s
+# Warmup Iteration   6: 58.770 ops/s
+# Warmup Iteration   7: 58.936 ops/s
+# Warmup Iteration   8: 58.859 ops/s
+# Warmup Iteration   9: 58.495 ops/s
+# Warmup Iteration  10: 58.934 ops/s
+# Warmup Iteration  11: 58.319 ops/s
+# Warmup Iteration  12: 59.080 ops/s
+# Warmup Iteration  13: 58.683 ops/s
+# Warmup Iteration  14: 59.059 ops/s
+# Warmup Iteration  15: 58.956 ops/s
+# Warmup Iteration  16: 58.691 ops/s
+# Warmup Iteration  17: 59.429 ops/s
+# Warmup Iteration  18: 59.915 ops/s
+# Warmup Iteration  19: 60.258 ops/s
+# Warmup Iteration  20: 59.957 ops/s
+Iteration   1: 59.393 ops/s
+Iteration   2: 59.767 ops/s
+Iteration   3: 60.360 ops/s
+Iteration   4: 59.800 ops/s
+Iteration   5: 60.253 ops/s
+Iteration   6: 60.194 ops/s
+Iteration   7: 60.082 ops/s
+Iteration   8: 59.523 ops/s
+Iteration   9: 59.870 ops/s
+Iteration  10: 59.951 ops/s
+
+# Run progress: 87.50% complete, ETA 00:01:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 50.692 ops/s
+# Warmup Iteration   2: 56.655 ops/s
+# Warmup Iteration   3: 59.333 ops/s
+# Warmup Iteration   4: 59.765 ops/s
+# Warmup Iteration   5: 58.948 ops/s
+# Warmup Iteration   6: 59.709 ops/s
+# Warmup Iteration   7: 59.555 ops/s
+# Warmup Iteration   8: 59.383 ops/s
+# Warmup Iteration   9: 59.967 ops/s
+# Warmup Iteration  10: 59.409 ops/s
+# Warmup Iteration  11: 59.358 ops/s
+# Warmup Iteration  12: 58.967 ops/s
+# Warmup Iteration  13: 60.017 ops/s
+# Warmup Iteration  14: 58.835 ops/s
+# Warmup Iteration  15: 59.857 ops/s
+# Warmup Iteration  16: 59.364 ops/s
+# Warmup Iteration  17: 59.332 ops/s
+# Warmup Iteration  18: 59.286 ops/s
+# Warmup Iteration  19: 59.129 ops/s
+# Warmup Iteration  20: 59.914 ops/s
+Iteration   1: 59.655 ops/s
+Iteration   2: 60.259 ops/s
+Iteration   3: 60.470 ops/s
+Iteration   4: 60.533 ops/s
+Iteration   5: 59.852 ops/s
+Iteration   6: 59.793 ops/s
+Iteration   7: 59.885 ops/s
+Iteration   8: 60.082 ops/s
+Iteration   9: 59.475 ops/s
+Iteration  10: 59.445 ops/s
+
+
+Result "com.gs.collections.impl.jmh.FunctionalInterfaceTest.parallel_lazy_scala_hand_coded":
+  59.932 ±(99.9%) 0.296 ops/s [Average]
+  (min, avg, max) = (59.393, 59.932, 60.533), stdev = 0.341
+  CI (99.9%): [59.636, 60.229] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:08:35
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                               (megamorphicWarmupLevel)   Mode  Cnt   Score   Error  Units
+FunctionalInterfaceTest.parallel_lazy_scala_hand_coded                         0  thrpt   20  67.530 ± 5.873  ops/s
+FunctionalInterfaceTest.parallel_lazy_scala_hand_coded                         1  thrpt   20  59.816 ± 0.873  ops/s
+FunctionalInterfaceTest.parallel_lazy_scala_hand_coded                         2  thrpt   20  60.715 ± 0.646  ops/s
+FunctionalInterfaceTest.parallel_lazy_scala_hand_coded                         3  thrpt   20  59.932 ± 0.296  ops/s
+
+Benchmark result is saved to gs-collections/exp-RETU-STATIC-out/microbenchmarks-original_FunctionalInterfaceTest_parallel_lazy_scala_hand_coded_retu_trial1.csv

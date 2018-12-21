@@ -1,0 +1,7 @@
+Benchmark Mode,Measurement Unit,Package,Class,Method,Full params,,Original,Fixed,Factor,Wilcoxom,Cliffs Delta Size,Cliffs Delta d
+"Average time, time/op",us/op, io.druid.benchmark,LoadStatusBenchmark,newVersion," (serverHasAllSegments = false, totalSegmentsCount = 10000)",0,285.461,195.1825,0.6837448898448475,True,large,1.0
+"Average time, time/op",us/op, io.druid.benchmark,LoadStatusBenchmark,newVersion," (serverHasAllSegments = true, totalSegmentsCount = 10000)",0,488.789,363.079,0.7428133611844784,True,large,1.0
+"Average time, time/op",us/op, io.druid.benchmark,LoadStatusBenchmark,oldVersion," (serverHasAllSegments = false, totalSegmentsCount = 10000)",0,300.298,218.58,0.7278769755376326,True,large,1.0
+"Average time, time/op",us/op, io.druid.benchmark,LoadStatusBenchmark,oldVersion," (serverHasAllSegments = true, totalSegmentsCount = 10000)",0,1844577.217,1179230.986,0.6392960810379564,True,large,0.9997146254458977
+"Average time, time/op",us/op, io.druid.benchmark.indexing,IndexIngestionBenchmark,addRows," (rollup = false, rowsPerSegment = 75000, schema = basic)",0,496044.05100000004,500992.909,1.009976650239073,False,small,-0.19000657462195925
+"Average time, time/op",us/op, io.druid.benchmark.indexing,IndexIngestionBenchmark,addRows," (rollup = true, rowsPerSegment = 75000, schema = basic)",0,499588.455,501642.94,1.0041123548381437,False,negligible,-0.1458230350963915

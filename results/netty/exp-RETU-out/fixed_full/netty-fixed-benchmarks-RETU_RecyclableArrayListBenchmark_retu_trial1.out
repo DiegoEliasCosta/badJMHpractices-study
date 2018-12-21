@@ -1,0 +1,401 @@
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread
+# Parameters: (size = 00000)
+
+# Run progress: 0.00% complete, ETA 00:04:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 141819546.000 ops/s
+# Warmup Iteration   2: 145454584.403 ops/s
+# Warmup Iteration   3: 150422845.505 ops/s
+# Warmup Iteration   4: 150386058.214 ops/s
+# Warmup Iteration   5: 149604508.720 ops/s
+# Warmup Iteration   6: 150895338.979 ops/s
+# Warmup Iteration   7: 150842074.365 ops/s
+# Warmup Iteration   8: 148440391.069 ops/s
+# Warmup Iteration   9: 148555409.586 ops/s
+# Warmup Iteration  10: 149890275.828 ops/s
+Iteration   1: 1508513.436 ops/s
+Iteration   2: 1507810.938 ops/s
+Iteration   3: 1508625.081 ops/s
+Iteration   4: 1498970.523 ops/s
+Iteration   5: 1507675.143 ops/s
+Iteration   6: 1479299.787 ops/s
+Iteration   7: 1508583.770 ops/s
+Iteration   8: 1508235.871 ops/s
+Iteration   9: 1508080.875 ops/s
+Iteration  10: 1499873.147 ops/s
+
+# Run progress: 8.33% complete, ETA 00:03:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 142170333.428 ops/s
+# Warmup Iteration   2: 145279543.917 ops/s
+# Warmup Iteration   3: 148864538.381 ops/s
+# Warmup Iteration   4: 150354724.304 ops/s
+# Warmup Iteration   5: 150788097.412 ops/s
+# Warmup Iteration   6: 149498048.040 ops/s
+# Warmup Iteration   7: 146498711.483 ops/s
+# Warmup Iteration   8: 149463161.646 ops/s
+# Warmup Iteration   9: 147658719.968 ops/s
+# Warmup Iteration  10: 150936619.361 ops/s
+Iteration   1: 1477221.721 ops/s
+Iteration   2: 1495017.065 ops/s
+Iteration   3: 1452117.591 ops/s
+Iteration   4: 1509290.630 ops/s
+Iteration   5: 1506333.063 ops/s
+Iteration   6: 1494267.115 ops/s
+Iteration   7: 1509538.150 ops/s
+Iteration   8: 1509128.507 ops/s
+Iteration   9: 1463153.890 ops/s
+Iteration  10: 1493676.660 ops/s
+
+
+Result "io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread":
+  1497270.648 ±(99.9%) 14532.844 ops/s [Average]
+  (min, avg, max) = (1452117.591, 1497270.648, 1509538.150), stdev = 16736.045
+  CI (99.9%): [1482737.804, 1511803.492] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread
+# Parameters: (size = 00256)
+
+# Run progress: 16.67% complete, ETA 00:03:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 140336545.740 ops/s
+# Warmup Iteration   2: 144928471.729 ops/s
+# Warmup Iteration   3: 147950168.366 ops/s
+# Warmup Iteration   4: 150479903.092 ops/s
+# Warmup Iteration   5: 150280854.417 ops/s
+# Warmup Iteration   6: 150876080.087 ops/s
+# Warmup Iteration   7: 150720185.038 ops/s
+# Warmup Iteration   8: 147959721.626 ops/s
+# Warmup Iteration   9: 148295354.610 ops/s
+# Warmup Iteration  10: 150788292.010 ops/s
+Iteration   1: 1486410.119 ops/s
+Iteration   2: 1483694.118 ops/s
+Iteration   3: 1515824.795 ops/s
+Iteration   4: 1517035.210 ops/s
+Iteration   5: 1514400.917 ops/s
+Iteration   6: 1485402.467 ops/s
+Iteration   7: 1481963.586 ops/s
+Iteration   8: 1517034.050 ops/s
+Iteration   9: 1485216.429 ops/s
+Iteration  10: 1514909.405 ops/s
+
+# Run progress: 25.00% complete, ETA 00:03:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 149661416.985 ops/s
+# Warmup Iteration   2: 146258942.687 ops/s
+# Warmup Iteration   3: 147035576.614 ops/s
+# Warmup Iteration   4: 151148635.751 ops/s
+# Warmup Iteration   5: 147977378.620 ops/s
+# Warmup Iteration   6: 148096186.465 ops/s
+# Warmup Iteration   7: 151362298.804 ops/s
+# Warmup Iteration   8: 147967999.087 ops/s
+# Warmup Iteration   9: 148386358.410 ops/s
+# Warmup Iteration  10: 151225171.351 ops/s
+Iteration   1: 1481181.158 ops/s
+Iteration   2: 1476867.876 ops/s
+Iteration   3: 1484358.564 ops/s
+Iteration   4: 1512527.250 ops/s
+Iteration   5: 1511786.904 ops/s
+Iteration   6: 1513479.229 ops/s
+Iteration   7: 1513758.351 ops/s
+Iteration   8: 1512735.069 ops/s
+Iteration   9: 1504650.319 ops/s
+Iteration  10: 1507434.674 ops/s
+
+
+Result "io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread":
+  1501033.524 ±(99.9%) 13343.567 ops/s [Average]
+  (min, avg, max) = (1476867.876, 1501033.524, 1517035.210), stdev = 15366.472
+  CI (99.9%): [1487689.957, 1514377.092] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread
+# Parameters: (size = 01024)
+
+# Run progress: 33.33% complete, ETA 00:02:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 149077242.821 ops/s
+# Warmup Iteration   2: 145209548.989 ops/s
+# Warmup Iteration   3: 148644700.412 ops/s
+# Warmup Iteration   4: 143991628.109 ops/s
+# Warmup Iteration   5: 150721360.562 ops/s
+# Warmup Iteration   6: 150161786.404 ops/s
+# Warmup Iteration   7: 151582629.499 ops/s
+# Warmup Iteration   8: 147900481.848 ops/s
+# Warmup Iteration   9: 149178285.431 ops/s
+# Warmup Iteration  10: 150592137.919 ops/s
+Iteration   1: 1483371.888 ops/s
+Iteration   2: 1495885.174 ops/s
+Iteration   3: 1499954.101 ops/s
+Iteration   4: 1487263.415 ops/s
+Iteration   5: 1506531.073 ops/s
+Iteration   6: 1497805.086 ops/s
+Iteration   7: 1515117.780 ops/s
+Iteration   8: 1500945.331 ops/s
+Iteration   9: 1512568.569 ops/s
+Iteration  10: 1512215.571 ops/s
+
+# Run progress: 41.67% complete, ETA 00:02:22
+# Fork: 2 of 2
+# Warmup Iteration   1: 147514745.243 ops/s
+# Warmup Iteration   2: 145178031.240 ops/s
+# Warmup Iteration   3: 148037871.331 ops/s
+# Warmup Iteration   4: 147887836.361 ops/s
+# Warmup Iteration   5: 151059600.800 ops/s
+# Warmup Iteration   6: 148418107.559 ops/s
+# Warmup Iteration   7: 148490968.382 ops/s
+# Warmup Iteration   8: 151691067.562 ops/s
+# Warmup Iteration   9: 151726290.819 ops/s
+# Warmup Iteration  10: 151621189.426 ops/s
+Iteration   1: 1482044.634 ops/s
+Iteration   2: 1510658.333 ops/s
+Iteration   3: 1515913.807 ops/s
+Iteration   4: 1516754.817 ops/s
+Iteration   5: 1483249.218 ops/s
+Iteration   6: 1484675.967 ops/s
+Iteration   7: 1513711.472 ops/s
+Iteration   8: 1449358.924 ops/s
+Iteration   9: 1480705.543 ops/s
+Iteration  10: 1483328.142 ops/s
+
+
+Result "io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread":
+  1496602.942 ±(99.9%) 15036.519 ops/s [Average]
+  (min, avg, max) = (1449358.924, 1496602.942, 1516754.817), stdev = 17316.077
+  CI (99.9%): [1481566.423, 1511639.461] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread
+# Parameters: (size = 04096)
+
+# Run progress: 50.00% complete, ETA 00:02:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 147064163.460 ops/s
+# Warmup Iteration   2: 141977282.177 ops/s
+# Warmup Iteration   3: 147800335.700 ops/s
+# Warmup Iteration   4: 147782690.997 ops/s
+# Warmup Iteration   5: 147803641.255 ops/s
+# Warmup Iteration   6: 148658123.850 ops/s
+# Warmup Iteration   7: 149331059.491 ops/s
+# Warmup Iteration   8: 149105936.562 ops/s
+# Warmup Iteration   9: 148741894.496 ops/s
+# Warmup Iteration  10: 149271697.107 ops/s
+Iteration   1: 1493639.786 ops/s
+Iteration   2: 1492470.613 ops/s
+Iteration   3: 1493414.590 ops/s
+Iteration   4: 1463951.432 ops/s
+Iteration   5: 1465457.891 ops/s
+Iteration   6: 1493626.311 ops/s
+Iteration   7: 1493260.078 ops/s
+Iteration   8: 1417079.546 ops/s
+Iteration   9: 1489305.132 ops/s
+Iteration  10: 1462067.545 ops/s
+
+# Run progress: 58.33% complete, ETA 00:01:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 144981875.643 ops/s
+# Warmup Iteration   2: 145959794.538 ops/s
+# Warmup Iteration   3: 149538569.129 ops/s
+# Warmup Iteration   4: 149487081.019 ops/s
+# Warmup Iteration   5: 149212797.258 ops/s
+# Warmup Iteration   6: 150718915.074 ops/s
+# Warmup Iteration   7: 150396989.330 ops/s
+# Warmup Iteration   8: 149251552.470 ops/s
+# Warmup Iteration   9: 150627988.188 ops/s
+# Warmup Iteration  10: 150112384.680 ops/s
+Iteration   1: 1498240.609 ops/s
+Iteration   2: 1499081.354 ops/s
+Iteration   3: 1513897.119 ops/s
+Iteration   4: 1503456.608 ops/s
+Iteration   5: 1504557.999 ops/s
+Iteration   6: 1501968.433 ops/s
+Iteration   7: 1475730.472 ops/s
+Iteration   8: 1498973.171 ops/s
+Iteration   9: 1475429.458 ops/s
+Iteration  10: 1505382.209 ops/s
+
+
+Result "io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread":
+  1487049.518 ±(99.9%) 19160.236 ops/s [Average]
+  (min, avg, max) = (1417079.546, 1487049.518, 1513897.119), stdev = 22064.956
+  CI (99.9%): [1467889.282, 1506209.754] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread
+# Parameters: (size = 16384)
+
+# Run progress: 66.67% complete, ETA 00:01:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 146455493.728 ops/s
+# Warmup Iteration   2: 144152483.677 ops/s
+# Warmup Iteration   3: 145896863.938 ops/s
+# Warmup Iteration   4: 149670242.212 ops/s
+# Warmup Iteration   5: 150422332.313 ops/s
+# Warmup Iteration   6: 151225733.424 ops/s
+# Warmup Iteration   7: 147891347.468 ops/s
+# Warmup Iteration   8: 150949917.872 ops/s
+# Warmup Iteration   9: 151249809.950 ops/s
+# Warmup Iteration  10: 147305595.336 ops/s
+Iteration   1: 1511402.181 ops/s
+Iteration   2: 1512750.254 ops/s
+Iteration   3: 1511696.833 ops/s
+Iteration   4: 1512762.366 ops/s
+Iteration   5: 1512226.477 ops/s
+Iteration   6: 1500445.308 ops/s
+Iteration   7: 1512577.581 ops/s
+Iteration   8: 1500881.393 ops/s
+Iteration   9: 1512527.086 ops/s
+Iteration  10: 1479490.900 ops/s
+
+# Run progress: 75.00% complete, ETA 00:01:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 147358553.606 ops/s
+# Warmup Iteration   2: 144530704.846 ops/s
+# Warmup Iteration   3: 146637765.135 ops/s
+# Warmup Iteration   4: 148080349.245 ops/s
+# Warmup Iteration   5: 148436796.158 ops/s
+# Warmup Iteration   6: 145783703.301 ops/s
+# Warmup Iteration   7: 147390489.091 ops/s
+# Warmup Iteration   8: 150088033.088 ops/s
+# Warmup Iteration   9: 146613513.115 ops/s
+# Warmup Iteration  10: 148761462.427 ops/s
+Iteration   1: 1482946.062 ops/s
+Iteration   2: 1469996.490 ops/s
+Iteration   3: 1501473.327 ops/s
+Iteration   4: 1492231.046 ops/s
+Iteration   5: 1488610.632 ops/s
+Iteration   6: 1468030.395 ops/s
+Iteration   7: 1501414.172 ops/s
+Iteration   8: 1500458.526 ops/s
+Iteration   9: 1479058.330 ops/s
+Iteration  10: 1500861.573 ops/s
+
+
+Result "io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread":
+  1497592.047 ±(99.9%) 12924.970 ops/s [Average]
+  (min, avg, max) = (1468030.395, 1497592.047, 1512762.366), stdev = 14884.415
+  CI (99.9%): [1484667.076, 1510517.017] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread
+# Parameters: (size = 65536)
+
+# Run progress: 83.33% complete, ETA 00:00:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 146321400.115 ops/s
+# Warmup Iteration   2: 142815170.465 ops/s
+# Warmup Iteration   3: 148906170.430 ops/s
+# Warmup Iteration   4: 146370924.363 ops/s
+# Warmup Iteration   5: 148963336.251 ops/s
+# Warmup Iteration   6: 148883816.163 ops/s
+# Warmup Iteration   7: 148417158.958 ops/s
+# Warmup Iteration   8: 147643128.075 ops/s
+# Warmup Iteration   9: 148384668.364 ops/s
+# Warmup Iteration  10: 146898026.260 ops/s
+Iteration   1: 1492547.394 ops/s
+Iteration   2: 1493776.511 ops/s
+Iteration   3: 1500403.536 ops/s
+Iteration   4: 1499255.643 ops/s
+Iteration   5: 1493461.363 ops/s
+Iteration   6: 1499534.032 ops/s
+Iteration   7: 1484529.914 ops/s
+Iteration   8: 1491487.648 ops/s
+Iteration   9: 1497404.567 ops/s
+Iteration  10: 1474659.266 ops/s
+
+# Run progress: 91.67% complete, ETA 00:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 141575310.846 ops/s
+# Warmup Iteration   2: 142681786.459 ops/s
+# Warmup Iteration   3: 149446882.443 ops/s
+# Warmup Iteration   4: 149068981.802 ops/s
+# Warmup Iteration   5: 147067907.212 ops/s
+# Warmup Iteration   6: 150307208.032 ops/s
+# Warmup Iteration   7: 150060780.736 ops/s
+# Warmup Iteration   8: 150302640.240 ops/s
+# Warmup Iteration   9: 150249251.705 ops/s
+# Warmup Iteration  10: 149023497.699 ops/s
+Iteration   1: 1504137.112 ops/s
+Iteration   2: 1501556.836 ops/s
+Iteration   3: 1503473.204 ops/s
+Iteration   4: 1504233.083 ops/s
+Iteration   5: 1503368.482 ops/s
+Iteration   6: 1500693.386 ops/s
+Iteration   7: 1503723.214 ops/s
+Iteration   8: 1504135.549 ops/s
+Iteration   9: 1483607.727 ops/s
+Iteration  10: 1502067.999 ops/s
+
+
+Result "io.netty.microbench.internal.RecyclableArrayListBenchmark.recycleSameThread":
+  1496902.823 ±(99.9%) 7105.234 ops/s [Average]
+  (min, avg, max) = (1474659.266, 1496902.823, 1504233.083), stdev = 8182.398
+  CI (99.9%): [1489797.590, 1504008.057] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:04:04
+
+Benchmark                                       (size)   Mode  Cnt        Score       Error  Units
+RecyclableArrayListBenchmark.recycleSameThread   00000  thrpt   20  1497270.648 ± 14532.844  ops/s
+RecyclableArrayListBenchmark.recycleSameThread   00256  thrpt   20  1501033.524 ± 13343.567  ops/s
+RecyclableArrayListBenchmark.recycleSameThread   01024  thrpt   20  1496602.942 ± 15036.519  ops/s
+RecyclableArrayListBenchmark.recycleSameThread   04096  thrpt   20  1487049.518 ± 19160.236  ops/s
+RecyclableArrayListBenchmark.recycleSameThread   16384  thrpt   20  1497592.047 ± 12924.970  ops/s
+RecyclableArrayListBenchmark.recycleSameThread   65536  thrpt   20  1496902.823 ±  7105.234  ops/s
+
+Benchmark result is saved to netty/exp-RETU-out/netty-fixed-benchmarks-RETU_RecyclableArrayListBenchmark_retu_trial1.csv

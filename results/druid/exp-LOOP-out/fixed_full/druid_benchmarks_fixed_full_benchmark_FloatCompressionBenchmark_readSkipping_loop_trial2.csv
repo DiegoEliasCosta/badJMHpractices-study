@@ -1,0 +1,12 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: dirPath","Param: file","Param: rowsPerSegment","Param: schema","Param: strategy"
+"io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone","avgt",1,25,126037.682541,11794.267736,"us/op",,,750000,basic,
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,3.103050,0.006289,"ms/op",floatCompress/,enumerate,,,lz4
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,0.158303,0.000232,"ms/op",floatCompress/,enumerate,,,none
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,9.834327,0.002324,"ms/op",floatCompress/,zipfLow,,,lz4
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,0.159903,0.005170,"ms/op",floatCompress/,zipfLow,,,none
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,5.349515,0.008947,"ms/op",floatCompress/,zipfHigh,,,lz4
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,0.158669,0.000209,"ms/op",floatCompress/,zipfHigh,,,none
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,3.916077,0.005675,"ms/op",floatCompress/,sequential,,,lz4
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,0.157322,0.002311,"ms/op",floatCompress/,sequential,,,none
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,2.209620,0.093242,"ms/op",floatCompress/,uniform,,,lz4
+"io.druid.benchmark.FloatCompressionBenchmark.readSkipping","avgt",1,25,0.157637,0.000284,"ms/op",floatCompress/,uniform,,,none

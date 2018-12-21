@@ -1,0 +1,104 @@
+# JMH 1.17.4 (released 441 days ago, please consider updating!)
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.postgresql.benchmark.statement.BindBoolean.bindBoolean
+
+# Run progress: 0.00% complete, ETA 00:00:30
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 7.291 ns/op
+# Warmup Iteration   2: 6.594 ns/op
+# Warmup Iteration   3: 5.362 ns/op
+# Warmup Iteration   4: 5.350 ns/op
+# Warmup Iteration   5: 5.350 ns/op
+Iteration   1: 5.350 ns/op
+Iteration   2: 5.350 ns/op
+Iteration   3: 5.350 ns/op
+Iteration   4: 5.359 ns/op
+Iteration   5: 5.351 ns/op
+
+Result "org.postgresql.benchmark.statement.BindBoolean.bindBoolean":
+  5.352 ±(99.9%) 0.015 ns/op [Average]
+  (min, avg, max) = (5.350, 5.352, 5.359), stdev = 0.004
+  CI (99.9%): [5.337, 5.367] (assumes normal distribution)
+
+
+# JMH 1.17.4 (released 441 days ago, please consider updating!)
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.postgresql.benchmark.statement.BindBoolean.boolAsBoolean
+
+# Run progress: 33.33% complete, ETA 00:00:20
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 11.834 ns/op
+# Warmup Iteration   2: 10.076 ns/op
+# Warmup Iteration   3: 9.974 ns/op
+# Warmup Iteration   4: 9.991 ns/op
+# Warmup Iteration   5: 9.987 ns/op
+Iteration   1: 9.962 ns/op
+Iteration   2: 9.982 ns/op
+Iteration   3: 9.975 ns/op
+Iteration   4: 9.966 ns/op
+Iteration   5: 9.995 ns/op
+
+Result "org.postgresql.benchmark.statement.BindBoolean.boolAsBoolean":
+  9.976 ±(99.9%) 0.052 ns/op [Average]
+  (min, avg, max) = (9.962, 9.976, 9.995), stdev = 0.013
+  CI (99.9%): [9.924, 10.028] (assumes normal distribution)
+
+
+# JMH 1.17.4 (released 441 days ago, please consider updating!)
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.postgresql.benchmark.statement.BindBoolean.boolAsInt
+
+# Run progress: 66.67% complete, ETA 00:00:10
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 14.939 ns/op
+# Warmup Iteration   2: 12.542 ns/op
+# Warmup Iteration   3: 12.703 ns/op
+# Warmup Iteration   4: 12.693 ns/op
+# Warmup Iteration   5: 12.699 ns/op
+Iteration   1: 12.714 ns/op
+Iteration   2: 12.688 ns/op
+Iteration   3: 12.703 ns/op
+Iteration   4: 12.698 ns/op
+Iteration   5: 12.695 ns/op
+
+Result "org.postgresql.benchmark.statement.BindBoolean.boolAsInt":
+  12.699 ±(99.9%) 0.039 ns/op [Average]
+  (min, avg, max) = (12.688, 12.699, 12.714), stdev = 0.010
+  CI (99.9%): [12.661, 12.738] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:30
+
+Benchmark                  Mode  Cnt   Score   Error  Units
+BindBoolean.bindBoolean    avgt    5   5.352 ± 0.015  ns/op
+BindBoolean.boolAsBoolean  avgt    5   9.976 ± 0.052  ns/op
+BindBoolean.boolAsInt      avgt    5  12.699 ± 0.039  ns/op
+
+Benchmark result is saved to exp-FORK-out/pgdbc_benchmarks_original_postgresql_benchmark_statement_BindBoolean_fork_trial8.csv

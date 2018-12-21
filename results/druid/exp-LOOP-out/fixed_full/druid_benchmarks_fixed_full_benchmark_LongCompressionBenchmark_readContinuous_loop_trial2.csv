@@ -1,0 +1,22 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: dirPath","Param: file","Param: format","Param: rowsPerSegment","Param: schema","Param: strategy"
+"io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone","avgt",1,25,127316.148313,15568.003437,"us/op",,,,750000,basic,
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,37.153365,0.089577,"ms/op",longCompress/,enumerate,auto,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,35.523368,0.137102,"ms/op",longCompress/,enumerate,auto,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,25.019922,0.036625,"ms/op",longCompress/,enumerate,longs,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,23.396009,0.033995,"ms/op",longCompress/,enumerate,longs,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,42.379034,0.160169,"ms/op",longCompress/,zipfLow,auto,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,38.285934,0.061440,"ms/op",longCompress/,zipfLow,auto,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,35.058541,0.047043,"ms/op",longCompress/,zipfLow,longs,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,23.451693,0.037662,"ms/op",longCompress/,zipfLow,longs,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,32.920132,0.432960,"ms/op",longCompress/,zipfHigh,auto,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,29.821924,0.026133,"ms/op",longCompress/,zipfHigh,auto,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,27.033129,0.037857,"ms/op",longCompress/,zipfHigh,longs,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,23.456290,0.037082,"ms/op",longCompress/,zipfHigh,longs,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,37.153239,0.629016,"ms/op",longCompress/,sequential,auto,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,34.529509,0.298524,"ms/op",longCompress/,sequential,auto,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,55.500063,0.069244,"ms/op",longCompress/,sequential,longs,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,23.683278,0.127313,"ms/op",longCompress/,sequential,longs,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,38.840887,0.155178,"ms/op",longCompress/,uniform,auto,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,38.276139,0.054340,"ms/op",longCompress/,uniform,auto,,,none
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,33.317619,1.178533,"ms/op",longCompress/,uniform,longs,,,lz4
+"io.druid.benchmark.LongCompressionBenchmark.readContinuous","avgt",1,25,23.465301,0.038938,"ms/op",longCompress/,uniform,longs,,,none

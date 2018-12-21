@@ -1,0 +1,311 @@
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.http.HttpMethodMapBenchmark.newMapKnownMethods
+
+# Run progress: 0.00% complete, ETA 00:02:36
+# Fork: 1 of 2
+# Warmup Iteration   1: 22.086 ops/us
+# Warmup Iteration   2: 24.759 ops/us
+# Warmup Iteration   3: 24.372 ops/us
+# Warmup Iteration   4: 24.338 ops/us
+# Warmup Iteration   5: 24.355 ops/us
+Iteration   1: 24.328 ops/us
+Iteration   2: 24.369 ops/us
+Iteration   3: 24.199 ops/us
+Iteration   4: 24.354 ops/us
+Iteration   5: 24.450 ops/us
+Iteration   6: 24.333 ops/us
+Iteration   7: 24.222 ops/us
+Iteration   8: 24.354 ops/us
+
+# Run progress: 8.33% complete, ETA 00:02:27
+# Fork: 2 of 2
+# Warmup Iteration   1: 22.467 ops/us
+# Warmup Iteration   2: 24.942 ops/us
+# Warmup Iteration   3: 22.505 ops/us
+# Warmup Iteration   4: 21.076 ops/us
+# Warmup Iteration   5: 24.303 ops/us
+Iteration   1: 20.697 ops/us
+Iteration   2: 22.485 ops/us
+Iteration   3: 22.965 ops/us
+Iteration   4: 20.704 ops/us
+Iteration   5: 24.452 ops/us
+Iteration   6: 24.315 ops/us
+Iteration   7: 20.719 ops/us
+Iteration   8: 22.315 ops/us
+
+
+Result "io.netty.handler.codec.http.HttpMethodMapBenchmark.newMapKnownMethods":
+  23.329 ±(99.9%) 1.504 ops/us [Average]
+  (min, avg, max) = (20.697, 23.329, 24.452), stdev = 1.477
+  CI (99.9%): [21.825, 24.833] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.http.HttpMethodMapBenchmark.newMapMixMethods
+
+# Run progress: 16.67% complete, ETA 00:02:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 16.277 ops/us
+# Warmup Iteration   2: 17.438 ops/us
+# Warmup Iteration   3: 17.283 ops/us
+# Warmup Iteration   4: 17.289 ops/us
+# Warmup Iteration   5: 16.235 ops/us
+Iteration   1: 16.860 ops/us
+Iteration   2: 17.287 ops/us
+Iteration   3: 16.379 ops/us
+Iteration   4: 15.927 ops/us
+Iteration   5: 16.209 ops/us
+Iteration   6: 15.922 ops/us
+Iteration   7: 17.290 ops/us
+Iteration   8: 17.291 ops/us
+
+# Run progress: 25.00% complete, ETA 00:02:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 16.276 ops/us
+# Warmup Iteration   2: 14.827 ops/us
+# Warmup Iteration   3: 14.483 ops/us
+# Warmup Iteration   4: 15.871 ops/us
+# Warmup Iteration   5: 15.901 ops/us
+Iteration   1: 14.608 ops/us
+Iteration   2: 14.604 ops/us
+Iteration   3: 14.835 ops/us
+Iteration   4: 15.418 ops/us
+Iteration   5: 14.700 ops/us
+Iteration   6: 17.264 ops/us
+Iteration   7: 17.260 ops/us
+Iteration   8: 16.196 ops/us
+
+
+Result "io.netty.handler.codec.http.HttpMethodMapBenchmark.newMapMixMethods":
+  16.128 ±(99.9%) 1.057 ops/us [Average]
+  (min, avg, max) = (14.604, 16.128, 17.291), stdev = 1.038
+  CI (99.9%): [15.071, 17.185] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.http.HttpMethodMapBenchmark.newMapUnknownMethods
+
+# Run progress: 33.33% complete, ETA 00:01:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 32.340 ops/us
+# Warmup Iteration   2: 34.852 ops/us
+# Warmup Iteration   3: 37.221 ops/us
+# Warmup Iteration   4: 37.294 ops/us
+# Warmup Iteration   5: 34.967 ops/us
+Iteration   1: 31.552 ops/us
+Iteration   2: 34.663 ops/us
+Iteration   3: 34.940 ops/us
+Iteration   4: 33.538 ops/us
+Iteration   5: 37.267 ops/us
+Iteration   6: 34.933 ops/us
+Iteration   7: 35.000 ops/us
+Iteration   8: 37.263 ops/us
+
+# Run progress: 41.67% complete, ETA 00:01:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 32.792 ops/us
+# Warmup Iteration   2: 35.083 ops/us
+# Warmup Iteration   3: 37.275 ops/us
+# Warmup Iteration   4: 37.282 ops/us
+# Warmup Iteration   5: 37.265 ops/us
+Iteration   1: 34.812 ops/us
+Iteration   2: 34.277 ops/us
+Iteration   3: 37.276 ops/us
+Iteration   4: 37.242 ops/us
+Iteration   5: 37.259 ops/us
+Iteration   6: 37.281 ops/us
+Iteration   7: 37.279 ops/us
+Iteration   8: 37.247 ops/us
+
+
+Result "io.netty.handler.codec.http.HttpMethodMapBenchmark.newMapUnknownMethods":
+  35.739 ±(99.9%) 1.802 ops/us [Average]
+  (min, avg, max) = (31.552, 35.739, 37.281), stdev = 1.770
+  CI (99.9%): [33.937, 37.541] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.http.HttpMethodMapBenchmark.oldMapKnownMethods
+
+# Run progress: 50.00% complete, ETA 00:01:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 17.393 ops/us
+# Warmup Iteration   2: 19.600 ops/us
+# Warmup Iteration   3: 20.406 ops/us
+# Warmup Iteration   4: 20.372 ops/us
+# Warmup Iteration   5: 20.405 ops/us
+Iteration   1: 20.375 ops/us
+Iteration   2: 20.402 ops/us
+Iteration   3: 20.409 ops/us
+Iteration   4: 19.165 ops/us
+Iteration   5: 19.195 ops/us
+Iteration   6: 20.376 ops/us
+Iteration   7: 20.400 ops/us
+Iteration   8: 20.410 ops/us
+
+# Run progress: 58.33% complete, ETA 00:01:06
+# Fork: 2 of 2
+# Warmup Iteration   1: 17.336 ops/us
+# Warmup Iteration   2: 18.809 ops/us
+# Warmup Iteration   3: 17.564 ops/us
+# Warmup Iteration   4: 19.789 ops/us
+# Warmup Iteration   5: 20.815 ops/us
+Iteration   1: 19.500 ops/us
+Iteration   2: 17.616 ops/us
+Iteration   3: 17.566 ops/us
+Iteration   4: 17.586 ops/us
+Iteration   5: 18.105 ops/us
+Iteration   6: 20.811 ops/us
+Iteration   7: 19.501 ops/us
+Iteration   8: 17.614 ops/us
+
+
+Result "io.netty.handler.codec.http.HttpMethodMapBenchmark.oldMapKnownMethods":
+  19.314 ±(99.9%) 1.251 ops/us [Average]
+  (min, avg, max) = (17.566, 19.314, 20.811), stdev = 1.228
+  CI (99.9%): [18.064, 20.565] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.http.HttpMethodMapBenchmark.oldMapMixMethods
+
+# Run progress: 66.67% complete, ETA 00:00:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 12.173 ops/us
+# Warmup Iteration   2: 13.038 ops/us
+# Warmup Iteration   3: 12.622 ops/us
+# Warmup Iteration   4: 13.739 ops/us
+# Warmup Iteration   5: 14.914 ops/us
+Iteration   1: 14.901 ops/us
+Iteration   2: 14.913 ops/us
+Iteration   3: 14.899 ops/us
+Iteration   4: 14.906 ops/us
+Iteration   5: 13.622 ops/us
+Iteration   6: 12.919 ops/us
+Iteration   7: 14.005 ops/us
+Iteration   8: 14.024 ops/us
+
+# Run progress: 75.00% complete, ETA 00:00:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 12.334 ops/us
+# Warmup Iteration   2: 13.657 ops/us
+# Warmup Iteration   3: 13.898 ops/us
+# Warmup Iteration   4: 14.903 ops/us
+# Warmup Iteration   5: 13.966 ops/us
+Iteration   1: 13.727 ops/us
+Iteration   2: 13.986 ops/us
+Iteration   3: 14.113 ops/us
+Iteration   4: 13.980 ops/us
+Iteration   5: 13.957 ops/us
+Iteration   6: 14.099 ops/us
+Iteration   7: 14.905 ops/us
+Iteration   8: 13.979 ops/us
+
+
+Result "io.netty.handler.codec.http.HttpMethodMapBenchmark.oldMapMixMethods":
+  14.183 ±(99.9%) 0.586 ops/us [Average]
+  (min, avg, max) = (12.919, 14.183, 14.913), stdev = 0.575
+  CI (99.9%): [13.598, 14.769] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 8 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.handler.codec.http.HttpMethodMapBenchmark.oldMapUnknownMethods
+
+# Run progress: 83.33% complete, ETA 00:00:26
+# Fork: 1 of 2
+# Warmup Iteration   1: 33.860 ops/us
+# Warmup Iteration   2: 37.744 ops/us
+# Warmup Iteration   3: 40.258 ops/us
+# Warmup Iteration   4: 37.734 ops/us
+# Warmup Iteration   5: 37.353 ops/us
+Iteration   1: 37.002 ops/us
+Iteration   2: 27.147 ops/us
+Iteration   3: 19.523 ops/us
+Iteration   4: 28.511 ops/us
+Iteration   5: 35.462 ops/us
+Iteration   6: 40.334 ops/us
+Iteration   7: 32.110 ops/us
+Iteration   8: 28.991 ops/us
+
+# Run progress: 91.67% complete, ETA 00:00:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 40.393 ops/us
+# Warmup Iteration   2: 41.076 ops/us
+# Warmup Iteration   3: 40.174 ops/us
+# Warmup Iteration   4: 37.709 ops/us
+# Warmup Iteration   5: 37.001 ops/us
+Iteration   1: 40.169 ops/us
+Iteration   2: 40.181 ops/us
+Iteration   3: 40.179 ops/us
+Iteration   4: 40.170 ops/us
+Iteration   5: 40.147 ops/us
+Iteration   6: 40.184 ops/us
+Iteration   7: 40.173 ops/us
+Iteration   8: 40.165 ops/us
+
+
+Result "io.netty.handler.codec.http.HttpMethodMapBenchmark.oldMapUnknownMethods":
+  35.653 ±(99.9%) 6.586 ops/us [Average]
+  (min, avg, max) = (19.523, 35.653, 40.334), stdev = 6.468
+  CI (99.9%): [29.067, 42.239] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:40
+
+Benchmark                                     Mode  Cnt   Score   Error   Units
+HttpMethodMapBenchmark.newMapKnownMethods    thrpt   16  23.329 ± 1.504  ops/us
+HttpMethodMapBenchmark.newMapMixMethods      thrpt   16  16.128 ± 1.057  ops/us
+HttpMethodMapBenchmark.newMapUnknownMethods  thrpt   16  35.739 ± 1.802  ops/us
+HttpMethodMapBenchmark.oldMapKnownMethods    thrpt   16  19.314 ± 1.251  ops/us
+HttpMethodMapBenchmark.oldMapMixMethods      thrpt   16  14.183 ± 0.586  ops/us
+HttpMethodMapBenchmark.oldMapUnknownMethods  thrpt   16  35.653 ± 6.586  ops/us
+
+Benchmark result is saved to netty/exp-LOOP-out/netty_benchmarks_original_HttpMethodMapBenchmark_loop_trial3.csv

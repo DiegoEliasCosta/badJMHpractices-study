@@ -1,0 +1,277 @@
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 15 iterations, 1 s each
+# Measurement: 30 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LoadStatusBenchmark.newVersion
+# Parameters: (serverHasAllSegments = true, totalSegmentsCount = 10000)
+
+# Run progress: 0.00% complete, ETA 00:03:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 2669.119 us/op
+# Warmup Iteration   2: 670.835 us/op
+# Warmup Iteration   3: 528.375 us/op
+# Warmup Iteration   4: 536.029 us/op
+# Warmup Iteration   5: 537.943 us/op
+# Warmup Iteration   6: 541.028 us/op
+# Warmup Iteration   7: 527.268 us/op
+# Warmup Iteration   8: 533.055 us/op
+# Warmup Iteration   9: 531.427 us/op
+# Warmup Iteration  10: 570.655 us/op
+# Warmup Iteration  11: 591.305 us/op
+# Warmup Iteration  12: 590.016 us/op
+# Warmup Iteration  13: 533.480 us/op
+# Warmup Iteration  14: 534.647 us/op
+# Warmup Iteration  15: 535.233 us/op
+Iteration   1: 531.329 us/op
+Iteration   2: 532.356 us/op
+Iteration   3: 554.737 us/op
+Iteration   4: 574.858 us/op
+Iteration   5: 584.944 us/op
+Iteration   6: 529.916 us/op
+Iteration   7: 531.778 us/op
+Iteration   8: 531.061 us/op
+Iteration   9: 529.111 us/op
+Iteration  10: 532.456 us/op
+Iteration  11: 597.110 us/op
+Iteration  12: 580.450 us/op
+Iteration  13: 530.905 us/op
+Iteration  14: 531.785 us/op
+Iteration  15: 532.598 us/op
+Iteration  16: 529.849 us/op
+Iteration  17: 529.701 us/op
+Iteration  18: 542.191 us/op
+Iteration  19: 578.184 us/op
+Iteration  20: 533.798 us/op
+Iteration  21: 534.506 us/op
+Iteration  22: 533.158 us/op
+Iteration  23: 538.083 us/op
+Iteration  24: 533.922 us/op
+Iteration  25: 532.281 us/op
+Iteration  26: 534.134 us/op
+Iteration  27: 534.149 us/op
+Iteration  28: 529.014 us/op
+Iteration  29: 586.864 us/op
+Iteration  30: 534.155 us/op
+
+
+Result "io.druid.benchmark.LoadStatusBenchmark.newVersion":
+  543.646 ±(99.9%) 14.157 us/op [Average]
+  (min, avg, max) = (529.014, 543.646, 597.110), stdev = 21.190
+  CI (99.9%): [529.489, 557.804] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 15 iterations, 1 s each
+# Measurement: 30 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LoadStatusBenchmark.newVersion
+# Parameters: (serverHasAllSegments = false, totalSegmentsCount = 10000)
+
+# Run progress: 25.00% complete, ETA 00:02:19
+# Fork: 1 of 1
+# Warmup Iteration   1: 1369.312 us/op
+# Warmup Iteration   2: 555.984 us/op
+# Warmup Iteration   3: 286.224 us/op
+# Warmup Iteration   4: 310.375 us/op
+# Warmup Iteration   5: 307.228 us/op
+# Warmup Iteration   6: 301.145 us/op
+# Warmup Iteration   7: 283.880 us/op
+# Warmup Iteration   8: 285.876 us/op
+# Warmup Iteration   9: 284.999 us/op
+# Warmup Iteration  10: 288.490 us/op
+# Warmup Iteration  11: 282.060 us/op
+# Warmup Iteration  12: 295.100 us/op
+# Warmup Iteration  13: 284.107 us/op
+# Warmup Iteration  14: 285.161 us/op
+# Warmup Iteration  15: 281.916 us/op
+Iteration   1: 282.559 us/op
+Iteration   2: 300.840 us/op
+Iteration   3: 307.407 us/op
+Iteration   4: 282.393 us/op
+Iteration   5: 283.768 us/op
+Iteration   6: 279.997 us/op
+Iteration   7: 285.219 us/op
+Iteration   8: 285.540 us/op
+Iteration   9: 284.605 us/op
+Iteration  10: 281.911 us/op
+Iteration  11: 282.474 us/op
+Iteration  12: 281.020 us/op
+Iteration  13: 281.803 us/op
+Iteration  14: 280.330 us/op
+Iteration  15: 287.111 us/op
+Iteration  16: 285.867 us/op
+Iteration  17: 284.282 us/op
+Iteration  18: 283.372 us/op
+Iteration  19: 282.497 us/op
+Iteration  20: 282.245 us/op
+Iteration  21: 287.046 us/op
+Iteration  22: 285.382 us/op
+Iteration  23: 284.319 us/op
+Iteration  24: 283.555 us/op
+Iteration  25: 284.382 us/op
+Iteration  26: 307.613 us/op
+Iteration  27: 283.130 us/op
+Iteration  28: 286.054 us/op
+Iteration  29: 284.960 us/op
+Iteration  30: 285.095 us/op
+
+
+Result "io.druid.benchmark.LoadStatusBenchmark.newVersion":
+  285.893 ±(99.9%) 4.606 us/op [Average]
+  (min, avg, max) = (279.997, 285.893, 307.613), stdev = 6.894
+  CI (99.9%): [281.287, 290.498] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 15 iterations, 1 s each
+# Measurement: 30 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LoadStatusBenchmark.oldVersion
+# Parameters: (serverHasAllSegments = true, totalSegmentsCount = 10000)
+
+# Run progress: 50.00% complete, ETA 00:01:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 1906991.815 us/op
+# Warmup Iteration   2: 1862883.249 us/op
+# Warmup Iteration   3: 1699332.711 us/op
+# Warmup Iteration   4: 2098014.084 us/op
+# Warmup Iteration   5: 1936983.174 us/op
+# Warmup Iteration   6: 1856699.825 us/op
+# Warmup Iteration   7: 2810001.933 us/op
+# Warmup Iteration   8: 2167208.847 us/op
+# Warmup Iteration   9: 1926172.481 us/op
+# Warmup Iteration  10: 1621402.250 us/op
+# Warmup Iteration  11: 1981157.008 us/op
+# Warmup Iteration  12: 1829420.680 us/op
+# Warmup Iteration  13: 1847017.552 us/op
+# Warmup Iteration  14: 1852123.521 us/op
+# Warmup Iteration  15: 1848618.246 us/op
+Iteration   1: 1937210.553 us/op
+Iteration   2: 1836183.288 us/op
+Iteration   3: 1703789.792 us/op
+Iteration   4: 2798786.755 us/op
+Iteration   5: 1868155.464 us/op
+Iteration   6: 1952737.410 us/op
+Iteration   7: 1832715.326 us/op
+Iteration   8: 1955519.048 us/op
+Iteration   9: 1838781.160 us/op
+Iteration  10: 1839702.508 us/op
+Iteration  11: 1838630.533 us/op
+Iteration  12: 1839627.116 us/op
+Iteration  13: 1605371.115 us/op
+Iteration  14: 1834837.652 us/op
+Iteration  15: 1832616.349 us/op
+Iteration  16: 2099102.066 us/op
+Iteration  17: 1850846.882 us/op
+Iteration  18: 1826811.890 us/op
+Iteration  19: 1848998.040 us/op
+Iteration  20: 2066224.210 us/op
+Iteration  21: 2009000.728 us/op
+Iteration  22: 1838397.993 us/op
+Iteration  23: 1833903.926 us/op
+Iteration  24: 1843470.677 us/op
+Iteration  25: 1963938.694 us/op
+Iteration  26: 1887092.802 us/op
+Iteration  27: 1921816.481 us/op
+Iteration  28: 1794764.170 us/op
+Iteration  29: 1928527.910 us/op
+Iteration  30: 1837431.770 us/op
+
+
+Result "io.druid.benchmark.LoadStatusBenchmark.oldVersion":
+  1902166.410 ±(99.9%) 129815.678 us/op [Average]
+  (min, avg, max) = (1605371.115, 1902166.410, 2798786.755), stdev = 194302.010
+  CI (99.9%): [1772350.732, 2031982.088] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 15 iterations, 1 s each
+# Measurement: 30 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.LoadStatusBenchmark.oldVersion
+# Parameters: (serverHasAllSegments = false, totalSegmentsCount = 10000)
+
+# Run progress: 75.00% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 1277.069 us/op
+# Warmup Iteration   2: 524.959 us/op
+# Warmup Iteration   3: 314.286 us/op
+# Warmup Iteration   4: 333.424 us/op
+# Warmup Iteration   5: 304.599 us/op
+# Warmup Iteration   6: 309.815 us/op
+# Warmup Iteration   7: 303.701 us/op
+# Warmup Iteration   8: 305.746 us/op
+# Warmup Iteration   9: 305.569 us/op
+# Warmup Iteration  10: 312.553 us/op
+# Warmup Iteration  11: 312.887 us/op
+# Warmup Iteration  12: 308.953 us/op
+# Warmup Iteration  13: 313.686 us/op
+# Warmup Iteration  14: 300.083 us/op
+# Warmup Iteration  15: 300.363 us/op
+Iteration   1: 298.090 us/op
+Iteration   2: 300.298 us/op
+Iteration   3: 302.359 us/op
+Iteration   4: 340.730 us/op
+Iteration   5: 299.704 us/op
+Iteration   6: 301.127 us/op
+Iteration   7: 296.102 us/op
+Iteration   8: 299.664 us/op
+Iteration   9: 298.991 us/op
+Iteration  10: 299.573 us/op
+Iteration  11: 297.340 us/op
+Iteration  12: 296.619 us/op
+Iteration  13: 299.098 us/op
+Iteration  14: 300.331 us/op
+Iteration  15: 296.367 us/op
+Iteration  16: 300.642 us/op
+Iteration  17: 326.660 us/op
+Iteration  18: 311.401 us/op
+Iteration  19: 298.655 us/op
+Iteration  20: 301.918 us/op
+Iteration  21: 296.742 us/op
+Iteration  22: 304.308 us/op
+Iteration  23: 300.448 us/op
+Iteration  24: 296.819 us/op
+Iteration  25: 298.233 us/op
+Iteration  26: 299.280 us/op
+Iteration  27: 296.466 us/op
+Iteration  28: 300.216 us/op
+Iteration  29: 295.517 us/op
+Iteration  30: 299.772 us/op
+
+
+Result "io.druid.benchmark.LoadStatusBenchmark.oldVersion":
+  301.782 ±(99.9%) 6.260 us/op [Average]
+  (min, avg, max) = (295.517, 301.782, 340.730), stdev = 9.370
+  CI (99.9%): [295.522, 308.042] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:49
+
+Benchmark                       (serverHasAllSegments)  (totalSegmentsCount)  Mode  Cnt        Score        Error  Units
+LoadStatusBenchmark.newVersion                    true                 10000  avgt   30      543.646 ±     14.157  us/op
+LoadStatusBenchmark.newVersion                   false                 10000  avgt   30      285.893 ±      4.606  us/op
+LoadStatusBenchmark.oldVersion                    true                 10000  avgt   30  1902166.410 ± 129815.678  us/op
+LoadStatusBenchmark.oldVersion                   false                 10000  avgt   30      301.782 ±      6.260  us/op
+
+Benchmark result is saved to druid/exp-INVO-out/druid_benchmarks_original_new_LoadStatusBenchmark_invo_trial3.csv

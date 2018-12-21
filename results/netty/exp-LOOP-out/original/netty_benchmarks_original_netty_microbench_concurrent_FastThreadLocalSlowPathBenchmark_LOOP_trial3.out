@@ -1,0 +1,135 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark.fastThreadLocal
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 3940395.482 ops/s
+# Warmup Iteration   2: 4101867.337 ops/s
+# Warmup Iteration   3: 4856136.298 ops/s
+# Warmup Iteration   4: 4855358.084 ops/s
+# Warmup Iteration   5: 4853055.554 ops/s
+# Warmup Iteration   6: 4766251.580 ops/s
+# Warmup Iteration   7: 4770383.801 ops/s
+# Warmup Iteration   8: 4752645.594 ops/s
+# Warmup Iteration   9: 3756279.529 ops/s
+# Warmup Iteration  10: 3754317.358 ops/s
+Iteration   1: 37608.663 ops/s
+Iteration   2: 37610.704 ops/s
+Iteration   3: 37631.948 ops/s
+Iteration   4: 37632.894 ops/s
+Iteration   5: 37607.465 ops/s
+Iteration   6: 47551.908 ops/s
+Iteration   7: 47675.822 ops/s
+Iteration   8: 46971.860 ops/s
+Iteration   9: 47668.827 ops/s
+Iteration  10: 47665.880 ops/s
+
+# Run progress: 25.00% complete, ETA 00:01:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 4451701.689 ops/s
+# Warmup Iteration   2: 4599169.835 ops/s
+# Warmup Iteration   3: 5636147.502 ops/s
+# Warmup Iteration   4: 5734938.121 ops/s
+# Warmup Iteration   5: 5637208.838 ops/s
+# Warmup Iteration   6: 5696004.384 ops/s
+# Warmup Iteration   7: 5741132.358 ops/s
+# Warmup Iteration   8: 5623979.340 ops/s
+# Warmup Iteration   9: 5741575.548 ops/s
+# Warmup Iteration  10: 5692336.905 ops/s
+Iteration   1: 56374.924 ops/s
+Iteration   2: 57012.809 ops/s
+Iteration   3: 56384.286 ops/s
+Iteration   4: 56937.415 ops/s
+Iteration   5: 53156.535 ops/s
+Iteration   6: 56392.364 ops/s
+Iteration   7: 57418.500 ops/s
+Iteration   8: 56925.986 ops/s
+Iteration   9: 56384.662 ops/s
+Iteration  10: 57366.900 ops/s
+
+
+Result "io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark.fastThreadLocal":
+  49499.017 ±(99.9%) 6959.766 ops/s [Average]
+  (min, avg, max) = (37607.465, 49499.017, 57418.500), stdev = 8014.877
+  CI (99.9%): [42539.251, 56458.784] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each, 100 calls per op
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark.jdkThreadLocalGet
+
+# Run progress: 50.00% complete, ETA 00:00:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 6217901.744 ops/s
+# Warmup Iteration   2: 6338058.771 ops/s
+# Warmup Iteration   3: 7631024.997 ops/s
+# Warmup Iteration   4: 7615968.888 ops/s
+# Warmup Iteration   5: 7447668.068 ops/s
+# Warmup Iteration   6: 7631896.566 ops/s
+# Warmup Iteration   7: 7625877.238 ops/s
+# Warmup Iteration   8: 7619405.955 ops/s
+# Warmup Iteration   9: 7613690.803 ops/s
+# Warmup Iteration  10: 7592966.011 ops/s
+Iteration   1: 74421.727 ops/s
+Iteration   2: 76061.250 ops/s
+Iteration   3: 76327.374 ops/s
+Iteration   4: 76255.071 ops/s
+Iteration   5: 76032.365 ops/s
+Iteration   6: 76138.437 ops/s
+Iteration   7: 76097.703 ops/s
+Iteration   8: 76266.356 ops/s
+Iteration   9: 76074.513 ops/s
+Iteration  10: 76046.209 ops/s
+
+# Run progress: 75.00% complete, ETA 00:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 6184225.003 ops/s
+# Warmup Iteration   2: 6219861.812 ops/s
+# Warmup Iteration   3: 7535177.827 ops/s
+# Warmup Iteration   4: 7533587.383 ops/s
+# Warmup Iteration   5: 7633414.999 ops/s
+# Warmup Iteration   6: 7617867.023 ops/s
+# Warmup Iteration   7: 7621617.209 ops/s
+# Warmup Iteration   8: 7545331.137 ops/s
+# Warmup Iteration   9: 7699870.616 ops/s
+# Warmup Iteration  10: 7697323.586 ops/s
+Iteration   1: 76109.578 ops/s
+Iteration   2: 75414.531 ops/s
+Iteration   3: 76981.620 ops/s
+Iteration   4: 76948.464 ops/s
+Iteration   5: 75380.391 ops/s
+Iteration   6: 76936.967 ops/s
+Iteration   7: 76272.335 ops/s
+Iteration   8: 75406.830 ops/s
+Iteration   9: 75402.498 ops/s
+Iteration  10: 75401.809 ops/s
+
+
+Result "io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark.jdkThreadLocalGet":
+  75998.801 ±(99.9%) 541.772 ops/s [Average]
+  (min, avg, max) = (74421.727, 75998.801, 76981.620), stdev = 623.906
+  CI (99.9%): [75457.029, 76540.574] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:21
+
+Benchmark                                            Mode  Cnt      Score      Error  Units
+FastThreadLocalSlowPathBenchmark.fastThreadLocal    thrpt   20  49499.017 ± 6959.766  ops/s
+FastThreadLocalSlowPathBenchmark.jdkThreadLocalGet  thrpt   20  75998.801 ±  541.772  ops/s
+
+Benchmark result is saved to netty/exp-LOOP-out/netty_benchmarks_original_netty_microbench_concurrent_FastThreadLocalSlowPathBenchmark_LOOP_trial3.csv

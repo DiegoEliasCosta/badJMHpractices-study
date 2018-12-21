@@ -1,0 +1,121 @@
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.indexing.IndexIngestionBenchmark.addRows
+# Parameters: (rollup = true, rowsPerSegment = 75000, schema = basic)
+
+# Run progress: 0.00% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 1152976.029 us/op
+# Warmup Iteration   2: 666703.789 us/op
+# Warmup Iteration   3: 611546.810 us/op
+# Warmup Iteration   4: 570035.418 us/op
+# Warmup Iteration   5: 690200.856 us/op
+# Warmup Iteration   6: 582539.752 us/op
+# Warmup Iteration   7: 556282.353 us/op
+# Warmup Iteration   8: 480731.757 us/op
+# Warmup Iteration   9: 493350.955 us/op
+# Warmup Iteration  10: 481511.385 us/op
+Iteration   1: 502522.340 us/op
+Iteration   2: 550779.419 us/op
+Iteration   3: 508129.107 us/op
+Iteration   4: 486155.274 us/op
+Iteration   5: 482259.581 us/op
+Iteration   6: 487807.887 us/op
+Iteration   7: 520651.836 us/op
+Iteration   8: 528448.703 us/op
+Iteration   9: 503108.289 us/op
+Iteration  10: 500088.896 us/op
+Iteration  11: 539191.238 us/op
+Iteration  12: 515544.159 us/op
+Iteration  13: 486044.943 us/op
+Iteration  14: 490691.157 us/op
+Iteration  15: 487342.684 us/op
+Iteration  16: 492077.838 us/op
+Iteration  17: 498004.908 us/op
+Iteration  18: 510392.319 us/op
+Iteration  19: 481203.287 us/op
+Iteration  20: 494335.843 us/op
+Iteration  21: 480748.683 us/op
+Iteration  22: 480517.516 us/op
+Iteration  23: 485769.192 us/op
+Iteration  24: 480015.145 us/op
+Iteration  25: 486018.262 us/op
+
+
+Result "io.druid.benchmark.indexing.IndexIngestionBenchmark.addRows":
+  499113.940 ±(99.9%) 14391.634 us/op [Average]
+  (min, avg, max) = (480015.145, 499113.940, 550779.419), stdev = 19212.419
+  CI (99.9%): [484722.306, 513505.574] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.indexing.IndexIngestionBenchmark.addRows
+# Parameters: (rollup = false, rowsPerSegment = 75000, schema = basic)
+
+# Run progress: 50.00% complete, ETA 00:00:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 1145356.259 us/op
+# Warmup Iteration   2: 676496.301 us/op
+# Warmup Iteration   3: 625986.922 us/op
+# Warmup Iteration   4: 586328.240 us/op
+# Warmup Iteration   5: 697463.085 us/op
+# Warmup Iteration   6: 621173.975 us/op
+# Warmup Iteration   7: 595833.210 us/op
+# Warmup Iteration   8: 496919.928 us/op
+# Warmup Iteration   9: 500618.464 us/op
+# Warmup Iteration  10: 496970.691 us/op
+Iteration   1: 506611.730 us/op
+Iteration   2: 495794.355 us/op
+Iteration   3: 496044.051 us/op
+Iteration   4: 498071.530 us/op
+Iteration   5: 732498.897 us/op
+Iteration   6: 754841.396 us/op
+Iteration   7: 523504.358 us/op
+Iteration   8: 495656.486 us/op
+Iteration   9: 510384.440 us/op
+Iteration  10: 500088.011 us/op
+Iteration  11: 496696.266 us/op
+Iteration  12: 512238.309 us/op
+Iteration  13: 497003.477 us/op
+Iteration  14: 499256.714 us/op
+Iteration  15: 497304.183 us/op
+Iteration  16: 508885.791 us/op
+Iteration  17: 502701.798 us/op
+Iteration  18: 501921.188 us/op
+Iteration  19: 496462.125 us/op
+Iteration  20: 495416.892 us/op
+Iteration  21: 506101.298 us/op
+Iteration  22: 555327.477 us/op
+Iteration  23: 776482.924 us/op
+Iteration  24: 682112.998 us/op
+Iteration  25: 502589.242 us/op
+
+
+Result "io.druid.benchmark.indexing.IndexIngestionBenchmark.addRows":
+  541759.837 ±(99.9%) 66505.294 us/op [Average]
+  (min, avg, max) = (495416.892, 541759.837, 776482.924), stdev = 88782.665
+  CI (99.9%): [475254.543, 608265.132] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:37
+
+Benchmark                        (rollup)  (rowsPerSegment)  (schema)  Mode  Cnt       Score       Error  Units
+IndexIngestionBenchmark.addRows      true             75000     basic  avgt   25  499113.940 ± 14391.634  us/op
+IndexIngestionBenchmark.addRows     false             75000     basic  avgt   25  541759.837 ± 66505.294  us/op
+
+Benchmark result is saved to druid/exp-INVO-out/druid_benchmarks_original_new_IndexIngestionBenchmark_invo_trial1.csv

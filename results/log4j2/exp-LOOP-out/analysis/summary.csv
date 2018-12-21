@@ -1,0 +1,9 @@
+Benchmark Mode,Measurement Unit,Package,Class,Method,Full params,,Original,Fixed,Factor,Wilcoxom,Cliffs Delta Size,Cliffs Delta d
+"Average time, time/op",ns/op, org.apache.logging.log4j.perf.jmh,SortedArrayVsHashMapBenchmark,iterateMap," (count = 5, length = 20)",0,35.18,37.055,1.0532973280272881,False,medium,-0.3568
+"Average time, time/op",ns/op, org.apache.logging.log4j.perf.jmh,SortedArrayVsHashMapBenchmark,iterateMap," (count = 500, length = 20)",0,3447.321,3705.505,1.0748940989249334,True,large,-0.8336
+"Throughput, ops/time",ops/s, org.apache.logging.log4j.perf.jmh,CollectionsBenchmark,iterArrayList1Element,,0,218399059.89249998,214003101.77899998,0.979871900017959,True,medium,0.4618468669442792
+"Throughput, ops/time",ops/s, org.apache.logging.log4j.perf.jmh,CollectionsBenchmark,iterArrayList3Element,,0,128729495.566,127590561.246,0.9911524991611883,True,medium,0.40673069808519713
+"Throughput, ops/time",ops/s, org.apache.logging.log4j.perf.jmh,CollectionsBenchmark,iterArraySet1Element,,0,226905062.32099998,206600351.407,0.9105145089919804,True,large,0.9485368458526166
+"Throughput, ops/time",ops/s, org.apache.logging.log4j.perf.jmh,CollectionsBenchmark,iterArraySet3Element,,0,120885917.926,124166183.141,1.0271352136897203,True,large,-0.6130652139080276
+"Throughput, ops/time",ops/s, org.apache.logging.log4j.perf.jmh,CollectionsBenchmark,iterMap1Element,,0,33124683.8,33233467.678,1.003284072948645,True,small,-0.2150185353798127
+"Throughput, ops/time",ops/s, org.apache.logging.log4j.perf.jmh,CollectionsBenchmark,iterMap3Elements,,0,26798279.281,26170892.362,0.9765885371810116,True,large,0.5813615909420816

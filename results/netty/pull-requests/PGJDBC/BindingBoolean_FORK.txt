@@ -1,0 +1,23 @@
+fix: configure benchmark forks to greater than zero
+
+Benchmarks configured with zero forks are prone to profile-guided optimization from JVM and other
+effects that offsets the measurement considerably.
+JMH strongly warns against using zero forks, and without the '-f' option being specified in the command line
+jmh will run every bench in the same VM, using optimizations guided from the first benchmarks and artificially 
+speeding-up later ones.
+ 
+We run the benchmarks 10 times with same number of iterations and warmups, and we observe:
+- effects were not as high as AddingPaddingZeros bench, highest factor of difference ~1.50
+
+- Class: BindingBooleans 
+- Mode: Average time 
+- Unit: ns/op  
+- Score reported as median
+- Every comparison had significant diference (Moore median's test)
+Method	        Factor	Fixed	Original
+bindBoolean		1.49    7.985	5.35
+boolAsBoolean	1.09    10.915	9.965
+boolAsInt		1.17    14.931	12.665
+
+It might still be important to keep the configuration of fork = 1 in case more benchmarks are added/modified 
+in the BindBoolena class.

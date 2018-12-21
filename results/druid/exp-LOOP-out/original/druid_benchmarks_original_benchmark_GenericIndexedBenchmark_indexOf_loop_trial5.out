@@ -1,0 +1,111 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 25 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone
+# Parameters: (rowsPerSegment = 750000, schema = basic)
+
+# Run progress: 0.00% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 121685.722 us/op
+# Warmup Iteration   2: 115844.958 us/op
+# Warmup Iteration   3: 139484.046 us/op
+# Warmup Iteration   4: 115984.570 us/op
+# Warmup Iteration   5: 115872.816 us/op
+# Warmup Iteration   6: 115896.049 us/op
+# Warmup Iteration   7: 203354.829 us/op
+# Warmup Iteration   8: 115571.129 us/op
+# Warmup Iteration   9: 115586.482 us/op
+# Warmup Iteration  10: 115498.518 us/op
+Iteration   1: 159689.647 us/op
+Iteration   2: 143662.377 us/op
+Iteration   3: 115495.829 us/op
+Iteration   4: 115517.416 us/op
+Iteration   5: 164181.364 us/op
+Iteration   6: 114839.810 us/op
+Iteration   7: 115809.077 us/op
+Iteration   8: 116004.127 us/op
+Iteration   9: 116086.686 us/op
+Iteration  10: 141432.622 us/op
+Iteration  11: 117852.576 us/op
+Iteration  12: 115952.216 us/op
+Iteration  13: 116003.258 us/op
+Iteration  14: 115921.882 us/op
+Iteration  15: 181659.757 us/op
+Iteration  16: 115955.834 us/op
+Iteration  17: 115940.186 us/op
+Iteration  18: 115976.223 us/op
+Iteration  19: 115926.495 us/op
+Iteration  20: 116392.933 us/op
+Iteration  21: 134223.027 us/op
+Iteration  22: 115820.757 us/op
+Iteration  23: 115815.839 us/op
+Iteration  24: 115702.018 us/op
+Iteration  25: 115801.276 us/op
+
+
+Result "io.druid.benchmark.FilterPartitionBenchmark.timeFilterNone":
+  125106.529 ±(99.9%) 13861.343 us/op [Average]
+  (min, avg, max) = (114839.810, 125106.529, 181659.757), stdev = 18504.496
+  CI (99.9%): [111245.187, 138967.872] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_144, VM 25.144-b01
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.druid.benchmark.GenericIndexedBenchmark.indexOf
+# Parameters: (elementSize = 8, n = 10000)
+
+# Run progress: 58.33% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 741.123 ns/op
+# Warmup Iteration   2: 782.462 ns/op
+# Warmup Iteration   3: 746.727 ns/op
+# Warmup Iteration   4: 755.968 ns/op
+# Warmup Iteration   5: 609.994 ns/op
+Iteration   1: 581.808 ns/op
+Iteration   2: 615.097 ns/op
+Iteration   3: 613.101 ns/op
+Iteration   4: 579.619 ns/op
+Iteration   5: 582.527 ns/op
+Iteration   6: 580.250 ns/op
+Iteration   7: 579.367 ns/op
+Iteration   8: 580.772 ns/op
+Iteration   9: 580.456 ns/op
+Iteration  10: 579.282 ns/op
+Iteration  11: 580.310 ns/op
+Iteration  12: 580.431 ns/op
+Iteration  13: 581.098 ns/op
+Iteration  14: 579.954 ns/op
+Iteration  15: 715.340 ns/op
+Iteration  16: 580.293 ns/op
+Iteration  17: 579.702 ns/op
+Iteration  18: 579.986 ns/op
+Iteration  19: 579.733 ns/op
+Iteration  20: 580.067 ns/op
+
+
+Result "io.druid.benchmark.GenericIndexedBenchmark.indexOf":
+  590.460 ±(99.9%) 27.074 ns/op [Average]
+  (min, avg, max) = (579.282, 590.460, 715.340), stdev = 31.178
+  CI (99.9%): [563.386, 617.534] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:22
+
+Benchmark                                (elementSize)    (n)  (rowsPerSegment)  (schema)  Mode  Cnt       Score       Error  Units
+FilterPartitionBenchmark.timeFilterNone            N/A    N/A            750000     basic  avgt   25  125106.529 ± 13861.343  us/op
+GenericIndexedBenchmark.indexOf                      8  10000               N/A       N/A  avgt   20     590.460 ±    27.074  ns/op
+
+Benchmark result is saved to exp-LOOP-out/druid_benchmarks_original_benchmark_GenericIndexedBenchmark_indexOf_loop_trial5.csv

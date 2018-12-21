@@ -1,0 +1,135 @@
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbenchmark.common.MathOperationsBenchmark.nextIndexConditionals
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 279195620.835 ops/s
+# Warmup Iteration   2: 301811158.745 ops/s
+# Warmup Iteration   3: 328544073.642 ops/s
+# Warmup Iteration   4: 363847948.459 ops/s
+# Warmup Iteration   5: 363591065.473 ops/s
+# Warmup Iteration   6: 363813510.564 ops/s
+# Warmup Iteration   7: 353628265.683 ops/s
+# Warmup Iteration   8: 363914046.978 ops/s
+# Warmup Iteration   9: 363808315.064 ops/s
+# Warmup Iteration  10: 363738593.462 ops/s
+Iteration   1: 363255247.929 ops/s
+Iteration   2: 363616846.469 ops/s
+Iteration   3: 363331956.743 ops/s
+Iteration   4: 363832475.020 ops/s
+Iteration   5: 337356189.241 ops/s
+Iteration   6: 324357583.522 ops/s
+Iteration   7: 363426493.412 ops/s
+Iteration   8: 363407045.525 ops/s
+Iteration   9: 363530246.631 ops/s
+Iteration  10: 340491060.027 ops/s
+
+# Run progress: 25.00% complete, ETA 00:01:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 262677096.731 ops/s
+# Warmup Iteration   2: 262969588.467 ops/s
+# Warmup Iteration   3: 294055081.946 ops/s
+# Warmup Iteration   4: 339285730.998 ops/s
+# Warmup Iteration   5: 336831108.793 ops/s
+# Warmup Iteration   6: 339045123.259 ops/s
+# Warmup Iteration   7: 339276015.244 ops/s
+# Warmup Iteration   8: 339140475.931 ops/s
+# Warmup Iteration   9: 338679800.477 ops/s
+# Warmup Iteration  10: 339218465.825 ops/s
+Iteration   1: 339173150.603 ops/s
+Iteration   2: 339182389.135 ops/s
+Iteration   3: 339290566.093 ops/s
+Iteration   4: 339249083.453 ops/s
+Iteration   5: 344661018.479 ops/s
+Iteration   6: 339173962.949 ops/s
+Iteration   7: 341176391.022 ops/s
+Iteration   8: 341116218.764 ops/s
+Iteration   9: 341191682.583 ops/s
+Iteration  10: 341171561.314 ops/s
+
+
+Result "io.netty.microbenchmark.common.MathOperationsBenchmark.nextIndexConditionals":
+  347599558.446 ±(99.9%) 10890297.147 ops/s [Average]
+  (min, avg, max) = (324357583.522, 347599558.446, 363832475.020), stdev = 12541282.389
+  CI (99.9%): [336709261.299, 358489855.592] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 10.0.1, VM 10.0.1+10
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.netty.microbenchmark.common.MathOperationsBenchmark.nextIndexNoConditionals
+
+# Run progress: 50.00% complete, ETA 00:00:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 287624041.639 ops/s
+# Warmup Iteration   2: 292878046.455 ops/s
+# Warmup Iteration   3: 321607729.477 ops/s
+# Warmup Iteration   4: 356235219.636 ops/s
+# Warmup Iteration   5: 341184817.762 ops/s
+# Warmup Iteration   6: 237695403.546 ops/s
+# Warmup Iteration   7: 297471619.923 ops/s
+# Warmup Iteration   8: 329051071.906 ops/s
+# Warmup Iteration   9: 346233683.246 ops/s
+# Warmup Iteration  10: 357245741.162 ops/s
+Iteration   1: 331779289.574 ops/s
+Iteration   2: 314694287.463 ops/s
+Iteration   3: 358716024.261 ops/s
+Iteration   4: 335523597.467 ops/s
+Iteration   5: 327420896.936 ops/s
+Iteration   6: 356246595.569 ops/s
+Iteration   7: 335402765.349 ops/s
+Iteration   8: 337313171.763 ops/s
+Iteration   9: 336945359.232 ops/s
+Iteration  10: 333203900.927 ops/s
+
+# Run progress: 75.00% complete, ETA 00:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 316682225.000 ops/s
+# Warmup Iteration   2: 344156844.433 ops/s
+# Warmup Iteration   3: 324850886.214 ops/s
+# Warmup Iteration   4: 329613143.182 ops/s
+# Warmup Iteration   5: 330060713.180 ops/s
+# Warmup Iteration   6: 339137241.987 ops/s
+# Warmup Iteration   7: 355680212.954 ops/s
+# Warmup Iteration   8: 355791157.532 ops/s
+# Warmup Iteration   9: 355892087.555 ops/s
+# Warmup Iteration  10: 354398785.923 ops/s
+Iteration   1: 355757399.531 ops/s
+Iteration   2: 354599002.472 ops/s
+Iteration   3: 355803594.684 ops/s
+Iteration   4: 332884881.088 ops/s
+Iteration   5: 327784803.623 ops/s
+Iteration   6: 343780484.645 ops/s
+Iteration   7: 329394733.012 ops/s
+Iteration   8: 357388727.171 ops/s
+Iteration   9: 357365053.121 ops/s
+Iteration  10: 356219932.064 ops/s
+
+
+Result "io.netty.microbenchmark.common.MathOperationsBenchmark.nextIndexNoConditionals":
+  341911224.998 ±(99.9%) 11643517.277 ops/s [Average]
+  (min, avg, max) = (314694287.463, 341911224.998, 358716024.261), stdev = 13408691.812
+  CI (99.9%): [330267707.720, 353554742.275] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:21
+
+Benchmark                                         Mode  Cnt          Score          Error  Units
+MathOperationsBenchmark.nextIndexConditionals    thrpt   20  347599558.446 ± 10890297.147  ops/s
+MathOperationsBenchmark.nextIndexNoConditionals  thrpt   20  341911224.998 ± 11643517.277  ops/s
+
+Benchmark result is saved to netty/exp-FINA-out/netty_benchmarks_original_MathOperationsBenchmark_fina_trial4.csv
