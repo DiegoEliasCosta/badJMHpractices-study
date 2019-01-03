@@ -1,4 +1,6 @@
-| name                                        | Stars | Benchs | RETU | LOOP | FINA | INVO | FORK | 
+## Occurrence of bad JMH practices on all 123 projects
+
+| Project                                     | Stars | Benchs | RETU | LOOP | FINA | INVO | FORK | 
 |---------------------------------------------|-------|--------|------|------|------|------|------| 
 | gs-collections                              | 1652  | 451  | 47 |      |      |      |      | 
 | logging-log4j2                              | 256   | 346  | 5  | 7  | 5  |      |      | 
