@@ -1,8 +1,8 @@
-## RQ1. Occurrence of bad JMH practices
+## RQ1. Occurrences of bad JMH practices
 
 In this folder we present the data collected from GitHub on projects that use JMH,
-the result of using SpotJMHBugs on all 123 projects and the scripts to analyze the
-data. 
+the occurrences of bad JMH practices on those project through the analysis of SpotJMHBugs and the scripts 
+to analyze the data. 
 
 The folder structure is as follows:
 - `data` stores the csv with all projects that use JMH.
