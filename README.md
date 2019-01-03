@@ -12,8 +12,11 @@ The paper that reports the study on bad JMH practices is still under revision.
 
 # Authors
 
-Diego Costa
-Cor-Paul Bezemer
-Philip Leitner
-Artur Andrzejak
+[Diego Costa](https://diegocosta.netlify.com/)
+
+[Cor-Paul Bezemer](https://www.ece.ualberta.ca/~bezemer/)
+
+[Philip Leitner](https://github.com/xLeitix)
+
+[Artur Andrzejak](https://pvs.ifi.uni-heidelberg.de/team/aa/)
 
