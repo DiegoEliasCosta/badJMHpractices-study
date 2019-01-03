@@ -3,51 +3,32 @@ import pandas as pd
 from analyze_bench import parse_input, analyze_bench
 
 """
-    This file is simply ot facilitate the run of analysis and it is not meant 
+    This file is simply to facilitate the run of analysis and it is not meant 
     to be used by command-line.
 """
 
 log4j = os.path.join('../results/log4j2')
 druid = os.path.join('../results/druid')
 pgdbc = os.path.join('../results/pgdbc')
-okio = os.path.join('../results/okio')
-rxjava = os.path.join('../results/rxjava_2x')
 netty = os.path.join('../results/netty')
 h2o3 = os.path.join('../results/h2o-3')
 gscollections = os.path.join('../results/gs-collections')
 
-projects = [log4j]
-projects = [h2o3]
-projects = [druid, netty, h2o3]
-projects = [druid]
-projects = [log4j]
-projects = [gscollections]
-projects = [netty]
 projects = [log4j, druid, pgdbc, netty, h2o3, gscollections]
 
 LOOP = 'exp-LOOP-out'
 RETU = 'exp-RETU-out'
-RETU_CONSUME = 'exp-RETU2-out'
-RETU_DEAD = 'exp-RETU-DEAD-out'
 FORK = 'exp-FORK-out'
 FINA = 'exp-FINA-out'
 INVOv2 = 'exp-INVOv2-out'
-SETUP = 'exp-SETUP-out'
 INVO = 'exp-INVO-out'
 
-experiments = [RETU_CONSUME, FINA]
-experiments = [INVO, SETUP, LOOP, FINA, RETU, FORK, INVO]
-experiments = [RETU_DEAD]
-experiments = [LOOP]
-experiments = [FINA]
-experiments = [RETU]
-experiments = [INVO, LOOP, FINA, RETU, FORK]
 
+experiments = [INVO, INVOv2, LOOP, FINA, RETU, FORK]
 
-parse_before_analyze = False
+parse_before_analyze = True
 
 output = 'analysis'
-
 
 if __name__ == '__main__':
 
